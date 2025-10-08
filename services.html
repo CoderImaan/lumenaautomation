@@ -1,190 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - LumenaAutomation | Crafting Cognitive Systems for Smarter Living</title>
-  <meta name="description" content="Explore LumenaAutomation's services including personal finance management, home automation, AI-driven systems, and enterprise device management.">
-  <meta name="keywords" content="device management, home automation, AI software, custom development, personal finance, Lumena Automation">
-  <meta property="og:title" content="Our Services - LumenaAutomation">
-  <meta property="og:description" content="Smart, secure, and future-ready IT and automation solutions for modern living.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/banner.jpg">
-  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LumenaAutomation - Our Services</title>
+  <meta name="description" content="Explore LumenaAutomation’s professional services including personal finance management, home automation, AI solutions, and enterprise device management." />
+  <meta name="keywords" content="LumenaAutomation, automation, AI, personal finance, device management, IT services, home automation, custom software" />
+  <meta property="og:title" content="LumenaAutomation - Our Services" />
+  <meta property="og:description" content="Discover LumenaAutomation’s innovative technology and automation services designed to simplify and secure modern living." />
+  <meta property="og:image" content="assets/img/logo.svg" />
+  <meta property="og:url" content="https://lumenaautomation.co.in/services" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
 
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/global.css">
-  <style>
-    /* --- Header --- */
-    .navbar-brand span {
-      color: #007bff;
-      font-weight: 600;
-      letter-spacing: 0.3px;
-    }
-    .navbar-brand span:hover {
-      color: #0056b3;
-    }
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    /* --- Hero Section --- */
-    .hero-section {
-      background: linear-gradient(135deg, #f8f9fa 0%, #e8f0ff 100%);
-      color: #00264d;
-      padding: 100px 0 70px;
-      text-align: center;
-      position: relative;
-    }
-    .hero-section h1 {
-      font-weight: 700;
-      font-size: 2.5rem;
-    }
-    .hero-section p {
-      font-size: 1.1rem;
-      color: #555;
-      max-width: 700px;
-      margin: 0 auto;
-    }
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-    /* --- Services Section --- */
-    .service-card {
-      background: #fff;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      transition: all 0.4s ease;
-      padding: 30px;
-      height: 100%;
-    }
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-    }
-    .service-card h4 {
-      color: #00264d;
-      margin-bottom: 15px;
-      font-weight: 600;
-    }
-    .service-card p {
-      color: #555;
-    }
-    .service-card ul {
-      padding-left: 20px;
-    }
-
-    /* --- Fade Animation --- */
-    [data-animate] {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s ease-out;
-    }
-    [data-animate].visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* --- Footer --- */
-    footer {
-      background-color: #00264d;
-      color: #fff;
-      text-align: center;
-      padding: 25px 0;
-      margin-top: 60px;
-    }
-    footer a {
-      color: #fff;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <!-- Custom Global Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
 
-  <!-- Header -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
+<body>
+  <!-- Header / Navbar -->
+  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/img/logo.svg" alt="LumenaAutomation Logo" width="40" height="40" class="me-2">
-        <span>LumenaAutomation</span>
+        <img src="assets/img/logo.svg" alt="LumenaAutomation Logo" height="40" class="me-2">
+        <span class="fw-bold text-primary">LumenaAutomation</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link active fw-semibold text-primary" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
-  </nav>
+  </header>
 
   <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container">
-      <h1 data-animate>Our Services</h1>
-      <p data-animate>Smart, secure, and future-ready technology solutions designed to enhance living and empower business transformation.</p>
+  <section class="hero-section d-flex align-items-center text-center text-white"
+    style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/hero-bg-services.jpg') center/cover no-repeat; height: 70vh; margin-top: 80px;">
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-5 fw-bold mb-3">Our Services</h1>
+      <p class="lead mb-4">Empowering smarter living through technology, automation, and innovation.</p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
     </div>
   </section>
 
-  <!-- Services -->
+  <!-- Intro Section -->
+  <section class="py-5 bg-light" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3">Innovative Solutions for a Connected Future</h2>
+      <p class="text-muted fs-5 mx-auto" style="max-width: 750px;">
+        At LumenaAutomation, we deliver intelligent solutions that bridge technology with everyday needs — from financial management to home automation and enterprise-level IT services. Our mission is to simplify, secure, and enhance the way you live and work.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
   <section class="py-5">
     <div class="container">
-      <div class="row g-4">
-
+      <div class="row g-5">
+        
         <!-- Personal Finance -->
-        <div class="col-md-6 col-lg-4" data-animate>
-          <div class="service-card h-100">
-            <h4>Personal Finance Management</h4>
-            <p>Take full control of your financial well-being with LumenaAutomation’s intelligent budgeting platform. Track, plan, and optimize your spending with ease.</p>
-            <ul>
-              <li>Smart budgeting and goal tracking</li>
-              <li>Data-driven financial insights</li>
-              <li>Cloud backup and device sync</li>
-            </ul>
-            <a href="https://lumena.pythonanywhere.com/login" target="_blank" rel="noopener" class="btn btn-outline-primary mt-3">Launch App</a>
-          </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <h4 class="fw-bold">Personal Finance Management</h4>
+          <p>
+            Simplify your financial life with intelligent insights and automation. Our personal finance tools help users plan budgets, track expenses, and achieve financial goals through data-driven analytics and visual dashboards.
+          </p>
+          <ul>
+            <li>Expense tracking and category analysis</li>
+            <li>Budget planning and optimization</li>
+            <li>Smart financial reports and visualizations</li>
+            <li>Cloud-synced and mobile-friendly solutions</li>
+          </ul>
+          <p>
+            Gain financial clarity and control with automated systems built for accuracy, security, and simplicity.
+          </p>
         </div>
 
         <!-- Home Automation -->
-        <div class="col-md-6 col-lg-4" data-animate>
-          <div class="service-card h-100">
-            <h4>Home Automation Solutions</h4>
-            <p>Experience smart living with intelligent automation systems that blend convenience, control, and security seamlessly within your home environment.</p>
-            <ul>
-              <li>IoT-based appliance management</li>
-              <li>Smart lighting and energy monitoring</li>
-              <li>AI-driven security automation</li>
-            </ul>
-          </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <h4 class="fw-bold">Home Automation Solutions</h4>
+          <p>
+            Transform your living spaces with intelligent automation. Our solutions integrate IoT devices and sensors to bring comfort, safety, and energy efficiency into your daily routine.
+          </p>
+          <ul>
+            <li>Smart lighting, HVAC, and appliance control</li>
+            <li>Energy monitoring and optimization</li>
+            <li>Voice and app-controlled systems</li>
+            <li>Seamless integration with existing home setups</li>
+          </ul>
+          <p>
+            Enjoy personalized automation that enhances your lifestyle while reducing operational costs.
+          </p>
         </div>
 
-        <!-- AI & Custom Software -->
-        <div class="col-md-6 col-lg-4" data-animate>
-          <div class="service-card h-100">
-            <h4>AI & Custom Software Development</h4>
-            <p>Empower your business with intelligent software solutions. From automation to predictive analytics, we design scalable systems for growth and innovation.</p>
-            <ul>
-              <li>AI-based automation and analytics</li>
-              <li>Web and mobile app development</li>
-              <li>Enterprise system integration</li>
-            </ul>
-          </div>
+        <!-- AI and Custom Software -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <h4 class="fw-bold">AI & Custom Software Solutions</h4>
+          <p>
+            Drive innovation through AI-driven insights and tailored software solutions. We design, develop, and deploy scalable applications powered by automation, analytics, and machine learning.
+          </p>
+          <ul>
+            <li>Intelligent data processing and predictive analytics</li>
+            <li>Business automation and workflow optimization</li>
+            <li>Custom software development for unique needs</li>
+            <li>Integration with enterprise tools and APIs</li>
+          </ul>
+          <p>
+            From startups to enterprises, our AI and software services help organizations adapt faster and operate smarter.
+          </p>
         </div>
 
         <!-- Device Management -->
-        <div class="col-md-6 col-lg-4" data-animate>
-          <div class="service-card h-100">
-            <h4>Enterprise Device Management</h4>
-            <p>Comprehensive management for macOS, Windows, Android, iOS, and IoT devices. Keep your organization’s devices secure, compliant, and performance-optimized.</p>
-            <ul>
-              <li>Policy enforcement & compliance</li>
-              <li>App deployment & patch management</li>
-              <li>Remote monitoring & lifecycle control</li>
-            </ul>
-          </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <h4 class="fw-bold">Enterprise Device Management</h4>
+          <p>
+            Ensure seamless, secure, and efficient management of all corporate devices with our end-to-end device management services for macOS, Windows, iOS, Android, and IoT environments.
+          </p>
+          <ul>
+            <li><strong>Security & Compliance:</strong> Enforce policies, monitor devices, and protect sensitive data.</li>
+            <li><strong>App Deployment:</strong> Manage rollouts, updates, and access across teams.</li>
+            <li><strong>Monitoring & Reports:</strong> Real-time visibility into performance and compliance.</li>
+            <li><strong>Remote Support:</strong> Troubleshoot and assist users anywhere, anytime.</li>
+            <li><strong>Lifecycle Management:</strong> Provision, maintain, and retire devices efficiently.</li>
+          </ul>
+          <p>
+            Gain visibility, control, and confidence knowing your organization’s devices are always secure, compliant, and up-to-date.
+          </p>
         </div>
 
       </div>
@@ -192,20 +146,18 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p class="mb-1">© 2025 LumenaAutomation. All rights reserved.</p>
-    <p class="small mb-0">Crafting Cognitive Systems for Smarter Living | <a href="https://lumenaautomation.co.in" target="_blank">lumenaautomation.co.in</a></p>
+  <footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+      <p class="mb-1">© 2025 LumenaAutomation. All rights reserved.</p>
+      <small><a href="https://lumenaautomation.co.in" class="text-white text-decoration-none">lumenaautomation.co.in</a></small>
+    </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    document.addEventListener('scroll', () => {
-      document.querySelectorAll('[data-animate]').forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) el.classList.add('visible');
-      });
-    });
+    AOS.init({ duration: 800, once: true });
   </script>
 </body>
 </html>
