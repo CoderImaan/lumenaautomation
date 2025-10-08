@@ -102,8 +102,8 @@
 </section>
 
 <!-- About Section -->
-<section class="py-5">
-  <div class="container">
+<section class="py-5 bg-white">
+  <div class="container" data-aos="fade-up">
     <div class="row align-items-center">
       <!-- Text Column -->
       <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
@@ -112,7 +112,7 @@
           <strong>LumenaAutomation</strong> delivers software and automation solutions that redefine how individuals
           and businesses manage their time, resources, and devices.
         </p>
-        <p>
+        <p class="mb-0">
           Our solutions span across <strong>personal finance management</strong>, <strong>AI-driven automation</strong>,
           <strong>custom software development</strong>, and <strong>device management systems</strong> — all designed to be
           intuitive, scalable, and empowering for users everywhere.
@@ -141,9 +141,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init({
-    duration: 1000,
-    once: true
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
   });
 </script>
 
