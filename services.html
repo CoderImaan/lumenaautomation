@@ -6,13 +6,153 @@
   <title>Services - Lumena Automation | Crafting Cognitive Systems for Smarter Living</title>
   <meta name="description" content="Explore Lumena Automation's professional IT services including personal finance solutions, home automation, AI-driven systems, custom software development, and enterprise device management.">
   <meta name="keywords" content="device management, home automation, AI solutions, custom software, personal finance, IT services, Lumena Automation">
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- Modern Glassmorphism & Animation Styling -->
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f8faff;
+      color: #333;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    header {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.85);
+      transition: all 0.3s ease;
+    }
+    header:hover {
+      background: rgba(255, 255, 255, 0.95);
+    }
+    header a {
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    header a:hover {
+      color: #0d6efd;
+    }
+
+    /* Hero Section */
+    section.bg-primary {
+      background: linear-gradient(135deg, #007bff, #6610f2);
+      background-size: 200% 200%;
+      animation: gradientShift 8s ease infinite;
+      color: #fff;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Service Cards */
+    .col-md-6 {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(15px);
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      padding: 30px;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .col-md-6::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(120deg, rgba(13,110,253,0.05), rgba(102,16,242,0.05));
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      border-radius: inherit;
+      z-index: 0;
+    }
+
+    .col-md-6:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+    }
+    .col-md-6:hover::before {
+      opacity: 1;
+    }
+
+    .col-md-6 h3 {
+      z-index: 1;
+      position: relative;
+      font-weight: 600;
+    }
+    .col-md-6 p, .col-md-6 ul {
+      z-index: 1;
+      position: relative;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      padding-left: 24px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #0d6efd;
+      font-weight: bold;
+    }
+
+    /* Button Styles */
+    .btn-outline-primary {
+      border: 2px solid #0d6efd;
+      transition: all 0.3s ease;
+    }
+    .btn-outline-primary:hover {
+      background: #0d6efd;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(13,110,253,0.3);
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: #f8f9fa;
+      font-size: 0.9rem;
+    }
+    footer a:hover {
+      color: #ffda79 !important;
+    }
+
+    /* Scroll Animation */
+    [data-aos] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    [data-aos].aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive Fixes */
+    @media (max-width: 768px) {
+      .col-md-6 {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
   <!-- Header -->
-  <header class="bg-light py-3 shadow-sm">
+  <header class="py-3 fixed-top shadow-sm">
     <div class="container d-flex justify-content-between align-items-center">
       <a href="index.html" class="navbar-brand fw-bold fs-4 text-primary">LumenaAutomation</a>
       <nav>
@@ -25,10 +165,10 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="py-5 text-center bg-primary text-white">
-    <div class="container">
-      <h1 class="fw-bold">Our Services</h1>
-      <p class="lead">Comprehensive technology solutions designed to simplify life, secure your digital assets, and empower your business.</p>
+  <section class="py-5 text-center bg-primary text-white mt-5">
+    <div class="container py-5">
+      <h1 class="fw-bold display-5">Our Services</h1>
+      <p class="lead mb-0">Comprehensive technology solutions designed to simplify life, secure your digital assets, and empower your business.</p>
     </div>
   </section>
 
@@ -39,76 +179,52 @@
 
         <!-- Personal Finance Solutions -->
         <div class="col-md-6" data-aos="fade-up">
-          <h3 class="text-primary fw-semibold mb-3">Personal Finance Management</h3>
-          <p>
-            Take control of your financial health with <strong>Budget Manager</strong> — a smart, intuitive solution designed to help individuals and families plan, track, and optimize their spending.  
-            Our finance platform combines analytics, automation, and user-friendly design to make budgeting effortless.
-          </p>
+          <h3 class="text-primary mb-3">Personal Finance Management</h3>
+          <p>Take control of your financial health with <strong>Budget Manager</strong> — a smart, intuitive solution designed to help individuals and families plan, track, and optimize their spending.</p>
           <ul>
             <li>Track income, expenses, and savings in real-time.</li>
             <li>Set monthly budgets and analyze spending patterns.</li>
-            <li>Visualize your financial progress with interactive charts and reports.</li>
-            <li>Enjoy an ad-free, secure environment with cloud synchronization.</li>
+            <li>Visualize your financial progress with interactive charts.</li>
+            <li>Enjoy an ad-free, secure environment with cloud sync.</li>
           </ul>
-          <p>
-            Empower your financial decisions with data-driven insights and experience stress-free money management.
-          </p>
           <a href="https://lumena.pythonanywhere.com/login" target="_blank" rel="noopener" class="btn btn-outline-primary mt-2">Launch App</a>
         </div>
 
         <!-- Home Automation -->
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-primary fw-semibold mb-3">Home Automation Solutions</h3>
-          <p>
-            Redefine modern living with intelligent home automation that connects your environment seamlessly.  
-            Our solutions enable you to monitor and control your appliances, lighting, and security systems remotely — offering convenience, efficiency, and peace of mind.
-          </p>
+          <h3 class="text-primary mb-3">Home Automation Solutions</h3>
+          <p>Redefine modern living with intelligent automation that connects your home seamlessly. Monitor and control your appliances, lighting, and security systems remotely — offering convenience and peace of mind.</p>
           <ul>
             <li>Smart lighting, climate control, and appliance automation.</li>
-            <li>Real-time monitoring with IoT integration and mobile access.</li>
-            <li>AI-driven energy optimization for sustainability.</li>
-            <li>Custom configurations to suit your lifestyle and preferences.</li>
+            <li>IoT integration and mobile-based monitoring.</li>
+            <li>AI-driven energy optimization and efficiency.</li>
+            <li>Custom configurations for your lifestyle.</li>
           </ul>
-          <p>
-            At LumenaAutomation, we merge technology and comfort, creating smarter, safer, and more efficient homes for the future.
-          </p>
         </div>
 
-        <!-- AI & Custom Software Development -->
+        <!-- AI & Custom Software -->
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-primary fw-semibold mb-3">AI & Custom Software Development</h3>
-          <p>
-            Harness the power of Artificial Intelligence and tailored software solutions to transform your business operations.  
-            We design intelligent systems that automate workflows, enhance decision-making, and deliver measurable results.
-          </p>
+          <h3 class="text-primary mb-3">AI & Custom Software Development</h3>
+          <p>Harness the power of Artificial Intelligence and tailored software to transform business operations and enable smarter decisions.</p>
           <ul>
-            <li>Custom AI models for predictive analytics and automation.</li>
-            <li>Web and mobile application development for all industries.</li>
-            <li>Integration with existing enterprise tools and data pipelines.</li>
-            <li>End-to-end design, deployment, and maintenance support.</li>
+            <li>AI-driven automation and predictive analytics.</li>
+            <li>Web and mobile app development across domains.</li>
+            <li>Seamless enterprise tool integration.</li>
+            <li>End-to-end product design and maintenance.</li>
           </ul>
-          <p>
-            Whether you’re modernizing existing systems or building from scratch, our expert team ensures scalability, performance, and innovation at every step.
-          </p>
         </div>
 
-        <!-- Enterprise Device Management -->
+        <!-- Device Management -->
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <h3 class="text-primary fw-semibold mb-3">Enterprise Device Management</h3>
-          <p>
-            Ensure seamless, secure, and efficient management of all your corporate devices with LumenaAutomation’s <strong>Enterprise Device Management</strong> services.  
-            We provide end-to-end lifecycle management across macOS, Windows, iOS, Android, and IoT devices — keeping your digital infrastructure safe, compliant, and optimized.
-          </p>
+          <h3 class="text-primary mb-3">Enterprise Device Management</h3>
+          <p>Ensure seamless, secure, and efficient management of all your corporate devices with our <strong>Enterprise Device Management</strong> services.</p>
           <ul>
-            <li><strong>Security & Compliance:</strong> Enforce corporate policies, deploy patches, and monitor threats to protect sensitive data.</li>
-            <li><strong>Application Management:</strong> Streamline deployment, updates, and configuration of business apps across devices.</li>
-            <li><strong>Monitoring & Analytics:</strong> Gain real-time visibility into device health, performance, and compliance metrics.</li>
-            <li><strong>Remote Support:</strong> Provide secure, remote troubleshooting and assistance for employees anytime, anywhere.</li>
-            <li><strong>Lifecycle Optimization:</strong> Manage provisioning, upgrades, and retirement of devices efficiently to minimize downtime.</li>
+            <li><strong>Security & Compliance:</strong> Enforce corporate policies and patch management.</li>
+            <li><strong>Application Deployment:</strong> Streamline rollouts and updates.</li>
+            <li><strong>Monitoring & Analytics:</strong> Real-time insights and compliance tracking.</li>
+            <li><strong>Remote Support:</strong> Assist employees securely anytime, anywhere.</li>
+            <li><strong>Lifecycle Optimization:</strong> Manage provisioning, upgrades, and retirement efficiently.</li>
           </ul>
-          <p>
-            With our enterprise-grade approach, your organization benefits from centralized control, enhanced security, and simplified IT management — enabling your teams to focus on what truly matters.
-          </p>
         </div>
 
       </div>
@@ -116,7 +232,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-light py-4 mt-5">
+  <footer class="text-light py-4 mt-5">
     <div class="container text-center">
       <p class="mb-0">&copy; 2025 Lumena Automation. All Rights Reserved.</p>
       <p class="small mb-0">Crafting Cognitive Systems for Smarter Living</p>
@@ -126,12 +242,14 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/aos.js"></script>
   <script>
-    AOS.init({ duration: 800, once: true });
+    // Minimal AOS-like animation trigger
+    document.addEventListener("scroll", () => {
+      document.querySelectorAll("[data-aos]").forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) el.classList.add("aos-animate");
+      });
+    });
   </script>
-
 </body>
 </html>
