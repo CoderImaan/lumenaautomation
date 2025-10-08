@@ -1,145 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Services - Lumena Automation</title>
-
-  <!-- SEO Meta -->
-  <meta name="description" content="Explore Lumena Automation’s professional services including personal finance software, home automation, AI solutions, and enterprise device management." />
-  <meta name="keywords" content="Lumena Automation, services, personal finance, home automation, AI, device management, enterprise IT solutions" />
-  <meta property="og:title" content="Our Services - Lumena Automation" />
-  <meta property="og:description" content="Discover how Lumena Automation empowers individuals and enterprises through intelligent automation and smart solutions." />
-  <meta property="og:image" content="https://lumenaautomation.co.in/assets/img/og-preview.jpg" />
-  <meta property="og:url" content="https://lumenaautomation.co.in/services.html" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://lumenaautomation.co.in/services.html">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-
-  <!-- CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/global.css" />
-  <link rel="stylesheet" href="assets/css/services.css" />
-
-  <!-- AOS Animation -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services - LumenaAutomation</title>
+<meta name="description" content="Explore LumenaAutomation's services in personal finance, home automation, AI-driven solutions, and enterprise device management. Empower your business and lifestyle with smart, secure, and efficient technology.">
+<meta name="keywords" content="Lumena Automation, AI services, home automation, personal finance, device management, custom software, Lumena, IoT solutions">
+<meta name="author" content="Lumena Automation">
+<meta property="og:title" content="Our Services - LumenaAutomation">
+<meta property="og:description" content="Smart, secure, and intelligent services for modern living and business automation.">
+<meta property="og:url" content="https://lumenaautomation.co.in/services">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://lumenaautomation.co.in/static/images/lumena-og-banner.jpg">
+<link rel="icon" href="https://lumenaautomation.co.in/static/images/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://lumenaautomation.co.in/static/css/global.css">
+<style>
+/* Inline Enhancements */
+.navbar-brand span {
+  color: #fff !important; /* match theme */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.navbar-brand span:hover {
+  color: #00b4d8; /* energetic accent */
+}
+.hero-section {
+  background: linear-gradient(135deg, #00264d 0%, #004080 100%);
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.1), transparent 70%);
+  animation: pulse 8s infinite;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+}
+.service-card {
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.service-card h4 {
+  color: #00264d;
+  margin-bottom: 15px;
+}
+footer {
+  background-color: #00264d;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+</style>
 </head>
-
 <body>
 
-  <!-- Header (matching other pages) -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <!-- Correct logo path identical to other pages -->
-          <img src="assets/img/logo.svg" alt="LumenaAutomation Logo" style="height:40px; width:auto; margin-right:10px;">
-          <span class="fw-bold text-dark">LumenaAutomation</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="/static/images/logo.svg" alt="LumenaAutomation Logo" width="40" height="40" class="me-2">
+      <span>LumenaAutomation</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero-section">
+  <div class="container">
+    <h1 class="display-5 fw-bold mb-3">Our Services</h1>
+    <p class="lead">Empowering smarter living and efficient business through intelligent, secure, and scalable technology.</p>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Personal Finance -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card p-4">
+          <h4>Personal Finance Management</h4>
+          <p>Manage your expenses, set budgets, and take control of your finances with our smart personal finance platform. LumenaAutomation helps individuals and families track spending, plan savings, and achieve financial goals with clarity and confidence.</p>
+          <ul>
+            <li>Expense tracking and budgeting tools</li>
+            <li>AI-based insights and analytics</li>
+            <li>Multi-device access and secure cloud backup</li>
           </ul>
         </div>
       </div>
-    </nav>
-  </header>
 
-  <!-- Spacer for fixed header (keeps page spacing identical to other pages) -->
-  <div style="height: 80px;"></div>
-
-  <!-- Hero Section -->
-  <section class="hero-section text-center py-5 bg-white" data-aos="fade-up">
-    <div class="container">
-      <h1 class="display-5 fw-bold">Our Services</h1>
-      <p class="lead text-muted">Innovative solutions to simplify finance, automation, and technology for modern living.</p>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section class="py-5" data-aos="fade-up">
-    <div class="container">
-      <div class="row gy-5">
-
-        <!-- Personal Finance Solutions -->
-        <div class="col-md-6">
-          <h3 class="fw-semibold mb-3 text-primary">Personal Finance Solutions</h3>
-          <p>Empower your financial decisions with LumenaAutomation’s <strong>Budget Manager</strong> — a smart personal finance app designed to simplify expense tracking, budget allocation, and savings management. Our platform helps users gain control over their money through real-time insights, visual analytics, and goal-based planning.</p>
+      <!-- Home Automation -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card p-4">
+          <h4>Home Automation Solutions</h4>
+          <p>Transform your living space with intelligent automation systems that make life more convenient, energy-efficient, and secure. Our IoT-enabled solutions integrate lighting, security, climate, and appliances for a connected home experience.</p>
           <ul>
-            <li>Comprehensive expense tracking with category-based reports</li>
-            <li>Customizable budget plans for individuals and families</li>
-            <li>Interactive charts and monthly performance dashboards</li>
-            <li>Secure cloud-based data management</li>
-          </ul>
-          <a href="https://lumena.pythonanywhere.com/login" target="_blank" rel="noopener" class="btn btn-outline-primary mt-2">Launch Budget Manager</a>
-        </div>
-
-        <!-- Home Automation -->
-        <div class="col-md-6">
-          <h3 class="fw-semibold mb-3 text-primary">Home Automation Solutions</h3>
-          <p>Experience the future of smart living with our intelligent <strong>Home Automation</strong> services. From lighting and climate control to device scheduling and security, our systems integrate seamlessly with IoT devices to make your home more efficient and responsive to your needs.</p>
-          <ul>
-            <li>Smart lighting, energy, and security automation</li>
-            <li>Voice and mobile app-based control systems</li>
-            <li>IoT integration for connected devices and sensors</li>
-            <li>Personalized automation routines to enhance comfort and efficiency</li>
+            <li>IoT integration and smart controls</li>
+            <li>Energy efficiency and sustainability</li>
+            <li>Remote monitoring and management</li>
           </ul>
         </div>
+      </div>
 
-        <!-- AI & Custom Software Development -->
-        <div class="col-md-6">
-          <h3 class="fw-semibold mb-3 text-primary">AI & Custom Software Development</h3>
-          <p>Transform your business processes with intelligent automation and data-driven solutions. Our <strong>AI-driven development services</strong> include predictive analytics, natural language processing, and machine learning systems tailored to your organization’s goals.</p>
+      <!-- AI and Custom Software -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card p-4">
+          <h4>AI & Custom Software Development</h4>
+          <p>Harness the power of Artificial Intelligence and tailored software solutions to solve your unique business challenges. From automation to analytics, we build scalable applications that enhance productivity and drive digital transformation.</p>
           <ul>
-            <li>AI-powered automation tools for efficiency and scalability</li>
-            <li>Custom web and mobile applications aligned with business needs</li>
-            <li>Data analytics dashboards and business intelligence systems</li>
-            <li>End-to-end software development with secure cloud integration</li>
+            <li>Custom web & mobile app development</li>
+            <li>AI/ML-driven analytics and automation</li>
+            <li>System integration and modernization</li>
           </ul>
         </div>
+      </div>
 
-        <!-- Enterprise Device Management -->
-        <div class="col-md-6">
-          <h3 class="fw-semibold mb-3 text-primary">Enterprise Device Management</h3>
-          <p>Ensure seamless, secure, and efficient management of all your corporate devices with LumenaAutomation’s <strong>Enterprise Device Management</strong> services. We provide end-to-end support for macOS, Windows, iOS, Android, and IoT devices, helping businesses maintain operational continuity and security.</p>
+      <!-- Device Management -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card p-4">
+          <h4>Enterprise Device Management</h4>
+          <p>Secure, manage, and monitor all enterprise devices with our unified management services. LumenaAutomation provides comprehensive support for macOS, Windows, Android, iOS, and IoT devices, ensuring they remain compliant, efficient, and secure.</p>
           <ul>
-            <li><strong>Security & Compliance:</strong> Enforce corporate policies, deploy security patches, and protect sensitive data.</li>
-            <li><strong>Application Management:</strong> Streamline deployment of business apps, updates, and configurations.</li>
-            <li><strong>Monitoring & Reporting:</strong> Real-time visibility into device performance, usage, and compliance.</li>
-            <li><strong>Remote Support:</strong> Quick troubleshooting and diagnostics for employees anywhere.</li>
-            <li><strong>Lifecycle Management:</strong> Manage provisioning, updates, and decommissioning efficiently.</li>
+            <li>Centralized device monitoring & reporting</li>
+            <li>Security policy enforcement & patching</li>
+            <li>Application deployment & lifecycle management</li>
           </ul>
         </div>
-
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="bg-primary text-white text-center py-4">
-    <div class="container">
-      <p class="mb-1">&copy; 2025 LumenaAutomation. All Rights Reserved.</p>
-      <small>Crafting Cognitive Systems for Smarter Living</small>
-    </div>
-  </footer>
+<!-- Footer -->
+<footer>
+  <p>© 2025 LumenaAutomation. All rights reserved.</p>
+</footer>
 
-  <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, once: true });
-  </script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
