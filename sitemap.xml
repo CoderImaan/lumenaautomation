@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Pages -->
   <url>
     <loc>https://www.lumenaautomation.co.in/</loc>
   </url>
@@ -15,4 +17,21 @@
   <url>
     <loc>https://www.lumenaautomation.co.in/contact.html</loc>
   </url>
+
+  <!-- Blog Listing Page -->
+  <url>
+    <loc>https://www.lumenaautomation.co.in/blogs.html</loc>
+  </url>
+
+  <!-- Individual Blog Posts -->
+  <url>
+    <loc>https://www.lumenaautomation.co.in/blogs/how-to-use-budgetmanager.html</loc>
+  </url>
+  <url>
+    <loc>https://www.lumenaautomation.co.in/blogs/smart-home-automation.html</loc>
+  </url>
+  <url>
+    <loc>https://www.lumenaautomation.co.in/blogs/top-5-ai-tools.html</loc>
+  </url>
+
 </urlset>
