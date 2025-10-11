@@ -112,13 +112,23 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero-section d-flex align-items-center text-center text-white"
+  <section class="hero-section d-flex align-items-center text-center text-white position-relative overflow-hidden"
     style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/hero-bg-services.jpg') center/cover no-repeat; height: 70vh; margin-top: 80px;">
-    <div class="container" data-aos="fade-up">
+    <div class="container position-relative z-2" data-aos="fade-up">
       <h1 class="display-5 fw-bold mb-3">Our Services</h1>
       <p class="lead mb-4">Empowering smarter living through technology, automation, and innovation.</p>
       <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
     </div>
+    <!-- Animated SVG or Decorative Graphics -->
+    <svg class="position-absolute bottom-0 start-0 w-100" height="120" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="z-index:1;">
+      <path d="M0,80 C360,160 1080,0 1440,80 L1440,120 L0,120 Z" fill="#fff" fill-opacity="0.9">
+        <animate attributeName="d" dur="8s" repeatCount="indefinite"
+          values="M0,80 C360,160 1080,0 1440,80 L1440,120 L0,120 Z;
+                  M0,100 C400,60 1040,180 1440,100 L1440,120 L0,120 Z;
+                  M0,80 C360,160 1080,0 1440,80 L1440,120 L0,120 Z" />
+      </path>
+    </svg>
+    <img src="assets/img/automation.jpg" alt="Automation Illustration" class="position-absolute end-0 bottom-0 d-none d-md-block" style="width: 320px; max-width: 40vw; z-index:2; opacity:0.85; pointer-events:none;" data-aos="fade-left" data-aos-delay="400" loading="lazy">
   </section>
 
   <!-- Intro Section -->
