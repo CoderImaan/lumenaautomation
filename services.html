@@ -24,7 +24,7 @@
 <link rel="mask-icon" href="https://lumenaautomation.co.in/safari-pinned-tab.svg" color="#0a0a0a">
 <meta name="theme-color" content="#ffffff">
 
-<!-- Organization Structured Data with Logo -->
+<!-- Organization Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -44,19 +44,6 @@
     "url": "https://lumenaautomation.co.in/contact.html",
     "telephone": "+919665624068"
   }]
-}
-</script>
-<!-- WebSite Structured Data for Sitelinks Search Box -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "url": "https://lumenaautomation.co.in/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://lumenaautomation.co.in/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
 }
 </script>
 
@@ -79,218 +66,182 @@
 <meta property="og:url" content="https://lumenaautomation.co.in/services.html">
 <meta property="og:type" content="website">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Services | LumenaAutomation">
-<meta name="twitter:description" content="Explore LumenaAutomation’s professional services: personal finance software, home automation, AI-driven systems, custom software, and enterprise Digital Workplace Solutions solutions.">
-<meta name="twitter:image" content="https://lumenaautomation.co.in/assets/img/logo.png">
-
+<style>
+  .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; }
+  .service-icon { width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 12px; margin-bottom: 1.5rem; background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%); color: white; font-size: 1.5rem; }
+  .carousel-caption { background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(5px); border-radius: 15px; padding: 2rem; bottom: 20%; }
+</style>
 </head>
 
-<body>
+<body class="bg-light">
   <!-- Header / Navbar -->
-  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top" aria-label="Main navigation">
-  <div class="container">
-    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-      <img src="assets/img/logo.svg" alt="LumenaAutomation Logo" style="height: 55px; width: auto; margin-right: 10px;">
-      LumenaAutomation
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <img src="assets/img/logo.svg" alt="LumenaAutomation Logo" style="height: 55px; width: auto; margin-right: 10px;">
+        LumenaAutomation
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active text-primary" href="services.html">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
         </ul>
       </div>
     </div>
-  </header>
+  </nav>
 
   <!-- Hero Section -->
-  <section class="hero-section d-flex align-items-center text-center text-white position-relative overflow-hidden"
-    style="background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%), url('assets/img/hero-bg-services.jpg') center/cover no-repeat; height: 70vh; margin-top: 80px;">
-    <div class="container position-relative z-2" data-aos="fade-up">
-      <h1 class="display-5 fw-bold mb-3">Our Services</h1>
-      <p class="lead mb-4">Empowering smarter living through technology, automation, and innovation.</p>
-      <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+  <section class="position-relative overflow-hidden" style="background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%); min-height: 400px; display: flex; align-items: center; margin-top: 80px;">
+    <div class="container text-center text-white position-relative z-2" data-aos="fade-up">
+      <h1 class="display-4 fw-bold mb-3">Our Services</h1>
+      <p class="lead mb-4 opacity-75">Empowering smarter living through technology, automation, and innovation[cite: 3].</p>
+      <a href="contact.html" class="btn btn-light btn-lg fw-bold text-primary px-5 rounded-pill shadow-sm">Get in Touch</a>
     </div>
-    <!-- Animated Thin Net Colored Waves -->
+    <!-- Animated Waves -->
     <svg class="position-absolute bottom-0 start-0 w-100" height="120" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="z-index:1;">
       <path d="M0,100 Q360,60 720,100 T1440,100" stroke="#00bfa5" stroke-width="2" fill="none">
-        <animate attributeName="d" dur="8s" repeatCount="indefinite"
-          values="M0,100 Q360,60 720,100 T1440,100;
-                  M0,100 Q360,120 720,80 T1440,100;
-                  M0,100 Q360,60 720,100 T1440,100" />
+        <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0,100 Q360,60 720,100 T1440,100; M0,100 Q360,120 720,80 T1440,100; M0,100 Q360,60 720,100 T1440,100" />
       </path>
-      <path d="M0,110 Q360,90 720,110 T1440,110" stroke="#007bff" stroke-width="1.5" fill="none" opacity="0.7">
-        <animate attributeName="d" dur="10s" repeatCount="indefinite"
-          values="M0,110 Q360,90 720,110 T1440,110;
-                  M0,110 Q360,130 720,90 T1440,110;
-                  M0,110 Q360,90 720,110 T1440,110" />
-      </path>
-      <path d="M0,120 Q360,110 720,120 T1440,120" stroke="#fff" stroke-width="1" fill="none" opacity="0.5">
-        <animate attributeName="d" dur="12s" repeatCount="indefinite"
-          values="M0,120 Q360,110 720,120 T1440,120;
-                  M0,120 Q360,100 720,130 T1440,120;
-                  M0,120 Q360,110 720,120 T1440,120" />
+      <path d="M0,110 Q360,90 720,110 T1440,110" stroke="#fff" stroke-width="1" fill="none" opacity="0.3">
+        <animate attributeName="d" dur="12s" repeatCount="indefinite" values="M0,120 Q360,110 720,120 T1440,120; M0,120 Q360,100 720,130 T1440,120; M0,120 Q360,110 720,120 T1440,120" />
       </path>
     </svg>
   </section>
 
   <!-- Intro Section -->
-  <section class="py-5 bg-light" data-aos="fade-up">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-3">Innovative Solutions for a Connected Future</h2>
-      <p class="text-muted fs-5 mx-auto" style="max-width: 750px;">
-        At LumenaAutomation, we deliver intelligent solutions that bridge technology with everyday needs — from financial management to home automation and enterprise-level IT services. Our mission is to simplify, secure, and enhance the way you live and work.
+  <section class="py-5 bg-white">
+    <div class="container text-center" data-aos="fade-up">
+      <h2 class="fw-bold mb-4">Innovative Solutions for a Connected Future</h2>
+      <p class="text-muted lead mx-auto" style="max-width: 800px;">
+        At LumenaAutomation, we deliver intelligent solutions that bridge technology with everyday needs — from financial management to home automation and enterprise-level IT services[cite: 3].
       </p>
     </div>
   </section>
+
   <!-- Services Hero Carousel -->
-  <section class="carousel-section position-relative overflow-hidden" data-aos="fade-up">
-    <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
-      <div class="carousel-inner">
-  
-        <div class="carousel-item active">
-          <img src="assets/img/digital-workplace.jpg" class="d-block w-100" alt="Digital Workplace Solutions" style="height: 70vh; object-fit: cover;">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-            <h5 class="fw-bold">Empower Your Digital Workplace</h5>
-            <p>Deliver a modern, secure, and connected experience for every user and device.</p>
+  <section class="py-5" data-aos="fade-up">
+    <div class="container">
+      <div id="servicesCarousel" class="carousel slide carousel-fade shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/digital-workplace.jpg" class="d-block w-100" alt="Digital Workplace" style="height: 60vh; object-fit: cover; filter: brightness(0.6);">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="fw-bold">Empower Your Digital Workplace</h3>
+              <p>Deliver a modern, secure, and connected experience for every user and device[cite: 3].</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/device-management.jpg" class="d-block w-100" alt="Device Management" style="height: 60vh; object-fit: cover; filter: brightness(0.6);">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="fw-bold">Manage Devices Smarter</h3>
+              <p>Centralized visibility and control across all major platforms and IoT devices[cite: 3].</p>
+            </div>
           </div>
         </div>
-  
-        <div class="carousel-item">
-          <img src="assets/img/device-management.jpg" class="d-block w-100" alt="Enterprise Digital Workplace Solutions" style="height: 70vh; object-fit: cover;">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-            <h5 class="fw-bold">Manage Devices Smarter</h5>
-            <p>Centralized visibility and control across Windows, macOS, iOS, Android, and IoT devices.</p>
-          </div>
-        </div>
-  
-        <div class="carousel-item">
-          <img src="assets/img/cloud-infrastructure.jpg" class="d-block w-100" alt="Cloud & Infrastructure Services" style="height: 70vh; object-fit: cover;">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-            <h5 class="fw-bold">Modernize with Cloud Confidence</h5>
-            <p>Seamless migration, scalable infrastructure, and secure hybrid environments.</p>
-          </div>
-        </div>
-  
-      </div>
-  
-      <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-  
-      <!-- Indicators -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
+  <!-- Detailed Services Grid -->
   <section class="py-5">
     <div class="container">
-      <div class="row g-5">
+      <div class="row g-4">
         
         <!-- Personal Finance -->
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <h4 class="fw-bold">Personal Finance Management</h4>
-          <p>
-            Simplify your financial life with intelligent insights and automation. Our personal finance tools help users plan budgets, track expenses, and achieve financial goals through data-driven analytics and visual dashboards.
-          </p>
-          <ul>
-            <li>Expense tracking and category analysis</li>
-            <li>Budget planning and optimization</li>
-            <li>Smart financial reports and visualizations</li>
-            <li>Cloud-synced and mobile-friendly solutions</li>
-          </ul>
-          <p>
-            Gain financial clarity and control with automated systems built for accuracy, security, and simplicity.
-          </p>
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 hover-lift bg-white">
+            <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h4 class="fw-bold">Personal Finance Management</h4>
+            <p class="text-muted">Simplify your financial life with intelligent insights and automation[cite: 3].</p>
+            <ul class="text-muted small">
+              <li>Expense tracking and category analysis[cite: 3]</li>
+              <li>Budget planning and optimization[cite: 3]</li>
+              <li>Smart financial reports and visualizations[cite: 3]</li>
+              <li>Cloud-synced and mobile-friendly solutions[cite: 3]</li>
+            </ul>
+          </div>
         </div>
 
         <!-- Home Automation -->
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <h4 class="fw-bold">Home Automation Solutions</h4>
-          <p>
-            Transform your living spaces with intelligent automation. Our solutions integrate IoT devices and sensors to bring comfort, safety, and energy efficiency into your daily routine.
-          </p>
-          <ul>
-            <li>Smart lighting, HVAC, and appliance control</li>
-            <li>Energy monitoring and optimization</li>
-            <li>Voice and app-controlled systems</li>
-            <li>Seamless integration with existing home setups</li>
-          </ul>
-          <p>
-            Enjoy personalized automation that enhances your lifestyle while reducing operational costs.
-          </p>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 hover-lift bg-white">
+            <div class="service-icon"><i class="fa-solid fa-house-laptop"></i></div>
+            <h4 class="fw-bold">Home Automation Solutions</h4>
+            <p class="text-muted">Transform your living spaces with IoT integration for comfort and energy efficiency[cite: 3].</p>
+            <ul class="text-muted small">
+              <li>Smart lighting, HVAC, and appliance control[cite: 3]</li>
+              <li>Energy monitoring and optimization[cite: 3]</li>
+              <li>Voice and app-controlled systems[cite: 3]</li>
+              <li>Seamless integration with existing setups[cite: 3]</li>
+            </ul>
+          </div>
         </div>
 
         <!-- AI and Custom Software -->
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <h4 class="fw-bold">AI & Custom Software Solutions</h4>
-          <p>
-            Drive innovation through AI-driven insights and tailored software solutions. We design, develop, and deploy scalable applications powered by automation, analytics, and machine learning.
-          </p>
-          <ul>
-            <li>Intelligent data processing and predictive analytics</li>
-            <li>Business automation and workflow optimization</li>
-            <li>Custom software development for unique needs</li>
-            <li>Integration with enterprise tools and APIs</li>
-          </ul>
-          <p>
-            From startups to enterprises, our AI and software services help organizations adapt faster and operate smarter.
-          </p>
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 hover-lift bg-white">
+            <div class="service-icon"><i class="fa-solid fa-microchip"></i></div>
+            <h4 class="fw-bold">AI & Custom Software</h4>
+            <p class="text-muted">Scalable applications powered by automation, analytics, and machine learning[cite: 3].</p>
+            <ul class="text-muted small">
+              <li>Intelligent data processing and predictive analytics[cite: 3]</li>
+              <li>Business automation and workflow optimization[cite: 3]</li>
+              <li>Custom development for unique business needs[cite: 3]</li>
+              <li>Integration with enterprise tools and APIs[cite: 3]</li>
+            </ul>
+          </div>
         </div>
 
-        <!-- Digital Workplace Solutions -->
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-          <h4 class="fw-bold">Enterprise Digital Workplace Solutions</h4>
-          <p>
-            Ensure seamless, secure, and efficient management of all corporate devices with our end-to-end Digital Workplace Solutions services for macOS, Windows, iOS, Android, and IoT environments.
-          </p>
-          <ul>
-            <li><strong>Security & Compliance:</strong> Enforce policies, monitor devices, and protect sensitive data.</li>
-            <li><strong>App Deployment:</strong> Manage rollouts, updates, and access across teams.</li>
-            <li><strong>Monitoring & Reports:</strong> Real-time visibility into performance and compliance.</li>
-            <li><strong>Remote Support:</strong> Troubleshoot and assist users anywhere, anytime.</li>
-            <li><strong>Lifecycle Management:</strong> Provision, maintain, and retire devices efficiently.</li>
-          </ul>
-          <p>
-            Gain visibility, control, and confidence knowing your organization’s devices are always secure, compliant, and up-to-date.
-          </p>
+        <!-- Digital Workplace -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 hover-lift bg-white">
+            <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h4 class="fw-bold">Enterprise Digital Workplace</h4>
+            <p class="text-muted">End-to-end management for macOS, Windows, iOS, Android, and IoT[cite: 3].</p>
+            <ul class="text-muted small">
+              <li>Security & Compliance: Policy enforcement and monitoring[cite: 3]</li>
+              <li>App Deployment: Managed rollouts and access control[cite: 3]</li>
+              <li>Remote Support & Monitoring: Real-time visibility[cite: 3]</li>
+              <li>Lifecycle Management: Provisioning and retirement[cite: 3]</li>
+            </ul>
+          </div>
         </div>
 
       </div>
-      <div class="text-center mt-5" data-aos="fade-up">
-        <h3 class="fw-bold mb-3">Connect With Us</h3>
+    </div>
+  </section>
 
-        <p class="mb-1"><i class="fa-brands fa-linkedin text-primary me-2"></i> <a href="https://in.linkedin.com/in/lumena-automation-712054363" target="_blank" rel="noopener">LinkedIn</a></p>
-        <p class="mb-1"><i class="fa-brands fa-instagram text-primary me-2"></i> <a href="https://www.instagram.com/lumenaautomation" target="_blank" rel="noopener">Instagram</a></p>
-        <p class="mb-1"><i class="fa-brands fa-x-twitter text-primary me-2"></i> <a href="https://x.com/lumenaauto" target="_blank" rel="noopener">X (Twitter)</a></p>
-        <p class="mb-1"><i class="fa-brands fa-youtube text-primary me-2"></i> <a href="https://www.youtube.com/@lumenaautomation" target="_blank" rel="noopener">YouTube</a></p>
+  <!-- Connect Section -->
+  <section class="py-5 bg-white text-center" data-aos="fade-up">
+    <div class="container border-top pt-5">
+      <h3 class="fw-bold mb-4">Connect With Us</h3>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://in.linkedin.com/in/lumena-automation-712054363" class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center hover-lift" style="width: 50px; height: 50px;" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/lumenaautomation" class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center hover-lift" style="width: 50px; height: 50px;" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/lumenaauto" class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center hover-lift" style="width: 50px; height: 50px;" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.youtube.com/@lumenaautomation" class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center hover-lift" style="width: 50px; height: 50px;" target="_blank"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center text-white py-4 mt-5" style="background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%);">
+  <footer class="text-center text-white py-4" style="background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%);">
     <div class="container">
-      <small>© 2025 LumenaAutomation. All Rights Reserved.</small>
+      <small>© 2026 LumenaAutomation. All Rights Reserved.</small>
     </div>
   </footer>
 
