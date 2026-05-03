@@ -132,10 +132,14 @@
           <a href="contact.html" class="btn btn-outline-light btn-lg fw-bold px-4">Get in Touch</a>
         </div>
       </div>
-      <div class="col-lg-5 d-none d-lg-block">
-        <!-- Optional: Replace with a highly relevant tech illustration or product mock in the future -->
-        <div class="bg-white rounded-circle opacity-10 position-absolute" style="width: 400px; height: 400px; top: 10%; right: 5%; blur: 50px;"></div>
-        <i class="fa-solid fa-microchip text-white opacity-50" style="font-size: 15rem; transform: rotate(15deg);"></i>
+      <div class="col-lg-5 d-none d-lg-block position-relative text-center" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
+        
+        <!-- Glowing Background Circle (Fixed CSS) -->
+        <div class="position-absolute bg-white rounded-circle" style="width: 350px; height: 350px; opacity: 0.15; filter: blur(50px); top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;"></div>
+        
+        <!-- Tech Icon -->
+        <i class="fa-solid fa-microchip text-white position-relative" style="font-size: 14rem; transform: rotate(15deg); opacity: 0.9; z-index: 2;"></i>
+        
       </div>
     </div>
   </div>
