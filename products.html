@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Products | LumenaAutomation</title>
-<meta name="description" content="Explore LumenaAutomation's products: BudgetManager personal finance app, AI & custom software tools, Home Automation Dashboard, and Digital Workplace Solutions solutions.">
+<meta name="description" content="Explore LumenaAutomation's products: BudgetManager personal finance app, AI & custom software tools, Home Automation Dashboard, and Digital Workplace Solutions.">
 <meta name="keywords" content="LumenaAutomation, products, BudgetManager, home automation, AI software, custom software development, Digital Workplace Solutions">
 <meta name="author" content="LumenaAutomation">
 <meta name="robots" content="index, follow">
@@ -23,8 +23,7 @@
 <link rel="mask-icon" href="https://lumenaautomation.co.in/safari-pinned-tab.svg" color="#0a0a0a">
 <meta name="theme-color" content="#ffffff">
 
-
-<!-- Organization Structured Data with Logo -->
+<!-- Organization Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -46,19 +45,6 @@
   }]
 }
 </script>
-<!-- WebSite Structured Data for Sitelinks Search Box -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "url": "https://lumenaautomation.co.in/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://lumenaautomation.co.in/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
 
 <!-- Bootstrap & Font Awesome -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -70,22 +56,25 @@
 
 <!-- Open Graph / Twitter -->
 <meta property="og:title" content="Products | LumenaAutomation">
-<meta property="og:description" content="Explore LumenaAutomation's products: BudgetManager personal finance app, AI & custom software tools, Home Automation Dashboard, and Digital Workplace Solutions solutions.">
+<meta property="og:description" content="Explore LumenaAutomation's innovative products including BudgetManager and Enterprise Digital Workplace Solutions.">
 <meta property="og:image" content="https://lumenaautomation.co.in/assets/img/logo.png">
 <meta property="og:url" content="https://lumenaautomation.co.in/products.html">
 <meta property="og:type" content="website">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Products | LumenaAutomation">
-<meta name="twitter:description" content="Explore LumenaAutomation's products: BudgetManager personal finance app, AI & custom software tools, Home Automation Dashboard, and Digital Workplace Solutions solutions.">
-<meta name="twitter:image" content="https://lumenaautomation.co.in/assets/img/logo.png">
-
+<style>
+  .product-card { transition: transform 0.3s ease, box-shadow 0.3s ease; border: none; border-radius: 15px; overflow: hidden; }
+  .product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important; }
+  .product-img-wrapper { position: relative; height: 220px; overflow: hidden; }
+  .product-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+  .btn-primary-gradient { background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%); border: none; color: white; padding: 10px 25px; border-radius: 50px; font-weight: 600; }
+  .btn-primary-gradient:hover { opacity: 0.9; color: white; }
+</style>
 </head>
 
-<body>
+<body class="bg-light">
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top" aria-label="Main navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top" aria-label="Main navigation">
   <div class="container">
     <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
       <img src="assets/img/logo.svg" alt="LumenaAutomation Logo" style="height: 55px; width: auto; margin-right: 10px;">
@@ -99,7 +88,7 @@
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link active text-primary fw-bold" href="products.html">Products</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
       </ul>
@@ -107,99 +96,107 @@
   </div>
 </nav>
 
-<!-- Spacer for Fixed Navbar -->
-<div style="height: 80px;"></div>
-
-<!-- Hero Section with Animated Waves -->
-<section class="position-relative overflow-hidden" style="background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%); min-height: 260px;">
-  <div class="container text-center text-white py-5 position-relative z-2" data-aos="fade-up">
-    <h1 class="display-5 fw-bold mb-2">Our Products</h1>
-    <p class="lead mb-0">Explore innovative tools and solutions designed for smarter living and business efficiency.</p>
+<!-- Hero Section -->
+<section class="position-relative overflow-hidden" style="background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%); min-height: 350px; display: flex; align-items: center; margin-top: 75px;">
+  <div class="container text-center text-white position-relative z-2" data-aos="fade-up">
+    <h1 class="display-4 fw-bold mb-3">Our Products</h1>
+    <p class="lead mb-0 opacity-90">Innovative tools and solutions designed for smarter living and business efficiency[cite: 4].</p>
   </div>
-  <!-- Animated Thin Net Colored Waves -->
-  <svg class="position-absolute bottom-0 start-0 w-100" height="90" viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg" style="z-index:1;">
-    <path d="M0,60 Q360,20 720,60 T1440,60" stroke="#00bfa5" stroke-width="2" fill="none">
-      <animate attributeName="d" dur="8s" repeatCount="indefinite"
-        values="M0,60 Q360,20 720,60 T1440,60;
-                M0,60 Q360,80 720,40 T1440,60;
-                M0,60 Q360,20 720,60 T1440,60" />
+  <!-- Animated Waves -->
+  <svg class="position-absolute bottom-0 start-0 w-100" height="100" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="z-index:1;">
+    <path d="M0,70 Q360,30 720,70 T1440,70" stroke="#00bfa5" stroke-width="2" fill="none">
+      <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0,70 Q360,30 720,70 T1440,70; M0,70 Q360,90 720,50 T1440,70; M0,70 Q360,30 720,70 T1440,70" />
     </path>
-    <path d="M0,80 Q360,60 720,80 T1440,80" stroke="#007bff" stroke-width="1.5" fill="none" opacity="0.7">
-      <animate attributeName="d" dur="10s" repeatCount="indefinite"
-        values="M0,80 Q360,60 720,80 T1440,80;
-                M0,80 Q360,100 720,60 T1440,80;
-                M0,80 Q360,60 720,80 T1440,80" />
-    </path>
-    <path d="M0,90 Q360,80 720,90 T1440,90" stroke="#fff" stroke-width="1" fill="none" opacity="0.5">
-      <animate attributeName="d" dur="12s" repeatCount="indefinite"
-        values="M0,90 Q360,80 720,90 T1440,90;
-                M0,90 Q360,70 720,100 T1440,90;
-                M0,90 Q360,80 720,90 T1440,90" />
+    <path d="M0,90 Q360,70 720,90 T1440,90" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.4">
+      <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M0,90 Q360,70 720,90 T1440,90; M0,90 Q360,110 720,70 T1440,90; M0,90 Q360,70 720,90 T1440,90" />
     </path>
   </svg>
 </section>
 
-<!-- Products Section -->
-<section class="py-5" data-aos="fade-up">
+<!-- Products Grid -->
+<section class="py-5">
   <div class="container">
-    <h2 class="fw-bold text-center mb-5 d-none">Our Products</h2>
     <div class="row g-4">
 
       <!-- BudgetManager -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/img/finance.jpg" class="card-img-top" alt="BudgetManager" loading="lazy">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-semibold">BudgetManager</h5>
-            <p class="card-text text-muted">Smart personal finance tracking and budgeting app. Take control of your money with ease.</p>
-            <a href="https://bm.lumenaautomation.co.in" target="_blank" rel="noopener" class="btn btn-primary">Launch App</a>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card product-card h-100 shadow-sm bg-white">
+          <div class="product-img-wrapper">
+            <img src="assets/img/finance.jpg" alt="BudgetManager Application" loading="lazy">
+          </div>
+          <div class="card-body text-center p-4">
+            <h5 class="fw-bold mb-3">BudgetManager</h5>
+            <p class="text-muted small mb-4">Smart personal finance tracking and budgeting app. Take control of your money with ease[cite: 4].</p>
+            <a href="https://bm.lumenaautomation.co.in" target="_blank" rel="noopener" class="btn btn-primary-gradient">Launch App</a>
           </div>
         </div>
       </div>
 
       <!-- Home Automation Dashboard -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/img/automation.jpg" class="card-img-top" alt="Home Automation Dashboard" loading="lazy">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-semibold">Home Automation Dashboard</h5>
-            <p class="card-text text-muted">Centralized control for smart homes and IoT devices.</p>
-            <a href="contact.html" class="btn btn-primary">Know More</a>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100 shadow-sm bg-white">
+          <div class="product-img-wrapper">
+            <img src="assets/img/automation.jpg" alt="Home Automation Dashboard" loading="lazy">
+          </div>
+          <div class="card-body text-center p-4">
+            <h5 class="fw-bold mb-3">Home Automation Dashboard</h5>
+            <p class="text-muted small mb-4">Centralized control for smart homes and IoT devices[cite: 4].</p>
+            <a href="contact.html" class="btn btn-primary-gradient">Know More</a>
           </div>
         </div>
       </div>
 
       <!-- AI & Custom Software -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/img/ai.jpg" class="card-img-top" alt="AI & Custom Software" loading="lazy">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-semibold">AI & Custom Software</h5>
-            <p class="card-text text-muted">Tailored AI-driven applications to automate personal and business workflows.</p>
-            <a href="contact.html" class="btn btn-primary">Know More</a>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card product-card h-100 shadow-sm bg-white">
+          <div class="product-img-wrapper">
+            <img src="assets/img/ai.jpg" alt="AI Software Solutions" loading="lazy">
+          </div>
+          <div class="card-body text-center p-4">
+            <h5 class="fw-bold mb-3">AI & Custom Software</h5>
+            <p class="text-muted small mb-4">Tailored AI-driven applications to automate personal and business workflows[cite: 4].</p>
+            <a href="contact.html" class="btn btn-primary-gradient">Know More</a>
           </div>
         </div>
       </div>
 
       <!-- Digital Workplace Solutions -->
-      <div class="col-md-4 mt-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="assets/img/device.jpg" class="card-img-top" alt="Digital Workplace Solutions Solutions" loading="lazy">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-semibold">Digital Workplace Solutions</h5>
-            <p class="card-text text-muted">Enterprise-grade device onboarding and monitoring solutions.</p>
-            <a href="contact.html" class="btn btn-primary">Know More</a>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card product-card h-100 shadow-sm bg-white">
+          <div class="product-img-wrapper">
+            <img src="assets/img/device.jpg" alt="Digital Workplace Solutions" loading="lazy">
+          </div>
+          <div class="card-body text-center p-4">
+            <h5 class="fw-bold mb-3">Digital Workplace Solutions</h5>
+            <p class="text-muted small mb-4">Enterprise-grade device onboarding and monitoring solutions[cite: 4].</p>
+            <a href="contact.html" class="btn btn-primary-gradient">Know More</a>
           </div>
         </div>
       </div>
 
     </div>
-    <div class="text-center mt-5" data-aos="fade-up">
-      <h3 class="fw-bold mb-3">Connect With Us</h3>
-      <p class="mb-1"><i class="fa-brands fa-linkedin text-primary me-2"></i> <a href="https://in.linkedin.com/in/lumena-automation-712054363" target="_blank" rel="noopener">LinkedIn</a></p>
-      <p class="mb-1"><i class="fa-brands fa-instagram text-primary me-2"></i> <a href="https://www.instagram.com/lumenaautomation" target="_blank" rel="noopener">Instagram</a></p>
-      <p class="mb-1"><i class="fa-brands fa-x-twitter text-primary me-2"></i> <a href="https://x.com/lumenaauto" target="_blank" rel="noopener">X (Twitter)</a></p>
-      <p class="mb-1"><i class="fa-brands fa-youtube text-primary me-2"></i> <a href="https://www.youtube.com/@lumenaautomation" target="_blank" rel="noopener">YouTube</a></p>
+
+    <!-- Social Connect -->
+    <div class="text-center mt-5 pt-5" data-aos="fade-up">
+      <h3 class="fw-bold mb-4">Connect With Us</h3>
+      <div class="d-flex justify-content-center gap-4 flex-wrap">
+        <a href="https://in.linkedin.com/in/lumena-automation-712054363" target="_blank" class="text-decoration-none text-dark hover-lift">
+          <i class="fa-brands fa-linkedin fa-2x text-primary"></i>
+          <p class="small mt-2">LinkedIn</p>
+        </a>
+        <a href="https://www.instagram.com/lumenaautomation" target="_blank" class="text-decoration-none text-dark hover-lift">
+          <i class="fa-brands fa-instagram fa-2x text-danger"></i>
+          <p class="small mt-2">Instagram</p>
+        </a>
+        <a href="https://x.com/lumenaauto" target="_blank" class="text-decoration-none text-dark hover-lift">
+          <i class="fa-brands fa-x-twitter fa-2x text-dark"></i>
+          <p class="small mt-2">X (Twitter)</p>
+        </a>
+        <a href="https://www.youtube.com/@lumenaautomation" target="_blank" class="text-decoration-none text-dark hover-lift">
+          <i class="fa-brands fa-youtube fa-2x text-danger"></i>
+          <p class="small mt-2">YouTube</p>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -207,7 +204,7 @@
 <!-- Footer -->
 <footer class="text-center text-white py-4 mt-5" style="background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%);">
   <div class="container">
-    <small>© 2025 LumenaAutomation. All Rights Reserved.</small>
+    <small>© 2026 LumenaAutomation. All Rights Reserved[cite: 4].</small>
   </div>
 </footer>
 
@@ -221,5 +218,3 @@
 </script>
 </body>
 </html>
-
-
