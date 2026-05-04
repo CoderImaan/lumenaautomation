@@ -84,6 +84,48 @@
 <meta name="twitter:description" content="Insights from LumenaAutomation on personal finance, AI tools, automation, and smart living.">
 <meta name="twitter:image" content="https://lumenaautomation.co.in/assets/img/logo.png">
 
+<!-- Sleek Blog Card Styles -->
+<style>
+  .blog-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+  }
+  .blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+  }
+  .card-img-wrapper {
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .blog-img {
+    transition: transform 0.4s ease;
+    object-fit: cover;
+    height: 200px; /* Uniform height for all blog images */
+    width: 100%;
+  }
+  .blog-card:hover .blog-img {
+    transform: scale(1.08);
+  }
+  .blog-date-badge {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .read-more-text {
+    transition: color 0.3s ease;
+  }
+  .blog-card:hover .read-more-text {
+    color: #00bfa5 !important;
+  }
+</style>
+
 </head>
 
 <body>
@@ -117,8 +159,8 @@
 <!-- Hero Section -->
 <section class="position-relative overflow-hidden" style="background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%); min-height: 260px;">
   <div class="container text-center text-white py-5 position-relative z-2" data-aos="fade-up">
-    <h1 class="display-5 fw-bold">Latest Blogs & Updates</h1>
-    <p class="lead mt-3">Stay informed with LumenaAutomation’s insights into technology, finance, and automation trends.</p>
+    <h1 class="display-5 fw-bold mb-2">Latest Blogs & Updates</h1>
+    <p class="lead mb-0">Stay informed with LumenaAutomation’s insights into technology, finance, and automation trends.</p>
   </div>
     <!-- Animated Thin Net Colored Waves -->
   <svg class="position-absolute bottom-0 start-0 w-100" height="90" viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg" style="z-index:1;">
@@ -152,11 +194,16 @@
       <article class="col-md-6 col-lg-4">
         <a href="blogs/how-to-use-budgetmanager.html" class="text-decoration-none text-dark">
         <div class="card blog-card h-100 shadow-sm border-0">
-          <img src="assets/img/blog1.jpg" class="card-img-top" alt="BudgetManager App Blog" loading="lazy">
-          <div class="card-body">
-            <h5 class="card-title">How BudgetManager Helps You Stay Financially Confident</h5>
-            <p class="text-muted small mb-2">October 2025</p>
-            <p class="card-text">Discover how LumenaAutomation’s BudgetManager app helps users control spending, plan budgets, and achieve financial clarity.</p>
+          <div class="card-img-wrapper">
+            <img src="assets/img/blog1.jpg" class="card-img-top blog-img" alt="BudgetManager App Blog" loading="lazy">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> October 2025</span>
+            <h5 class="card-title fw-bold">How BudgetManager Helps You Stay Financially Confident</h5>
+            <p class="card-text text-muted mb-4">Discover how LumenaAutomation’s BudgetManager app helps users control spending, plan budgets, and achieve financial clarity.</p>
+            <div class="mt-auto pt-2 border-top">
+              <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
+            </div>
           </div>
         </div>
         </a>
@@ -166,11 +213,16 @@
       <article class="col-md-6 col-lg-4">
         <a href="blogs/smart-home-automation.html" class="text-decoration-none text-dark">
         <div class="card blog-card h-100 shadow-sm border-0">
-          <img src="assets/img/blog2.jpg" class="card-img-top" alt="Smart Home Automation Blog" loading="lazy">
-          <div class="card-body">
-            <h5 class="card-title">Smart Home Automation: Making Life Effortless</h5>
-            <p class="text-muted small mb-2">September 2025</p>
-            <p class="card-text">From voice control to smart lighting — explore how our automation tools simplify daily living while saving time and energy.</p>
+          <div class="card-img-wrapper">
+            <img src="assets/img/blog2.jpg" class="card-img-top blog-img" alt="Smart Home Automation Blog" loading="lazy">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> September 2025</span>
+            <h5 class="card-title fw-bold">Smart Home Automation: Making Life Effortless</h5>
+            <p class="card-text text-muted mb-4">From voice control to smart lighting — explore how our automation tools simplify daily living while saving time and energy.</p>
+            <div class="mt-auto pt-2 border-top">
+              <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
+            </div>
           </div>
         </div>
         </a>
@@ -180,27 +232,35 @@
       <article class="col-md-6 col-lg-4">
         <a href="blogs/top-5-ai-tools.html" class="text-decoration-none text-dark">
           <div class="card blog-card h-100 shadow-sm border-0">
-            <img src="assets/img/blog3.jpg" class="card-img-top" alt="AI Tools Blog" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Top 5 AI Tools That Improve Everyday Productivity</h5>
-              <p class="text-muted small mb-2">August 2025</p>
-              <p class="card-text">Explore the power of AI-driven tools that make managing tasks, writing, and data handling faster and smarter.</p>
+            <div class="card-img-wrapper">
+              <img src="assets/img/blog3.jpg" class="card-img-top blog-img" alt="AI Tools Blog" loading="lazy">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> August 2025</span>
+              <h5 class="card-title fw-bold">Top 5 AI Tools That Improve Everyday Productivity</h5>
+              <p class="card-text text-muted mb-4">Explore the power of AI-driven tools that make managing tasks, writing, and data handling faster and smarter.</p>
+              <div class="mt-auto pt-2 border-top">
+                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
+              </div>
             </div>
           </div>
         </a>
       </article>
 
-      <!-- 🆕 BudgetManager & Lumena Automation Blogs -->
-
       <!-- Blog 4 -->
       <article class="col-md-6 col-lg-4">
         <a href="blogs/daily-expense.html" class="text-decoration-none text-dark">
           <div class="card blog-card h-100 shadow-sm border-0">
-            <img src="assets/img/blog4.jpg" class="card-img-top" alt="Daily Expense Tracking" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">How to Track Daily Expenses Easily</h5>
-              <p class="text-muted small mb-2">November 2025</p>
-              <p class="card-text">Learn simple ways to monitor your spending and stay on budget using modern apps like BudgetManager.</p>
+            <div class="card-img-wrapper">
+              <img src="assets/img/blog4.jpg" class="card-img-top blog-img" alt="Daily Expense Tracking" loading="lazy">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
+              <h5 class="card-title fw-bold">How to Track Daily Expenses Easily</h5>
+              <p class="card-text text-muted mb-4">Learn simple ways to monitor your spending and stay on budget using modern apps like BudgetManager.</p>
+              <div class="mt-auto pt-2 border-top">
+                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
+              </div>
             </div>
           </div>
         </a>
@@ -210,11 +270,16 @@
       <article class="col-md-6 col-lg-4">
         <a href="blogs/best-budget-app-2025.html" class="text-decoration-none text-dark">
           <div class="card blog-card h-100 shadow-sm border-0">
-            <img src="assets/img/blog5.jpg" class="card-img-top" alt="Best Budget App India" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Best Budget Planner App in 2025</h5>
-              <p class="text-muted small mb-2">November 2025</p>
-              <p class="card-text">Compare the top budgeting apps in India and discover why BudgetManager is the easiest way to manage money.</p>
+            <div class="card-img-wrapper">
+              <img src="assets/img/blog5.jpg" class="card-img-top blog-img" alt="Best Budget App India" loading="lazy">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
+              <h5 class="card-title fw-bold">Best Budget Planner App in 2025</h5>
+              <p class="card-text text-muted mb-4">Compare the top budgeting apps in India and discover why BudgetManager is the easiest way to manage money.</p>
+              <div class="mt-auto pt-2 border-top">
+                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
+              </div>
             </div>
           </div>
         </a>
@@ -224,11 +289,16 @@
       <article class="col-md-6 col-lg-4">
         <a href="blogs/zero-based-budget-guide.html" class="text-decoration-none text-dark">
           <div class="card blog-card h-100 shadow-sm border-0">
-            <img src="assets/img/blog6.jpg" class="card-img-top" alt="Zero-Based Budgeting" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Zero-Based Budgeting — Step-by-Step Guide</h5>
-              <p class="text-muted small mb-2">November 2025</p>
-              <p class="card-text">Master zero-based budgeting — allocate every rupee with purpose and achieve complete financial control.</p>
+            <div class="card-img-wrapper">
+              <img src="assets/img/blog6.jpg" class="card-img-top blog-img" alt="Zero-Based Budgeting" loading="lazy">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
+              <h5 class="card-title fw-bold">Zero-Based Budgeting — Step-by-Step Guide</h5>
+              <p class="card-text text-muted mb-4">Master zero-based budgeting — allocate every rupee with purpose and achieve complete financial control.</p>
+              <div class="mt-auto pt-2 border-top">
+                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
+              </div>
             </div>
           </div>
         </a>
@@ -238,11 +308,16 @@
       <article class="col-md-6 col-lg-4">
         <a href="blogs/automation-saves-business-time.html" class="text-decoration-none text-dark">
           <div class="card blog-card h-100 shadow-sm border-0">
-            <img src="assets/img/blog7.jpg" class="card-img-top" alt="Automation Business Blog" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">How Automation Helps Businesses Save Time & Money</h5>
-              <p class="text-muted small mb-2">November 2025</p>
-              <p class="card-text">Discover how Lumena Automation empowers businesses through smart solutions that cut costs and boost efficiency.</p>
+            <div class="card-img-wrapper">
+              <img src="assets/img/blog7.jpg" class="card-img-top blog-img" alt="Automation Business Blog" loading="lazy">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
+              <h5 class="card-title fw-bold">How Automation Helps Businesses Save Time & Money</h5>
+              <p class="card-text text-muted mb-4">Discover how Lumena Automation empowers businesses through smart solutions that cut costs and boost efficiency.</p>
+              <div class="mt-auto pt-2 border-top">
+                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
+              </div>
             </div>
           </div>
         </a>
@@ -252,11 +327,16 @@
       <article class="col-md-6 col-lg-4">
         <a href="blogs/personal-finance-mistakes.html" class="text-decoration-none text-dark">
           <div class="card blog-card h-100 shadow-sm border-0">
-            <img src="assets/img/blog8.jpg" class="card-img-top" alt="Personal Finance Tips" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Top 7 Personal Finance Mistakes to Avoid in 2025</h5>
-              <p class="text-muted small mb-2">November 2025</p>
-              <p class="card-text">Avoid these common money traps and make 2025 your best financial year yet — powered by BudgetManager insights.</p>
+            <div class="card-img-wrapper">
+              <img src="assets/img/blog8.jpg" class="card-img-top blog-img" alt="Personal Finance Tips" loading="lazy">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
+              <h5 class="card-title fw-bold">Top 7 Personal Finance Mistakes to Avoid in 2025</h5>
+              <p class="card-text text-muted mb-4">Avoid these common money traps and make 2025 your best financial year yet — powered by BudgetManager insights.</p>
+              <div class="mt-auto pt-2 border-top">
+                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
+              </div>
             </div>
           </div>
         </a>
@@ -266,11 +346,16 @@
       <article class="col-md-6 col-lg-4">
         <a href="blogs/custom-it-solutions-2025.html" class="text-decoration-none text-dark">
           <div class="card blog-card h-100 shadow-sm border-0">
-            <img src="assets/img/blog9.jpg" class="card-img-top" alt="IT Services India" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Why Every Business Needs a Custom IT Solution in 2025</h5>
-              <p class="text-muted small mb-2">November 2025</p>
-              <p class="card-text">From automation to digital transformation — see how Lumena Automation helps businesses evolve smarter.</p>
+            <div class="card-img-wrapper">
+              <img src="assets/img/blog9.jpg" class="card-img-top blog-img" alt="IT Services India" loading="lazy">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
+              <h5 class="card-title fw-bold">Why Every Business Needs a Custom IT Solution in 2025</h5>
+              <p class="card-text text-muted mb-4">From automation to digital transformation — see how Lumena Automation helps businesses evolve smarter.</p>
+              <div class="mt-auto pt-2 border-top">
+                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
+              </div>
             </div>
           </div>
         </a>
@@ -280,11 +365,16 @@
       <article class="col-md-6 col-lg-4">
         <a href="blogs/financial-goals-before-30.html" class="text-decoration-none text-dark">
           <div class="card blog-card h-100 shadow-sm border-0">
-            <img src="assets/img/blog10.jpg" class="card-img-top" alt="Financial Goals India" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Top Financial Goals Everyone Should Set Before 30</h5>
-              <p class="text-muted small mb-2">November 2025</p>
-              <p class="card-text">Set smart goals and track progress with BudgetManager — your trusted partner in financial planning.</p>
+            <div class="card-img-wrapper">
+              <img src="assets/img/blog10.jpg" class="card-img-top blog-img" alt="Financial Goals India" loading="lazy">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
+              <h5 class="card-title fw-bold">Top Financial Goals Everyone Should Set Before 30</h5>
+              <p class="card-text text-muted mb-4">Set smart goals and track progress with BudgetManager — your trusted partner in financial planning.</p>
+              <div class="mt-auto pt-2 border-top">
+                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
+              </div>
             </div>
           </div>
         </a>
@@ -294,11 +384,16 @@
       <article class="col-md-6 col-lg-4">
         <a href="blogs/financial-literacy-for-students.html" class="text-decoration-none text-dark">
           <div class="card blog-card h-100 shadow-sm border-0">
-            <img src="assets/img/blog11.jpg" class="card-img-top" alt="Financial Literacy Students" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Importance of Financial Literacy for College Students</h5>
-              <p class="text-muted small mb-2">November 2025</p>
-              <p class="card-text">Build money confidence early — learn the basics of budgeting and saving as a student in India.</p>
+            <div class="card-img-wrapper">
+              <img src="assets/img/blog11.jpg" class="card-img-top blog-img" alt="Financial Literacy Students" loading="lazy">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
+              <h5 class="card-title fw-bold">Importance of Financial Literacy for College Students</h5>
+              <p class="card-text text-muted mb-4">Build money confidence early — learn the basics of budgeting and saving as a student in India.</p>
+              <div class="mt-auto pt-2 border-top">
+                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
+              </div>
             </div>
           </div>
         </a>
@@ -308,18 +403,24 @@
       <article class="col-md-6 col-lg-4">
         <a href="blogs/budgetmanager-saas-advanced-reports.html" class="text-decoration-none text-dark">
           <div class="card blog-card h-100 shadow-sm border-0">
-            <img src="assets/img/blog12.png" class="card-img-top" alt="BudgetManager SaaS Reports" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">BudgetManager as a SaaS: Smarter Reports & Historic Insights</h5>
-              <p class="text-muted small mb-2">December 2025</p>
-              <p class="card-text">Analyze historic spending, gain deep financial insights, and export powerful reports — all in one cloud platform.</p>
+            <div class="card-img-wrapper">
+              <img src="assets/img/blog12.png" class="card-img-top blog-img" alt="BudgetManager SaaS Reports" loading="lazy">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> December 2025</span>
+              <h5 class="card-title fw-bold">BudgetManager as a SaaS: Smarter Reports & Historic Insights</h5>
+              <p class="card-text text-muted mb-4">Analyze historic spending, gain deep financial insights, and export powerful reports — all in one cloud platform.</p>
+              <div class="mt-auto pt-2 border-top">
+                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
+              </div>
             </div>
           </div>
         </a>
       </article>
 
-
     </div>
+    
+    <!-- Connect With Us (Kept consistent with Products page[cite: 1]) -->
     <div class="text-center mt-5" data-aos="fade-up">
       <h3 class="fw-bold mb-3">Connect With Us</h3>
       <p class="mb-1"><i class="fa-brands fa-linkedin text-primary me-2"></i> <a href="https://in.linkedin.com/in/lumena-automation-712054363" target="_blank" rel="noopener">LinkedIn</a></p>
