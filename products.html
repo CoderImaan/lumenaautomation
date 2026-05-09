@@ -4,83 +4,189 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Products | LumenaAutomation</title>
-<meta name="description" content="Explore LumenaAutomation's products: BudgetManager personal finance app, AI & custom software tools, Home Automation Dashboard, and Digital Workplace Solutions.">
-<meta name="keywords" content="LumenaAutomation, products, BudgetManager, home automation, AI software, custom software development, Digital Workplace Solutions">
+<title>Products & Solutions | LumenaAutomation</title>
+<meta name="description" content="Explore LumenaAutomation's ecosystem of digital products: BudgetManager, TractorOnRent, Enterprise MDM, Cloud Migration, PowerBI Analytics, and Smart Home Automation.">
+<meta name="keywords" content="LumenaAutomation, products, BudgetManager, TractorOnRent, home automation, AI software, MDM, Cloud Migration, PowerBI, Digital Workplace Solutions">
 <meta name="author" content="LumenaAutomation">
 <meta name="robots" content="index, follow">
 
 <!-- Canonical link -->
 <link rel="canonical" href="https://lumenaautomation.co.in/products.html">
 
-<!-- Favicons & Logo for Google Search -->
+<!-- Favicons & Logo -->
 <link rel="apple-touch-icon" sizes="180x180" href="https://lumenaautomation.co.in/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://lumenaautomation.co.in/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://lumenaautomation.co.in/favicon-16x16.png">
 <link rel="icon" href="https://lumenaautomation.co.in/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="https://lumenaautomation.co.in/favicon.ico">
 <link rel="manifest" href="https://lumenaautomation.co.in/site.webmanifest">
-<link rel="mask-icon" href="https://lumenaautomation.co.in/safari-pinned-tab.svg" color="#0a0a0a">
-<meta name="theme-color" content="#ffffff">
-
-<!-- Organization Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "LumenaAutomation",
-  "url": "https://lumenaautomation.co.in",
-  "logo": "https://lumenaautomation.co.in/assets/img/logo.png",
-  "sameAs": [
-    "https://www.linkedin.com/company/lumenaautomation",
-    "https://www.instagram.com/lumenaautomation",
-    "https://x.com/lumenaauto"
-  ],
-  "contactPoint": [{
-    "@type": "ContactPoint",
-    "contactType": "Customer Support",
-    "email": "info.lumenaautomation@gmail.com",
-    "url": "https://lumenaautomation.co.in/contact.html",
-    "telephone": "+919665624068"
-  }]
-}
-</script>
-
-<!-- Bootstrap & Font Awesome -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-<!-- Custom CSS -->
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<meta name="theme-color" content="#0a0f1a">
 
 <!-- Open Graph / Twitter -->
-<meta property="og:title" content="Products | LumenaAutomation">
-<meta property="og:description" content="Explore LumenaAutomation's innovative products including BudgetManager and Enterprise Digital Workplace Solutions.">
+<meta property="og:title" content="Advanced Products & Solutions | LumenaAutomation">
+<meta property="og:description" content="Innovative AI, Cloud, and SaaS platforms designed for smarter living and enterprise efficiency.">
 <meta property="og:image" content="https://lumenaautomation.co.in/assets/img/logo.png">
 <meta property="og:url" content="https://lumenaautomation.co.in/products.html">
 <meta property="og:type" content="website">
 
+<!-- Bootstrap 5 & Font Awesome -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<!-- AOS Animation CSS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+<!-- Custom Tech CSS -->
 <style>
-  .product-card { transition: transform 0.3s ease, box-shadow 0.3s ease; border: none; border-radius: 15px; overflow: hidden; }
-  .product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important; }
-  .product-img-wrapper { position: relative; height: 220px; overflow: hidden; }
-  .product-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
-  .btn-primary-gradient { background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%); border: none; color: white; padding: 10px 25px; border-radius: 50px; font-weight: 600; }
-  .btn-primary-gradient:hover { opacity: 0.9; color: white; }
+  :root {
+    --bg-dark: #0a0f1a;
+    --card-bg: rgba(20, 25, 35, 0.7);
+    --primary-gradient: linear-gradient(135deg, #007bff 0%, #00bfa5 100%);
+    --accent-glow: rgba(0, 191, 165, 0.4);
+    --text-main: #f8f9fa;
+    --text-muted: #a0aec0;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    overflow-x: hidden;
+  }
+
+  /* Navbar Styling */
+  .navbar {
+    background: rgba(10, 15, 26, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .navbar-brand, .nav-link { color: var(--text-main) !important; }
+  .nav-link.active { background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; }
+  .nav-link:hover { color: #00bfa5 !important; }
+
+  /* Hero Section */
+  .hero-tech {
+    position: relative;
+    padding: 160px 0 100px;
+    background: radial-gradient(circle at top right, rgba(0, 123, 255, 0.15), transparent 40%),
+                radial-gradient(circle at bottom left, rgba(0, 191, 165, 0.15), transparent 40%);
+  }
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Product Cards (Glassmorphism & Neon Hover) */
+  .tech-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    height: 100%;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+  }
+  .tech-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 4px;
+    background: var(--primary-gradient);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .tech-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px var(--accent-glow);
+    border-color: rgba(0, 191, 165, 0.3);
+  }
+  .tech-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  /* Icons */
+  .icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #00bfa5;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  /* Buttons */
+  .btn-gradient {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  .btn-gradient:hover {
+    box-shadow: 0 5px 15px var(--accent-glow);
+    color: white;
+    opacity: 0.9;
+  }
+  .btn-outline-tech {
+    border: 1px solid #00bfa5;
+    color: #00bfa5;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  .btn-outline-tech:hover {
+    background: #00bfa5;
+    color: #0a0f1a;
+  }
+
+  /* Badges */
+  .badge-free { background: rgba(0, 191, 165, 0.1); border: 1px solid #00bfa5; color: #00bfa5; }
+  .badge-paid { background: rgba(0, 123, 255, 0.1); border: 1px solid #007bff; color: #4da3ff; }
+
+  /* Section Titles */
+  .section-heading {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+  }
+  .section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 60px; height: 3px;
+    background: var(--primary-gradient);
+    border-radius: 5px;
+  }
 </style>
 </head>
 
-<body class="bg-light">
+<body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top" aria-label="Main navigation">
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm" aria-label="Main navigation">
   <div class="container">
     <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-      <img src="assets/img/logo.svg" alt="LumenaAutomation Logo" style="height: 55px; width: auto; margin-right: 10px;">
+      <i class="fa-solid fa-microchip me-2" style="color: #00bfa5; font-size: 1.5rem;"></i>
       LumenaAutomation
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -88,161 +194,198 @@
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link active text-primary fw-bold" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- Hero Section -->
-<section class="position-relative overflow-hidden" style="background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%); min-height: 350px; display: flex; align-items: center; margin-top: 75px;">
-  <div class="container text-center text-white position-relative z-2" data-aos="fade-up">
-    <h1 class="display-4 fw-bold mb-3">Our Products</h1>
-    <p class="lead mb-0 opacity-90">Innovative tools and solutions designed for smarter living and business efficiency[cite: 4].</p>
+<section class="hero-tech text-center">
+  <div class="container" data-aos="fade-up">
+    <span class="badge bg-dark border border-secondary mb-3 px-3 py-2 rounded-pill">Innovating the Future</span>
+    <h1 class="hero-title mb-4">Ecosystem of Intelligent Products</h1>
+    <p class="lead w-75 mx-auto" style="color: var(--text-muted);">
+      From personal finance management to enterprise-grade cloud migrations and automated dashboards. Discover LumenaAutomation's suite of ready-to-use platforms and custom software solutions.
+    </p>
   </div>
-  <!-- Animated Waves -->
-  <svg class="position-absolute bottom-0 start-0 w-100" height="100" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="z-index:1;">
-    <path d="M0,70 Q360,30 720,70 T1440,70" stroke="#00bfa5" stroke-width="2" fill="none">
-      <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0,70 Q360,30 720,70 T1440,70; M0,70 Q360,90 720,50 T1440,70; M0,70 Q360,30 720,70 T1440,70" />
-    </path>
-    <path d="M0,90 Q360,70 720,90 T1440,90" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.4">
-      <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M0,90 Q360,70 720,90 T1440,90; M0,90 Q360,110 720,70 T1440,90; M0,90 Q360,70 720,90 T1440,90" />
-    </path>
-  </svg>
 </section>
 
-<!-- Products Grid -->
+<!-- FREE & COMMUNITY PRODUCTS SECTION -->
 <section class="py-5">
   <div class="container">
+    <h3 class="section-heading fw-bold" data-aos="fade-right">Community & Free Platforms</h3>
     <div class="row g-4">
 
       <!-- BudgetManager -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card product-card h-100 shadow-sm bg-white">
-          <div class="product-img-wrapper">
-            <img src="assets/img/finance.jpg" alt="BudgetManager Application" loading="lazy">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="tech-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-box"><i class="fa-solid fa-wallet"></i></div>
+            <span class="badge badge-free px-3 py-2 rounded-pill">Free to Use</span>
           </div>
-          <div class="card-body text-center p-4">
-            <h5 class="fw-bold mb-3">BudgetManager</h5>
-            <p class="text-muted small mb-4">Smart personal finance tracking and budgeting app. Take control of your money with ease[cite: 4].</p>
-            <a href="https://bm.lumenaautomation.co.in" target="_blank" rel="noopener" class="btn btn-primary-gradient">Launch App</a>
-          </div>
+          <h4 class="fw-bold mb-3">BudgetManager</h4>
+          <p style="color: var(--text-muted);">Take absolute control of your personal finances. A smart tracking and budgeting SaaS application designed to help individuals monitor expenses, set goals, and achieve financial freedom seamlessly.</p>
+          <ul class="list-unstyled mb-4" style="color: var(--text-muted); font-size: 0.9rem;">
+            <li><i class="fa-solid fa-check text-success me-2"></i> Real-time expense tracking</li>
+            <li><i class="fa-solid fa-check text-success me-2"></i> Automated monthly reporting</li>
+            <li><i class="fa-solid fa-check text-success me-2"></i> Secure cloud data storage</li>
+          </ul>
+          <a href="https://bm.lumenaautomation.co.in" target="_blank" class="btn-gradient w-100 text-center">Launch BudgetManager <i class="fa-solid fa-arrow-right ms-2"></i></a>
         </div>
       </div>
 
-      <!-- Home Automation Dashboard -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card product-card h-100 shadow-sm bg-white">
-          <div class="product-img-wrapper">
-            <img src="assets/img/automation.jpg" alt="Home Automation Dashboard" loading="lazy">
+      <!-- TractorOnRent -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="tech-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-box"><i class="fa-solid fa-tractor"></i></div>
+            <span class="badge badge-free px-3 py-2 rounded-pill">Free Platform</span>
           </div>
-          <div class="card-body text-center p-4">
-            <h5 class="fw-bold mb-3">Home Automation Dashboard</h5>
-            <p class="text-muted small mb-4">Centralized control for smart homes and IoT devices[cite: 4].</p>
-            <a href="contact.html" class="btn btn-primary-gradient">Know More</a>
-          </div>
+          <h4 class="fw-bold mb-3">TractorOnRent Platform</h4>
+          <p style="color: var(--text-muted);">A dedicated digital marketplace connecting farmers. Register your tractor to offer it on rent, or easily find and hire agricultural machinery on a required basis to boost farming efficiency.</p>
+          <ul class="list-unstyled mb-4" style="color: var(--text-muted); font-size: 0.9rem;">
+            <li><i class="fa-solid fa-check text-success me-2"></i> Free registration for equipment owners</li>
+            <li><i class="fa-solid fa-check text-success me-2"></i> Geo-location based searching</li>
+            <li><i class="fa-solid fa-check text-success me-2"></i> Direct farmer-to-farmer communication</li>
+          </ul>
+          <a href="https://tractoronrent.lumenaautomation.co.in" target="_blank" class="btn-gradient w-100 text-center">Visit Platform <i class="fa-solid fa-arrow-right ms-2"></i></a>
         </div>
       </div>
 
-      <!-- AI & Custom Software -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card product-card h-100 shadow-sm bg-white">
-          <div class="product-img-wrapper">
-            <img src="assets/img/ai.jpg" alt="AI Software Solutions" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ENTERPRISE & PAID SOLUTIONS SECTION -->
+<section class="py-5 mb-5">
+  <div class="container">
+    <h3 class="section-heading fw-bold" data-aos="fade-right">Enterprise & Premium Solutions</h3>
+    <div class="row g-4">
+
+      <!-- PowerBI Automation -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="tech-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+            <span class="badge badge-paid px-2 py-1 rounded-pill small">Enterprise</span>
           </div>
-          <div class="card-body text-center p-4">
-            <h5 class="fw-bold mb-3">AI & Custom Software</h5>
-            <p class="text-muted small mb-4">Tailored AI-driven applications to automate personal and business workflows[cite: 4].</p>
-            <a href="contact.html" class="btn btn-primary-gradient">Know More</a>
-          </div>
+          <h5 class="fw-bold">Automated PowerBI Reporting</h5>
+          <p class="small mt-2" style="color: var(--text-muted);">Custom data visualization and automated intelligence reports tailored for top management to make instant, data-driven decisions.</p>
+          <a href="contact.html" class="btn-outline-tech btn-sm mt-3">Request Demo</a>
         </div>
       </div>
 
-      <!-- Digital Workplace Solutions -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="card product-card h-100 shadow-sm bg-white">
-          <div class="product-img-wrapper">
-            <img src="assets/img/device.jpg" alt="Digital Workplace Solutions" loading="lazy">
+      <!-- MDM & Workplace -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="tech-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-box"><i class="fa-solid fa-network-wired"></i></div>
+            <span class="badge badge-paid px-2 py-1 rounded-pill small">Enterprise</span>
           </div>
-          <div class="card-body text-center p-4">
-            <h5 class="fw-bold mb-3">Digital Workplace Solutions</h5>
-            <p class="text-muted small mb-4">Enterprise-grade device onboarding and monitoring solutions[cite: 4].</p>
-            <a href="contact.html" class="btn btn-primary-gradient">Know More</a>
+          <h5 class="fw-bold">MDM & Digital Workplace</h5>
+          <p class="small mt-2" style="color: var(--text-muted);">Comprehensive Mobile Device Management (MDM) solutions. Secure onboarding, monitoring, and compliance for corporate fleets.</p>
+          <a href="contact.html" class="btn-outline-tech btn-sm mt-3">Explore Solutions</a>
+        </div>
+      </div>
+
+      <!-- Cloud Migration -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="tech-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-box"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+            <span class="badge badge-paid px-2 py-1 rounded-pill small">IT Services</span>
+          </div>
+          <h5 class="fw-bold">Cloud Migration Suite</h5>
+          <p class="small mt-2" style="color: var(--text-muted);">Seamless transition strategies from on-premise datacenters to modern, scalable cloud technologies (AWS, Azure, GCP).</p>
+          <a href="contact.html" class="btn-outline-tech btn-sm mt-3">Consult Experts</a>
+        </div>
+      </div>
+
+      <!-- Home Automation -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="tech-card">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div class="icon-box"><i class="fa-solid fa-house-signal"></i></div>
+            <span class="badge badge-paid px-2 py-1 rounded-pill small">Premium</span>
+          </div>
+          <h5 class="fw-bold">Smart Home Automation</h5>
+          <p class="small mt-2" style="color: var(--text-muted);">Centralized control panels and custom IoT software integrations to turn standard properties into fully automated smart homes.</p>
+          <a href="contact.html" class="btn-outline-tech btn-sm mt-3">View Systems</a>
+        </div>
+      </div>
+
+      <!-- Custom AI Solutions -->
+      <div class="col-lg-8 col-md-12" data-aos="fade-up" data-aos-delay="500">
+        <div class="tech-card d-flex flex-column flex-md-row align-items-md-center gap-4">
+          <div class="icon-box mb-0" style="width: 80px; height: 80px; font-size: 2.5rem;"><i class="fa-solid fa-code"></i></div>
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <h5 class="fw-bold mb-0">Custom Software & AI Solutions</h5>
+              <span class="badge badge-paid px-2 py-1 rounded-pill small">Bespoke</span>
+            </div>
+            <p class="small mb-3" style="color: var(--text-muted);">Need something built from scratch? We develop proprietary algorithms, custom AI integrations, and specialized IT solutions tailored specifically to your unique business workflow.</p>
+            <a href="contact.html" class="btn-gradient btn-sm px-4">Start a Custom Project</a>
           </div>
         </div>
       </div>
 
     </div>
+  </div>
+</section>
 
-    <!-- Social Connect -->
-    <div class="text-center mt-5 pt-5" data-aos="fade-up">
-      <h3 class="fw-bold mb-4">Connect With Us</h3>
-      <div class="d-flex justify-content-center gap-4 flex-wrap">
-        <a href="https://in.linkedin.com/in/lumena-automation-712054363" target="_blank" class="text-decoration-none text-dark hover-lift">
-          <i class="fa-brands fa-linkedin fa-2x text-primary"></i>
-          <p class="small mt-2">LinkedIn</p>
-        </a>
-        <a href="https://www.instagram.com/lumenaautomation" target="_blank" class="text-decoration-none text-dark hover-lift">
-          <i class="fa-brands fa-instagram fa-2x text-danger"></i>
-          <p class="small mt-2">Instagram</p>
-        </a>
-        <a href="https://x.com/lumenaauto" target="_blank" class="text-decoration-none text-dark hover-lift">
-          <i class="fa-brands fa-x-twitter fa-2x text-dark"></i>
-          <p class="small mt-2">X (Twitter)</p>
-        </a>
-        <a href="https://www.youtube.com/@lumenaautomation" target="_blank" class="text-decoration-none text-dark hover-lift">
-          <i class="fa-brands fa-youtube fa-2x text-danger"></i>
-          <p class="small mt-2">YouTube</p>
-        </a>
-      </div>
-    </div>
+<!-- Call to Action -->
+<section class="py-5 border-top border-secondary">
+  <div class="container text-center" data-aos="zoom-in">
+    <h2 class="fw-bold mb-3">Ready to Upgrade Your Tech Stack?</h2>
+    <p class="mb-4" style="color: var(--text-muted);">Reach out to discuss pricing, custom features, or implementation details for our enterprise products.</p>
+    <a href="mailto:info.lumenaautomation@gmail.com" class="btn-gradient px-5 py-3 fs-5"><i class="fa-regular fa-envelope me-2"></i> Contact Sales</a>
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="text-white pt-5 pb-3" style="background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%);">
+<footer class="pt-5 pb-3 border-top" style="border-color: rgba(255,255,255,0.05) !important; background: #060a12;">
   <div class="container">
     <div class="row text-start">
-
+      
       <!-- Company Info -->
       <div class="col-md-4 mb-4">
-        <h5 class="fw-bold">LumenaAutomation</h5>
-        <p class="small opacity-75">
-          Building intelligent software solutions including AI tools, home automation, and personal finance platforms like Budget Manager.
+        <h5 class="fw-bold text-white d-flex align-items-center">
+          <i class="fa-solid fa-microchip me-2" style="color: #00bfa5;"></i> LumenaAutomation
+        </h5>
+        <p class="small" style="color: var(--text-muted);">
+          Building intelligent software solutions, AI tools, enterprise IT services, and platforms like BudgetManager and TractorOnRent.
         </p>
       </div>
 
       <!-- Quick Links -->
       <div class="col-md-4 mb-4">
-        <h6 class="fw-bold">Quick Links</h6>
+        <h6 class="fw-bold text-white">Solutions</h6>
         <ul class="list-unstyled small">
-          <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-          <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
-          <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
-          <li><a href="products.html" class="text-white text-decoration-none">Products</a></li>
-          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          <li class="mb-2"><a href="https://bm.lumenaautomation.co.in" target="_blank" class="text-decoration-none" style="color: var(--text-muted);">BudgetManager</a></li>
+          <li class="mb-2"><a href="https://tractoronrent.lumenaautomation.co.in" target="_blank" class="text-decoration-none" style="color: var(--text-muted);">TractorOnRent</a></li>
+          <li class="mb-2"><a href="contact.html" class="text-decoration-none" style="color: var(--text-muted);">Cloud Migrations</a></li>
+          <li class="mb-2"><a href="contact.html" class="text-decoration-none" style="color: var(--text-muted);">PowerBI Reports</a></li>
         </ul>
       </div>
 
-      <!-- Legal -->
+      <!-- Connect -->
       <div class="col-md-4 mb-4">
-        <h6 class="fw-bold">Legal</h6>
-        <ul class="list-unstyled small">
-          <li><a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
-          <li><a href="terms-of-service.html" class="text-white text-decoration-none">Terms of Service</a></li>
-          <li><a href="refund-policy.html" class="text-white text-decoration-none">Refund Policy</a></li>
-          <li><a href="cookies.html" class="text-white text-decoration-none">Cookie Use</a></li>
-        </ul>
+        <h6 class="fw-bold text-white">Connect With Us</h6>
+        <div class="d-flex gap-3 mt-3">
+          <a href="https://in.linkedin.com/in/lumena-automation-712054363" target="_blank" style="color: #007bff; font-size: 1.5rem;"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/lumenaautomation" target="_blank" style="color: #e1306c; font-size: 1.5rem;"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/lumenaauto" target="_blank" style="color: white; font-size: 1.5rem;"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/@lumenaautomation" target="_blank" style="color: #ff0000; font-size: 1.5rem;"><i class="fa-brands fa-youtube"></i></a>
+        </div>
       </div>
-
     </div>
 
-    <hr class="border-light opacity-25">
+    <hr style="border-color: rgba(255,255,255,0.1);">
 
     <!-- Bottom -->
-    <div class="text-center small">
+    <div class="text-center small" style="color: var(--text-muted);">
       © 2026 LumenaAutomation. All Rights Reserved.
     </div>
   </div>
@@ -253,7 +396,11 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ 
+      duration: 800, 
+      once: true,
+      offset: 100
+    });
   });
 </script>
 </body>
