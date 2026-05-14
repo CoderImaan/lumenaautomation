@@ -1,314 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | LumenaAutomation - Engineering the Future</title>
-    
-    <!-- SEO & Favicons -->
-    <meta name="description" content="LumenaAutomation: Architecting intelligent ecosystems and human-centric software solutions.">
-    <link rel="icon" href="https://lumenaautomation.co.in/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | LumenaAutomation — Engineering the Future</title>
+<meta name="description" content="LumenaAutomation: Architecting intelligent ecosystems and human-centric software solutions. Learn about our mission, philosophy, and digital vision.">
+<meta name="keywords" content="LumenaAutomation about, IT company India, AI software company, automation firm, MDM experts">
+<meta name="author" content="LumenaAutomation">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lumenaautomation.co.in/about.html">
+<meta property="og:title" content="About LumenaAutomation — Engineering the Future">
+<meta property="og:description" content="Architecting intelligent ecosystems and human-centric software solutions built for the digital economy.">
+<meta property="og:image" content="https://lumenaautomation.co.in/assets/img/og-image.png">
+<meta property="og:url" content="https://lumenaautomation.co.in/about.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@lumenaauto">
+<link rel="apple-touch-icon" sizes="180x180" href="https://lumenaautomation.co.in/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lumenaautomation.co.in/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lumenaautomation.co.in/favicon-16x16.png">
+<link rel="icon" href="https://lumenaautomation.co.in/favicon.ico" type="image/x-icon">
+<link rel="manifest" href="https://lumenaautomation.co.in/site.webmanifest">
+<meta name="theme-color" content="#080c15">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<style>
+:root{--bg:#080c15;--bg-surface:#0d1220;--bg-card:rgba(15,20,35,0.75);--border:rgba(255,255,255,0.07);--border-accent:rgba(0,212,170,0.35);--grad:linear-gradient(135deg,#1a6dff 0%,#00d4aa 100%);--grad-text:linear-gradient(135deg,#60a5fa 0%,#34d399 100%);--accent:#00d4aa;--accent-dim:rgba(0,212,170,0.12);--blue:#1a6dff;--text:#eef2f7;--text-dim:#8896b0;--text-dimmer:#505d70;--radius-card:18px;--shadow-glow:0 0 40px rgba(0,212,170,0.18);--shadow-card:0 20px 50px rgba(0,0,0,0.45)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.7}
+h1,h2,h3,h4,h5,h6,.navbar-brand{font-family:'Syne',sans-serif;letter-spacing:-0.02em}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--accent);border-radius:4px}
 
-    <!-- Fonts & Frameworks -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+.navbar{background:rgba(8,12,21,0.92)!important;backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:.85rem 0}
+.navbar-brand{font-weight:700;font-size:1.15rem;color:var(--text)!important}
+.brand-chip{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:8px;background:var(--grad);margin-right:10px;font-size:.95rem}
+.nav-link{color:var(--text-dim)!important;font-weight:500;font-size:.875rem;padding:.45rem .9rem!important;border-radius:7px;transition:color .25s,background .25s}
+.nav-link:hover{color:var(--accent)!important;background:var(--accent-dim)}
+.nav-link.active{color:var(--accent)!important;background:var(--accent-dim);font-weight:600}
+.navbar-toggler{border:1px solid var(--border)!important;background:var(--bg-surface)!important;padding:.35rem .6rem}
+.navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28238,242,247,0.85%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important}
 
-    <style>
-        :root {
-            --bg-dark: #05080f;
-            --surface: #0c121d;
-            --accent: #00f2ff;
-            --primary: #007bff;
-            --text-main: #ffffff;
-            --text-dim: #a0aec0;
-            --glass: rgba(255, 255, 255, 0.03);
-            --glass-border: rgba(255, 255, 255, 0.1);
-        }
+.btn-primary-gradient{background:var(--grad);color:#fff;border:none;padding:13px 32px;border-radius:10px;font-family:'Syne',sans-serif;font-weight:600;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s,opacity .2s}
+.btn-primary-gradient:hover{color:#fff;transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,212,170,0.4);opacity:.92}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border);padding:13px 32px;border-radius:10px;font-family:'Syne',sans-serif;font-weight:600;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:border-color .25s,color .25s,background .25s}
+.btn-ghost:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-dim)}
 
-        body {
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            font-family: 'Inter', sans-serif;
-            overflow-x: hidden;
-        }
+.hero-page{padding:170px 0 100px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 20% 50%,rgba(26,109,255,0.12),transparent 45%),radial-gradient(ellipse at 80% 30%,rgba(0,212,170,0.09),transparent 45%)}
+.hero-page::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.018'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none;opacity:.5}
+.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:20px;padding:6px 16px;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem}
+.hero-title{font-size:clamp(2.4rem,6vw,4rem);font-weight:800;line-height:1.1;margin-bottom:1.5rem}
+.gradient-text{background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 
-        h1, h2, h3, .navbar-brand { font-family: 'Space Grotesk', sans-serif; }
+.tech-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-card);padding:2rem;height:100%;position:relative;overflow:hidden;backdrop-filter:blur(12px);transition:transform .35s cubic-bezier(.175,.885,.32,1.275),border-color .3s,box-shadow .3s}
+.tech-card::before{content:'';position:absolute;inset:0 0 auto 0;height:3px;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .4s ease;border-radius:var(--radius-card) var(--radius-card) 0 0}
+.tech-card:hover{transform:translateY(-8px);border-color:var(--border-accent);box-shadow:var(--shadow-card),var(--shadow-glow)}
+.tech-card:hover::before{transform:scaleX(1)}
+.icon-box{width:58px;height:58px;border-radius:14px;background:var(--accent-dim);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--accent);flex-shrink:0;transition:background .3s,color .3s}
+.tech-card:hover .icon-box{background:var(--grad);color:#fff;border-color:transparent}
 
-        /* --- Navbar --- */
-        .navbar {
-            background: rgba(5, 8, 15, 0.95) !important;
-            backdrop-filter: blur(15px);
-            border-bottom: 1px solid var(--glass-border);
-            padding: 1rem 0;
-        }
-        .nav-link { color: var(--text-dim) !important; transition: 0.3s; }
-        .nav-link:hover, .nav-link.active { color: var(--accent) !important; text-shadow: 0 0 10px var(--accent); }
+.section-eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem;display:block}
+.section-title{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;line-height:1.15;margin-bottom:1rem}
+.section-sub{color:var(--text-dim);font-size:1rem;line-height:1.75}
 
-        /* --- Hero Section --- */
-        .hero-visual {
-            position: relative;
-            padding: 160px 0 100px;
-            background: radial-gradient(circle at 20% 30%, rgba(0, 123, 255, 0.15), transparent 40%),
-                        radial-gradient(circle at 80% 70%, rgba(0, 242, 255, 0.1), transparent 40%);
-        }
-        .hero-title {
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            font-weight: 700;
-            background: linear-gradient(to right, #fff, var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+.pillar-num{font-size:4rem;font-weight:800;line-height:1;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;opacity:.5}
 
-        /* --- Glass Cards --- */
-        .glass-card {
-            background: var(--surface);
-            border: 1px solid var(--glass-border);
-            border-radius: 24px;
-            padding: 2.5rem;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            position: relative;
-            overflow: hidden;
-        }
-        .glass-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--accent);
-            box-shadow: 0 15px 40px rgba(0, 242, 255, 0.1);
-        }
-        .glass-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: -100%;
-            width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
-            transition: 0.5s;
-        }
-        .glass-card:hover::before { left: 100%; }
+.timeline-item{position:relative;padding-left:2.5rem;margin-bottom:2.5rem}
+.timeline-item::before{content:'';position:absolute;left:10px;top:28px;bottom:-2.5rem;width:1px;background:linear-gradient(to bottom,var(--accent),transparent)}
+.timeline-item:last-child::before{display:none}
+.timeline-dot{position:absolute;left:0;top:6px;width:22px;height:22px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:.65rem;color:#fff;font-weight:700;box-shadow:0 0 12px rgba(0,212,170,0.5)}
 
-        /* --- Icons --- */
-        .tech-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            display: inline-block;
-            background: linear-gradient(45deg, var(--primary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 0 8px rgba(0, 242, 255, 0.4));
-        }
+.value-pill{display:inline-flex;align-items:center;gap:8px;background:var(--accent-dim);border:1px solid var(--border-accent);border-radius:30px;padding:8px 18px;font-size:.875rem;font-weight:500;color:var(--text);margin:.3rem}
 
-        /* --- Carousel --- */
-        .carousel { border-radius: 30px; overflow: hidden; border: 1px solid var(--glass-border); }
-        .carousel-item img { height: 500px; object-fit: cover; filter: brightness(0.5); }
-        .carousel-caption { bottom: 15%; text-align: left; left: 10%; right: 10%; }
+.social-circle{width:52px;height:52px;border-radius:12px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--text-dim);font-size:1.1rem;text-decoration:none;transition:border-color .25s,color .25s,background .25s}
+.social-circle:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-dim)}
 
-        /* --- Social Buttons --- */
-        .social-circle {
-            width: 60px; height: 60px;
-            display: flex; align-items: center; justify-content: center;
-            border-radius: 50%;
-            border: 1px solid var(--glass-border);
-            color: white; font-size: 1.2rem;
-            transition: 0.4s; text-decoration: none;
-            background: var(--surface);
-        }
-        .social-circle:hover {
-            background: var(--accent);
-            color: var(--bg-dark);
-            box-shadow: 0 0 20px var(--accent);
-            transform: scale(1.1);
-        }
+.glow-divider{height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);border:none;margin:3rem 0;opacity:.35}
+.cta-block{background:var(--bg-card);border:1px solid var(--border-accent);border-radius:24px;padding:4rem 2rem;text-align:center;position:relative;overflow:hidden}
+.cta-block::before{content:'';position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:400px;height:400px;background:radial-gradient(circle,rgba(0,212,170,0.1),transparent 70%);pointer-events:none}
 
-        /* --- Animations --- */
-        .glow-line {
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent);
-            margin: 4rem 0;
-        }
-
-        .scroll-down {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: bounce 2s infinite;
-        }
-        @keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0) translateX(-50%);} 40% {transform: translateY(-10px) translateX(-50%);} 60% {transform: translateY(-5px) translateX(-50%);} }
-    </style>
+.site-footer{background:#050810;border-top:1px solid var(--border);padding:4rem 0 2rem}
+.footer-heading{font-family:'Syne',sans-serif;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text-dimmer);margin-bottom:1rem}
+.footer-link{color:var(--text-dim);text-decoration:none;font-size:.875rem;transition:color .2s;display:inline-block;margin-bottom:.55rem}
+.footer-link:hover{color:var(--accent)}
+.social-icon{width:38px;height:38px;border-radius:9px;border:1px solid var(--border);display:inline-flex;align-items:center;justify-content:center;color:var(--text-dim);font-size:.95rem;text-decoration:none;transition:border-color .25s,color .25s,background .25s}
+.social-icon:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-dim)}
+#backToTop{position:fixed;bottom:28px;right:28px;width:44px;height:44px;border-radius:11px;background:var(--grad);color:#fff;border:none;display:none;align-items:center;justify-content:center;font-size:1rem;cursor:pointer;z-index:9999;box-shadow:0 4px 20px rgba(0,212,170,0.4);transition:transform .2s}
+#backToTop:hover{transform:translateY(-3px)}
+#backToTop.visible{display:flex}
+</style>
 </head>
-
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top shadow-sm" aria-label="Main navigation">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
   <div class="container">
-    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-      <i class="fa-solid fa-microchip me-2" style="color: #00bfa5; font-size: 1.5rem;"></i>
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <span class="brand-chip"><i class="fa-solid fa-microchip" style="font-size:.9rem;color:#fff;"></i></span>
       LumenaAutomation
     </a>
-    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn-primary-gradient py-2 px-4" href="contact.html" style="font-size:.85rem;">Contact Us</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-visual text-center">
-        <div class="container" data-aos="zoom-out" data-aos-duration="1000">
-            <span class="badge rounded-pill px-3 py-2 mb-3" style="border: 1px solid var(--accent); color: var(--accent);">WHO WE ARE</span>
-            <h1 class="hero-title mb-4">Architecting the <br>Autonomous Future</h1>
-            <p class="lead text-dim mx-auto mb-5" style="max-width: 700px;">
-                LumenaAutomation isn't just a software company. We are a laboratory of efficiency, 
-                building the bridges between human intent and machine execution.
-            </p>
-        </div>
-        <div class="scroll-down text-dim opacity-50"><i class="fa-solid fa-chevron-down"></i></div>
-    </section>
+<!-- HERO -->
+<section class="hero-page text-center">
+  <div class="container" data-aos="fade-up">
+    <div class="page-eyebrow mx-auto" style="width:fit-content;">
+      <i class="fa-solid fa-circle" style="font-size:.5rem;"></i> Who We Are
+    </div>
+    <h1 class="hero-title">Architecting the <span class="gradient-text">Autonomous Future</span></h1>
+    <p style="color:var(--text-dim);font-size:1.05rem;max-width:640px;margin:0 auto 2.5rem;line-height:1.8;">
+      LumenaAutomation isn't just a software company. We are a laboratory of efficiency, building the bridges between human intent and machine execution — one intelligent system at a time.
+    </p>
+    <div class="d-flex flex-wrap gap-3 justify-content-center">
+      <a href="services.html" class="btn-primary-gradient">Explore Services <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="contact.html" class="btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Mission Grid -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="glass-card h-100">
-                        <i class="fa-solid fa-brain tech-icon"></i>
-                        <h4 class="fw-bold mb-3">Intelligence First</h4>
-                        <p class="text-dim">We prioritize AI integration that doesn't just process data but provides actionable logic for everyday challenges.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="glass-card h-100">
-                        <i class="fa-solid fa-fingerprint tech-icon"></i>
-                        <h4 class="fw-bold mb-3">Human-Centric</h4>
-                        <p class="text-dim">User interfaces designed for clarity. We believe powerful technology shouldn't be complicated to use.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="glass-card h-100">
-                        <i class="fa-solid fa-shield-halved tech-icon"></i>
-                        <h4 class="fw-bold mb-3">Military-Grade</h4>
-                        <p class="text-dim">Security is not an afterthought. Every line of code is built with robust encryption and data integrity at its core.</p>
-                    </div>
-                </div>
-            </div>
+<!-- MISSION PILLARS -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="tech-card">
+          <div class="icon-box mb-3"><i class="fa-solid fa-brain"></i></div>
+          <h4 class="fw-bold mb-2">Intelligence First</h4>
+          <p style="color:var(--text-dim);font-size:.92rem;">We prioritize AI integration that doesn't just process data but provides actionable logic for real-world challenges — from enterprise workflows to personal finance.</p>
         </div>
-    </section>
-
-    <!-- Mission Carousel (High Tech Style) -->
-    <section class="py-5">
-        <div class="container">
-            <div id="techCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072" class="d-block w-100">
-                        <div class="carousel-caption">
-                            <h2 class="display-5 fw-bold text-white">Innovation Without Friction</h2>
-                            <p class="fs-5 text-accent">We automate the mundane to liberate the creative.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070" class="d-block w-100">
-                        <div class="carousel-caption">
-                            <h2 class="display-5 fw-bold text-white">Scalable Infrastructure</h2>
-                            <p class="fs-5 text-accent">Building systems that grow as fast as your ambitions.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#techCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#techCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="tech-card">
+          <div class="icon-box mb-3"><i class="fa-solid fa-fingerprint"></i></div>
+          <h4 class="fw-bold mb-2">Human-Centric Design</h4>
+          <p style="color:var(--text-dim);font-size:.92rem;">Interfaces built for clarity and ease. We believe powerful technology shouldn't require a manual. Every product is engineered to feel intuitive from day one.</p>
         </div>
-    </section>
-
-    <!-- Content Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h2 class="fw-bold mb-4" style="color: var(--accent);">Our Digital Philosophy</h2>
-                    <p class="text-dim fs-5">
-                        Founded on the principle of <strong>Absolute Simplicity</strong>, LumenaAutomation has transformed from a niche dev shop into a multi-disciplinary automation house.
-                    </p>
-                    <p class="text-dim">
-                        Whether it's managing complex MDM (Mobile Device Management) fleets or helping a family budget their finances via BudgetManager, our DNA remains the same: 
-                        Clean code, secure data, and effortless automation.
-                    </p>
-                    <div class="mt-4">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fa-solid fa-circle-check me-2 text-primary"></i>
-                            <span>Enterprise MDM Solutions</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fa-solid fa-circle-check me-2 text-primary"></i>
-                            <span>AI-Powered Financial Tools</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <i class="fa-solid fa-circle-check me-2 text-primary"></i>
-                            <span>Custom Cloud Architectures</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="glass-card text-center py-5">
-                        <h2 class="display-3 fw-bold" style="color: var(--accent);">2026</h2>
-                        <p class="text-dim text-uppercase tracking-widest">Our Road Towards Singularity</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="tech-card">
+          <div class="icon-box mb-3"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4 class="fw-bold mb-2">Security by Design</h4>
+          <p style="color:var(--text-dim);font-size:.92rem;">Security is never an afterthought. Every line of code is built with robust encryption, zero-trust architecture, and data integrity at its core.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Community & Social -->
-    <section class="py-5 text-center">
-        <div class="container">
-            <div class="glow-line"></div>
-            <h3 class="fw-bold mb-5">Connect with the Lab</h3>
-            <div class="d-flex justify-content-center gap-4 flex-wrap">
-                <a href="#" class="social-circle"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="social-circle"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" class="social-circle"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="social-circle"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <div class="glow-line"></div>
+<!-- PHILOSOPHY -->
+<section class="py-5" style="background:var(--bg-surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container py-3">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="section-eyebrow">Our Philosophy</span>
+        <h2 class="section-title">Absolute Simplicity. <span class="gradient-text">Maximum Impact.</span></h2>
+        <p class="section-sub mb-4">
+          Founded on the principle of <strong style="color:var(--text);">Absolute Simplicity</strong>, LumenaAutomation has evolved from a niche development shop into a multi-disciplinary automation house serving enterprises and consumers alike.
+        </p>
+        <p style="color:var(--text-dim);font-size:.92rem;margin-bottom:2rem;">
+          Whether it's managing complex MDM fleet deployments or helping a family budget their finances through BudgetManager, our DNA stays unchanged: clean code, secure data, and effortless automation.
+        </p>
+        <div class="d-flex flex-wrap">
+          <span class="value-pill"><i class="fa-solid fa-check" style="color:var(--accent);"></i> Enterprise MDM Solutions</span>
+          <span class="value-pill"><i class="fa-solid fa-check" style="color:var(--accent);"></i> AI-Powered Financial Tools</span>
+          <span class="value-pill"><i class="fa-solid fa-check" style="color:var(--accent);"></i> Custom Cloud Architectures</span>
+          <span class="value-pill"><i class="fa-solid fa-check" style="color:var(--accent);"></i> Smart Home Integration</span>
+          <span class="value-pill"><i class="fa-solid fa-check" style="color:var(--accent);"></i> PowerBI Analytics</span>
+          <span class="value-pill"><i class="fa-solid fa-check" style="color:var(--accent);"></i> SaaS Platform Development</span>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-5" style="background: #030509; border-top: 1px solid var(--glass-border);">
-        <div class="container text-center">
-            <p class="text-dim small">© 2026 LumenaAutomation. All Rights Reserved.</p>
-            <div class="d-flex justify-content-center gap-3 small">
-                <a href="#" class="text-dim text-decoration-none">Privacy Policy</a>
-                <a href="#" class="text-dim text-decoration-none">Terms of Service</a>
-            </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="border-radius:20px;overflow:hidden;border:1px solid var(--border);">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop" alt="LumenaAutomation technology infrastructure" class="img-fluid" style="display:block;filter:brightness(.8) saturate(1.1);">
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        AOS.init({ 
-            duration: 1000, 
-            once: true,
-            offset: 100
-        });
-    });
+<!-- ROADMAP / TIMELINE -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-5" data-aos="fade-right">
+        <span class="section-eyebrow">Our Journey</span>
+        <h2 class="section-title">Building Towards <span class="gradient-text">Digital Singularity</span></h2>
+        <p class="section-sub">Every product we ship, every system we architect, and every client we serve brings us closer to a fully connected, automated world.</p>
+        <div class="mt-4 tech-card" style="text-align:center;padding:2.5rem 2rem;">
+          <div class="pillar-num">2026</div>
+          <p style="color:var(--text-dim);font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;margin-top:.5rem;">Our Road Towards Singularity</p>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="timeline-item">
+          <div class="timeline-dot">1</div>
+          <h5 class="fw-bold mb-1">Foundation &amp; Core Services</h5>
+          <p style="color:var(--text-dim);font-size:.9rem;">Launched enterprise IT services, MDM solutions, and cloud migration expertise. Built the foundation for a multi-disciplinary automation house.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">2</div>
+          <h5 class="fw-bold mb-1">BudgetManager Goes Live</h5>
+          <p style="color:var(--text-dim);font-size:.9rem;">Released our flagship consumer SaaS platform for personal and family finance management, combining AI-driven insights with intuitive design.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">3</div>
+          <h5 class="fw-bold mb-1">TractorOnRent Platform Launch</h5>
+          <p style="color:var(--text-dim);font-size:.9rem;">Deployed a geo-location based agricultural marketplace connecting farmers with equipment owners across India — a first-of-its-kind digital utility.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot" style="background:linear-gradient(135deg,#1a6dff,#00d4aa);">→</div>
+          <h5 class="fw-bold mb-1">Intelligent Automation &amp; AI Expansion</h5>
+          <p style="color:var(--text-dim);font-size:.9rem;">Scaling AI capabilities, custom software development, smart home automation, and PowerBI analytics for enterprise clients across India and beyond.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section class="py-5" style="border-top:1px solid var(--border);">
+  <div class="container text-center" data-aos="fade-up">
+    <span class="section-eyebrow">Connect with the Lab</span>
+    <h3 class="section-title mb-4">Follow Our <span class="gradient-text">Digital Journey</span></h3>
+    <div class="d-flex justify-content-center gap-3 flex-wrap mb-5">
+      <a href="https://in.linkedin.com/in/lumena-automation-712054363" target="_blank" rel="noopener" class="social-circle" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://x.com/lumenaauto" target="_blank" rel="noopener" class="social-circle" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/lumenaautomation" target="_blank" rel="noopener" class="social-circle" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@lumenaautomation" target="_blank" rel="noopener" class="social-circle" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <hr class="glow-divider">
+    <div class="cta-block mt-5">
+      <span class="section-eyebrow d-block mb-3">Work With Us</span>
+      <h2 class="section-title mb-3">Ready to Build Something <span class="gradient-text">Extraordinary?</span></h2>
+      <p style="color:var(--text-dim);max-width:500px;margin:0 auto 2rem;">Our engineering team is open to new challenges. Let's discuss how we can engineer efficiency for your business.</p>
+      <a href="contact.html" class="btn-primary-gradient">Start a Conversation <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="brand-chip" style="width:30px;height:30px;font-size:.8rem;"><i class="fa-solid fa-microchip" style="color:#fff;"></i></span>
+          <span style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;">LumenaAutomation</span>
+        </div>
+        <p style="font-size:.85rem;color:var(--text-dim);line-height:1.7;max-width:280px;">Engineering intelligent systems, cloud infrastructure, and SaaS platforms for the modern digital economy.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="https://in.linkedin.com/in/lumena-automation-712054363" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/lumenaautomation" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/lumenaauto" target="_blank" rel="noopener" class="social-icon" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/@lumenaautomation" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <p class="footer-heading">Navigate</p>
+        <div class="d-flex flex-column">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="products.html" class="footer-link">Products</a>
+          <a href="blogs.html" class="footer-link">Blogs</a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <p class="footer-heading">Solutions</p>
+        <div class="d-flex flex-column">
+          <a href="https://bm.lumenaautomation.co.in" target="_blank" rel="noopener" class="footer-link">BudgetManager</a>
+          <a href="https://tractoronrent.lumenaautomation.co.in" target="_blank" rel="noopener" class="footer-link">TractorOnRent</a>
+          <a href="services.html" class="footer-link">MDM &amp; Workplace</a>
+          <a href="services.html" class="footer-link">Cloud Migration</a>
+          <a href="services.html" class="footer-link">PowerBI Analytics</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <p class="footer-heading">Contact &amp; Legal</p>
+        <div class="d-flex flex-column mb-3">
+          <a href="mailto:info@lumenaautomation.co.in" class="footer-link"><i class="fa-solid fa-envelope me-2" style="color:var(--accent);font-size:.8rem;"></i>info@lumenaautomation.co.in</a>
+          <a href="mailto:support@lumenaautomation.co.in" class="footer-link"><i class="fa-solid fa-headset me-2" style="color:var(--accent);font-size:.8rem;"></i>support@lumenaautomation.co.in</a>
+        </div>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="privacy-policy.html" class="footer-link" style="font-size:.78rem;">Privacy Policy</a>
+          <a href="terms-of-service.html" class="footer-link" style="font-size:.78rem;">Terms of Service</a>
+          <a href="refund-policy.html" class="footer-link" style="font-size:.78rem;">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+    <hr style="border-color:var(--border);margin:2rem 0 1.5rem;">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p style="font-size:.8rem;color:var(--text-dimmer);margin:0;">© 2026 LumenaAutomation. All Rights Reserved.</p>
+      <p style="font-size:.8rem;color:var(--text-dimmer);margin:0;">Built with precision in India 🇮🇳</p>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded',function(){
+    AOS.init({duration:750,once:true,offset:80,easing:'ease-out-cubic'});
+    const btn=document.getElementById('backToTop');
+    window.addEventListener('scroll',()=>btn.classList.toggle('visible',window.scrollY>400));
+    btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  });
 </script>
 </body>
 </html>
