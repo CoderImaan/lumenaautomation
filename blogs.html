@@ -3,489 +3,659 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Blogs | LumenaAutomation</title>
-<meta name="description" content="Read LumenaAutomation blogs on personal finance, AI, home automation, and custom software solutions. Learn, explore, and innovate with us.">
-<meta name="keywords" content="LumenaAutomation blogs, BudgetManager, finance, AI automation, software, smart living, technology">
+<title>Blog | LumenaAutomation — Insights on AI, Finance & Automation</title>
+<meta name="description" content="Read the latest insights from LumenaAutomation on AI tools, personal finance, smart home automation, BudgetManager, cloud IT, and productivity.">
+<meta name="keywords" content="LumenaAutomation blog, AI tools, budgeting, BudgetManager, smart home, automation, financial literacy, IT solutions">
 <meta name="author" content="LumenaAutomation">
 <meta name="robots" content="index, follow">
-
-<!-- Canonical link -->
 <link rel="canonical" href="https://lumenaautomation.co.in/blogs.html">
-
-<!-- Favicons & Logo for Google Search -->
+<meta property="og:title" content="Blog | LumenaAutomation — Insights on AI, Finance & Automation">
+<meta property="og:description" content="Explore expert articles on AI tools, personal finance, BudgetManager, smart home automation, and enterprise IT.">
+<meta property="og:image" content="https://lumenaautomation.co.in/assets/img/og-image.png">
+<meta property="og:url" content="https://lumenaautomation.co.in/blogs.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@lumenaauto">
 <link rel="apple-touch-icon" sizes="180x180" href="https://lumenaautomation.co.in/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://lumenaautomation.co.in/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://lumenaautomation.co.in/favicon-16x16.png">
 <link rel="icon" href="https://lumenaautomation.co.in/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="https://lumenaautomation.co.in/favicon.ico">
 <link rel="manifest" href="https://lumenaautomation.co.in/site.webmanifest">
-<link rel="mask-icon" href="https://lumenaautomation.co.in/safari-pinned-tab.svg" color="#0a0a0a">
-<meta name="theme-color" content="#ffffff">
-
-<!-- Organization Structured Data with Logo -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "LumenaAutomation",
-  "url": "https://lumenaautomation.co.in",
-  "logo": "https://lumenaautomation.co.in/assets/img/logo.png",
-  "sameAs": [
-    "https://www.linkedin.com/company/lumenaautomation",
-    "https://www.instagram.com/lumenaautomation",
-    "https://x.com/lumenaauto"
-  ],
-  "contactPoint": [{
-    "@type": "ContactPoint",
-    "contactType": "Customer Support",
-    "email": "info.lumenaautomation@gmail.com",
-    "url": "https://lumenaautomation.co.in/contact.html",
-    "telephone": "+919665624068"
-  }]
-}
-</script>
-<!-- WebSite Structured Data for Sitelinks Search Box -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "url": "https://lumenaautomation.co.in/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://lumenaautomation.co.in/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
-
-<!-- Performance preconnect -->
+<meta name="theme-color" content="#080c15">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-
-<!-- Bootstrap & Font Awesome -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-<!-- Custom CSS -->
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/blogs.css">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
-<!-- Open Graph / Twitter -->
-<meta property="og:title" content="Blogs | LumenaAutomation">
-<meta property="og:description" content="Insights from LumenaAutomation on personal finance, AI tools, automation, and smart living.">
-<meta property="og:image" content="https://lumenaautomation.co.in/assets/img/logo.png">
-<meta property="og:url" content="https://lumenaautomation.co.in/blogs.html">
-<meta property="og:type" content="website">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Blogs | LumenaAutomation">
-<meta name="twitter:description" content="Insights from LumenaAutomation on personal finance, AI tools, automation, and smart living.">
-<meta name="twitter:image" content="https://lumenaautomation.co.in/assets/img/logo.png">
-
-<!-- Sleek Blog Card Styles -->
 <style>
-  .blog-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 12px;
-  }
-  .blog-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
-  }
-  .card-img-wrapper {
-    overflow: hidden;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-  }
-  .blog-img {
-    transition: transform 0.4s ease;
-    object-fit: cover;
-    height: 200px; /* Uniform height for all blog images */
-    width: 100%;
-  }
-  .blog-card:hover .blog-img {
-    transform: scale(1.08);
-  }
-  .blog-date-badge {
-    background-color: rgba(0, 123, 255, 0.1);
-    color: #007bff;
-    font-size: 0.8rem;
-    font-weight: 600;
-    padding: 4px 10px;
-    border-radius: 20px;
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-  .read-more-text {
-    transition: color 0.3s ease;
-  }
-  .blog-card:hover .read-more-text {
-    color: #00bfa5 !important;
-  }
+:root{--bg:#080c15;--bg-surface:#0d1220;--bg-card:rgba(15,20,35,0.8);--border:rgba(255,255,255,0.07);--border-accent:rgba(0,212,170,0.35);--grad:linear-gradient(135deg,#1a6dff 0%,#00d4aa 100%);--grad-text:linear-gradient(135deg,#60a5fa 0%,#34d399 100%);--accent:#00d4aa;--accent-dim:rgba(0,212,170,0.12);--text:#eef2f7;--text-dim:#8896b0;--text-dimmer:#505d70;--radius-card:18px;--shadow-glow:0 0 40px rgba(0,212,170,0.15);--shadow-card:0 16px 48px rgba(0,0,0,0.4)}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.7}
+h1,h2,h3,h4,h5,h6,.navbar-brand{font-family:'Syne',sans-serif;letter-spacing:-0.02em}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--accent);border-radius:4px}
+
+/* Navbar */
+.navbar{background:rgba(8,12,21,0.92)!important;backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:.85rem 0}
+.navbar-brand{font-weight:700;font-size:1.15rem;color:var(--text)!important}
+.brand-chip{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:8px;background:var(--grad);margin-right:10px}
+.nav-link{color:var(--text-dim)!important;font-weight:500;font-size:.875rem;padding:.45rem .9rem!important;border-radius:7px;transition:color .25s,background .25s}
+.nav-link:hover{color:var(--accent)!important;background:var(--accent-dim)}
+.nav-link.active{color:var(--accent)!important;background:var(--accent-dim);font-weight:600}
+.navbar-toggler{border:1px solid var(--border)!important;background:var(--bg-surface)!important;padding:.35rem .6rem}
+.navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28238,242,247,0.85%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important}
+
+/* Buttons */
+.btn-primary-gradient{background:var(--grad);color:#fff;border:none;padding:13px 32px;border-radius:10px;font-family:'Syne',sans-serif;font-weight:600;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,box-shadow .2s,opacity .2s}
+.btn-primary-gradient:hover{color:#fff;transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,212,170,0.4);opacity:.92}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border);padding:9px 22px;border-radius:10px;font-family:'Syne',sans-serif;font-weight:600;font-size:.85rem;text-decoration:none;display:inline-flex;align-items:center;gap:7px;transition:border-color .25s,color .25s,background .25s}
+.btn-ghost:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-dim)}
+
+/* Hero */
+.hero-page{padding:160px 0 90px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 20% 50%,rgba(26,109,255,0.12),transparent 45%),radial-gradient(ellipse at 80% 30%,rgba(0,212,170,0.09),transparent 45%)}
+.hero-page::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.018'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
+.gradient-text{background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.page-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:20px;padding:6px 16px;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem}
+
+/* Filter tabs */
+.filter-tabs{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:3rem}
+.filter-tab{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:20px;padding:7px 18px;font-size:.8rem;font-weight:600;color:var(--text-dim);cursor:pointer;transition:all .2s;user-select:none;font-family:'DM Sans',sans-serif}
+.filter-tab:hover,.filter-tab.active{background:var(--accent-dim);border-color:var(--border-accent);color:var(--accent)}
+
+/* Blog cards */
+.blog-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-card);overflow:hidden;height:100%;display:flex;flex-direction:column;transition:transform .35s cubic-bezier(.175,.885,.32,1.275),border-color .3s,box-shadow .3s;backdrop-filter:blur(12px)}
+.blog-card:hover{transform:translateY(-8px);border-color:var(--border-accent);box-shadow:var(--shadow-card),var(--shadow-glow)}
+.blog-card-img{position:relative;overflow:hidden;height:200px;background:linear-gradient(135deg,rgba(26,109,255,0.15),rgba(0,212,170,0.1))}
+.blog-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;display:block}
+.blog-card:hover .blog-card-img img{transform:scale(1.06)}
+.blog-card-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3.5rem;color:var(--accent);opacity:.25}
+.blog-card-body{padding:1.5rem;flex:1;display:flex;flex-direction:column}
+.blog-cat-badge{display:inline-flex;align-items:center;gap:5px;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:4px 10px;border-radius:12px;margin-bottom:.9rem}
+.cat-finance{background:rgba(0,212,170,0.12);color:var(--accent);border:1px solid rgba(0,212,170,0.25)}
+.cat-ai{background:rgba(26,109,255,0.12);color:#6fa3ff;border:1px solid rgba(26,109,255,0.25)}
+.cat-automation{background:rgba(168,85,247,0.12);color:#c084fc;border:1px solid rgba(168,85,247,0.25)}
+.cat-product{background:rgba(251,191,36,0.12);color:#fbbf24;border:1px solid rgba(251,191,36,0.25)}
+.cat-home{background:rgba(249,115,22,0.12);color:#fb923c;border:1px solid rgba(249,115,22,0.25)}
+.blog-card-title{font-size:1.05rem;font-weight:700;line-height:1.35;margin-bottom:.7rem;color:var(--text)}
+.blog-card-excerpt{font-size:.875rem;color:var(--text-dim);line-height:1.65;flex:1;margin-bottom:1.2rem}
+.blog-card-meta{font-size:.75rem;color:var(--text-dimmer);display:flex;align-items:center;gap:1rem;margin-bottom:1rem}
+.blog-card-meta span{display:inline-flex;align-items:center;gap:5px}
+.blog-read-link{color:var(--accent);font-size:.85rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:gap .2s,color .2s}
+.blog-read-link:hover{gap:10px;color:var(--accent)}
+
+/* Featured post */
+.featured-blog{background:var(--bg-card);border:1px solid var(--border-accent);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;backdrop-filter:blur(12px);position:relative}
+.featured-blog::before{content:'';position:absolute;inset:0 0 auto 0;height:3px;background:var(--grad);border-radius:22px 22px 0 0}
+.featured-blog-img{height:340px;overflow:hidden;background:linear-gradient(135deg,rgba(26,109,255,0.2),rgba(0,212,170,0.15))}
+.featured-blog-img img{width:100%;height:100%;object-fit:cover}
+.featured-blog-body{padding:2rem}
+
+/* Newsletter */
+.newsletter-block{background:var(--bg-card);border:1px solid var(--border-accent);border-radius:22px;padding:3rem 2rem;text-align:center;position:relative;overflow:hidden}
+.newsletter-block::before{content:'';position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:300px;height:300px;background:radial-gradient(circle,rgba(0,212,170,0.1),transparent 70%);pointer-events:none}
+.newsletter-input{background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:10px;color:var(--text);padding:12px 18px;font-family:'DM Sans',sans-serif;font-size:.9rem;width:100%;outline:none;transition:border-color .25s}
+.newsletter-input:focus{border-color:var(--accent);background:rgba(0,212,170,0.04)}
+.newsletter-input::placeholder{color:var(--text-dimmer)}
+
+/* Sidebar */
+.sidebar-card{background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:1.5rem;margin-bottom:1.5rem;backdrop-filter:blur(10px)}
+.sidebar-heading{font-family:'Syne',sans-serif;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text-dimmer);margin-bottom:1rem}
+.sidebar-post{display:flex;gap:.9rem;padding:.7rem 0;border-bottom:1px solid var(--border)}
+.sidebar-post:last-child{border-bottom:none;padding-bottom:0}
+.sidebar-post-num{width:28px;height:28px;border-radius:7px;background:var(--accent-dim);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:var(--accent);flex-shrink:0;margin-top:2px}
+.sidebar-post-title{font-size:.83rem;font-weight:600;color:var(--text);line-height:1.35;text-decoration:none;transition:color .2s;display:block}
+.sidebar-post-title:hover{color:var(--accent)}
+.sidebar-post-meta{font-size:.72rem;color:var(--text-dimmer);margin-top:3px}
+
+.section-eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem;display:block}
+
+/* Footer */
+.site-footer{background:#050810;border-top:1px solid var(--border);padding:4rem 0 2rem}
+.footer-heading{font-family:'Syne',sans-serif;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text-dimmer);margin-bottom:1rem}
+.footer-link{color:var(--text-dim);text-decoration:none;font-size:.875rem;transition:color .2s;display:inline-block;margin-bottom:.55rem}
+.footer-link:hover{color:var(--accent)}
+.social-icon{width:38px;height:38px;border-radius:9px;border:1px solid var(--border);display:inline-flex;align-items:center;justify-content:center;color:var(--text-dim);font-size:.95rem;text-decoration:none;transition:border-color .25s,color .25s,background .25s}
+.social-icon:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-dim)}
+#backToTop{position:fixed;bottom:28px;right:28px;width:44px;height:44px;border-radius:11px;background:var(--grad);color:#fff;border:none;display:none;align-items:center;justify-content:center;font-size:1rem;cursor:pointer;z-index:9999;box-shadow:0 4px 20px rgba(0,212,170,0.4);transition:transform .2s}
+#backToTop:hover{transform:translateY(-3px)}
+#backToTop.visible{display:flex}
+
+/* hidden cards for filter */
+.blog-item{transition:opacity .3s,transform .3s}
+.blog-item.hidden{display:none}
 </style>
-
 </head>
-
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top" aria-label="Main navigation">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
   <div class="container">
-    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-      <img src="assets/img/logo.svg" alt="LumenaAutomation Logo" style="height: 55px; width: auto; margin-right: 10px;">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <span class="brand-chip"><i class="fa-solid fa-microchip" style="font-size:.9rem;color:#fff;"></i></span>
       LumenaAutomation
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         <li class="nav-item"><a class="nav-link active" href="blogs.html">Blogs</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn-primary-gradient py-2 px-4" href="contact.html" style="font-size:.85rem;">Contact Us</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Spacer for fixed navbar -->
-<div style="height: 80px;"></div>
-
-<!-- Hero Section -->
-<section class="position-relative overflow-hidden" style="background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%); min-height: 260px;">
-  <div class="container text-center text-white py-5 position-relative z-2" data-aos="fade-up">
-    <h1 class="display-5 fw-bold mb-2">Latest Blogs & Updates</h1>
-    <p class="lead mb-0">Stay informed with LumenaAutomation’s insights into technology, finance, and automation trends.</p>
+<!-- HERO -->
+<section class="hero-page text-center">
+  <div class="container" data-aos="fade-up">
+    <div class="page-eyebrow mx-auto" style="width:fit-content;">
+      <i class="fa-solid fa-circle" style="font-size:.5rem;"></i> Knowledge Hub
+    </div>
+    <h1 style="font-size:clamp(2.4rem,6vw,4rem);font-weight:800;line-height:1.1;margin-bottom:1.2rem;">
+      Insights on AI, Finance<br>&amp; <span class="gradient-text">Intelligent Automation</span>
+    </h1>
+    <p style="color:var(--text-dim);font-size:1.05rem;max-width:580px;margin:0 auto;line-height:1.8;">
+      Expert articles, product guides, and practical knowledge — from smart budgeting to enterprise automation and beyond.
+    </p>
   </div>
-    <!-- Animated Thin Net Colored Waves -->
-  <svg class="position-absolute bottom-0 start-0 w-100" height="90" viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg" style="z-index:1;">
-    <path d="M0,60 Q360,20 720,60 T1440,60" stroke="#00bfa5" stroke-width="2" fill="none">
-      <animate attributeName="d" dur="8s" repeatCount="indefinite"
-        values="M0,60 Q360,20 720,60 T1440,60;
-                M0,60 Q360,80 720,40 T1440,60;
-                M0,60 Q360,20 720,60 T1440,60" />
-    </path>
-    <path d="M0,80 Q360,60 720,80 T1440,80" stroke="#007bff" stroke-width="1.5" fill="none" opacity="0.7">
-      <animate attributeName="d" dur="10s" repeatCount="indefinite"
-        values="M0,80 Q360,60 720,80 T1440,80;
-                M0,80 Q360,100 720,60 T1440,80;
-                M0,80 Q360,60 720,80 T1440,80" />
-    </path>
-    <path d="M0,90 Q360,80 720,90 T1440,90" stroke="#fff" stroke-width="1" fill="none" opacity="0.5">
-      <animate attributeName="d" dur="12s" repeatCount="indefinite"
-        values="M0,90 Q360,80 720,90 T1440,90;
-                M0,90 Q360,70 720,100 T1440,90;
-                M0,90 Q360,80 720,90 T1440,90" />
-    </path>
-  </svg>
 </section>
 
-<!-- Blogs Section -->
-<section class="py-5 bg-white">
+<!-- FEATURED POST -->
+<section class="pb-4">
   <div class="container">
-    <div class="row g-4" data-aos="fade-up">
-
-      <!-- Blog 1 -->
-      <article class="col-md-6 col-lg-4">
-        <a href="blogs/how-to-use-budgetmanager.html" class="text-decoration-none text-dark">
-        <div class="card blog-card h-100 shadow-sm border-0">
-          <div class="card-img-wrapper">
-            <img src="assets/img/blog1.jpg" class="card-img-top blog-img" alt="BudgetManager App Blog" loading="lazy">
-          </div>
-          <div class="card-body d-flex flex-column">
-            <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> October 2025</span>
-            <h5 class="card-title fw-bold">How BudgetManager Helps You Stay Financially Confident</h5>
-            <p class="card-text text-muted mb-4">Discover how LumenaAutomation’s BudgetManager app helps users control spending, plan budgets, and achieve financial clarity.</p>
-            <div class="mt-auto pt-2 border-top">
-              <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
-            </div>
+    <span class="section-eyebrow" data-aos="fade-right">Featured Article</span>
+    <div class="featured-blog" data-aos="fade-up">
+      <div class="row g-0">
+        <div class="col-lg-6">
+          <div class="featured-blog-img">
+            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop" alt="How to Use BudgetManager" loading="lazy">
           </div>
         </div>
-        </a>
-      </article>
-
-      <!-- Blog 2 -->
-      <article class="col-md-6 col-lg-4">
-        <a href="blogs/smart-home-automation.html" class="text-decoration-none text-dark">
-        <div class="card blog-card h-100 shadow-sm border-0">
-          <div class="card-img-wrapper">
-            <img src="assets/img/blog2.jpg" class="card-img-top blog-img" alt="Smart Home Automation Blog" loading="lazy">
-          </div>
-          <div class="card-body d-flex flex-column">
-            <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> September 2025</span>
-            <h5 class="card-title fw-bold">Smart Home Automation: Making Life Effortless</h5>
-            <p class="card-text text-muted mb-4">From voice control to smart lighting — explore how our automation tools simplify daily living while saving time and energy.</p>
-            <div class="mt-auto pt-2 border-top">
-              <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
+        <div class="col-lg-6 d-flex align-items-center">
+          <div class="featured-blog-body">
+            <span class="blog-cat-badge cat-product"><i class="fa-solid fa-star"></i> Product Guide</span>
+            <h2 style="font-size:1.55rem;font-weight:800;line-height:1.25;margin-bottom:.9rem;">How to Use BudgetManager — Master Your Money in 7 Simple Steps</h2>
+            <p style="color:var(--text-dim);font-size:.92rem;line-height:1.7;margin-bottom:1.4rem;">A comprehensive step-by-step walkthrough of BudgetManager: from creating your account and setting monthly budgets to analyzing charts, tracking yearly trends, and managing finances on the go.</p>
+            <div style="font-size:.75rem;color:var(--text-dimmer);display:flex;gap:1rem;margin-bottom:1.4rem;flex-wrap:wrap;">
+              <span><i class="fa-regular fa-calendar me-1"></i>October 2025</span>
+              <span><i class="fa-regular fa-clock me-1"></i>6 min read</span>
+              <span><i class="fa-solid fa-pen me-1"></i>LumenaAutomation</span>
             </div>
+            <a href="blogs/how-to-use-budgetmanager.html" class="btn-primary-gradient" style="font-size:.875rem;">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
-        </a>
-      </article>
-
-      <!-- Blog 3 -->
-      <article class="col-md-6 col-lg-4">
-        <a href="blogs/top-5-ai-tools.html" class="text-decoration-none text-dark">
-          <div class="card blog-card h-100 shadow-sm border-0">
-            <div class="card-img-wrapper">
-              <img src="assets/img/blog3.jpg" class="card-img-top blog-img" alt="AI Tools Blog" loading="lazy">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> August 2025</span>
-              <h5 class="card-title fw-bold">Top 5 AI Tools That Improve Everyday Productivity</h5>
-              <p class="card-text text-muted mb-4">Explore the power of AI-driven tools that make managing tasks, writing, and data handling faster and smarter.</p>
-              <div class="mt-auto pt-2 border-top">
-                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <!-- Blog 4 -->
-      <article class="col-md-6 col-lg-4">
-        <a href="blogs/daily-expense.html" class="text-decoration-none text-dark">
-          <div class="card blog-card h-100 shadow-sm border-0">
-            <div class="card-img-wrapper">
-              <img src="assets/img/blog4.jpg" class="card-img-top blog-img" alt="Daily Expense Tracking" loading="lazy">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
-              <h5 class="card-title fw-bold">How to Track Daily Expenses Easily</h5>
-              <p class="card-text text-muted mb-4">Learn simple ways to monitor your spending and stay on budget using modern apps like BudgetManager.</p>
-              <div class="mt-auto pt-2 border-top">
-                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <!-- Blog 5 -->
-      <article class="col-md-6 col-lg-4">
-        <a href="blogs/best-budget-app-2025.html" class="text-decoration-none text-dark">
-          <div class="card blog-card h-100 shadow-sm border-0">
-            <div class="card-img-wrapper">
-              <img src="assets/img/blog5.jpg" class="card-img-top blog-img" alt="Best Budget App India" loading="lazy">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
-              <h5 class="card-title fw-bold">Best Budget Planner App in 2025</h5>
-              <p class="card-text text-muted mb-4">Compare the top budgeting apps in India and discover why BudgetManager is the easiest way to manage money.</p>
-              <div class="mt-auto pt-2 border-top">
-                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <!-- Blog 6 -->
-      <article class="col-md-6 col-lg-4">
-        <a href="blogs/zero-based-budget-guide.html" class="text-decoration-none text-dark">
-          <div class="card blog-card h-100 shadow-sm border-0">
-            <div class="card-img-wrapper">
-              <img src="assets/img/blog6.jpg" class="card-img-top blog-img" alt="Zero-Based Budgeting" loading="lazy">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
-              <h5 class="card-title fw-bold">Zero-Based Budgeting — Step-by-Step Guide</h5>
-              <p class="card-text text-muted mb-4">Master zero-based budgeting — allocate every rupee with purpose and achieve complete financial control.</p>
-              <div class="mt-auto pt-2 border-top">
-                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <!-- Blog 7 -->
-      <article class="col-md-6 col-lg-4">
-        <a href="blogs/automation-saves-business-time.html" class="text-decoration-none text-dark">
-          <div class="card blog-card h-100 shadow-sm border-0">
-            <div class="card-img-wrapper">
-              <img src="assets/img/blog7.jpg" class="card-img-top blog-img" alt="Automation Business Blog" loading="lazy">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
-              <h5 class="card-title fw-bold">How Automation Helps Businesses Save Time & Money</h5>
-              <p class="card-text text-muted mb-4">Discover how Lumena Automation empowers businesses through smart solutions that cut costs and boost efficiency.</p>
-              <div class="mt-auto pt-2 border-top">
-                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <!-- Blog 8 -->
-      <article class="col-md-6 col-lg-4">
-        <a href="blogs/personal-finance-mistakes.html" class="text-decoration-none text-dark">
-          <div class="card blog-card h-100 shadow-sm border-0">
-            <div class="card-img-wrapper">
-              <img src="assets/img/blog8.jpg" class="card-img-top blog-img" alt="Personal Finance Tips" loading="lazy">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
-              <h5 class="card-title fw-bold">Top 7 Personal Finance Mistakes to Avoid in 2025</h5>
-              <p class="card-text text-muted mb-4">Avoid these common money traps and make 2025 your best financial year yet — powered by BudgetManager insights.</p>
-              <div class="mt-auto pt-2 border-top">
-                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <!-- Blog 9 -->
-      <article class="col-md-6 col-lg-4">
-        <a href="blogs/custom-it-solutions-2025.html" class="text-decoration-none text-dark">
-          <div class="card blog-card h-100 shadow-sm border-0">
-            <div class="card-img-wrapper">
-              <img src="assets/img/blog9.jpg" class="card-img-top blog-img" alt="IT Services India" loading="lazy">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
-              <h5 class="card-title fw-bold">Why Every Business Needs a Custom IT Solution in 2025</h5>
-              <p class="card-text text-muted mb-4">From automation to digital transformation — see how Lumena Automation helps businesses evolve smarter.</p>
-              <div class="mt-auto pt-2 border-top">
-                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <!-- Blog 10 -->
-      <article class="col-md-6 col-lg-4">
-        <a href="blogs/financial-goals-before-30.html" class="text-decoration-none text-dark">
-          <div class="card blog-card h-100 shadow-sm border-0">
-            <div class="card-img-wrapper">
-              <img src="assets/img/blog10.jpg" class="card-img-top blog-img" alt="Financial Goals India" loading="lazy">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
-              <h5 class="card-title fw-bold">Top Financial Goals Everyone Should Set Before 30</h5>
-              <p class="card-text text-muted mb-4">Set smart goals and track progress with BudgetManager — your trusted partner in financial planning.</p>
-              <div class="mt-auto pt-2 border-top">
-                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <!-- Blog 11 -->
-      <article class="col-md-6 col-lg-4">
-        <a href="blogs/financial-literacy-for-students.html" class="text-decoration-none text-dark">
-          <div class="card blog-card h-100 shadow-sm border-0">
-            <div class="card-img-wrapper">
-              <img src="assets/img/blog11.jpg" class="card-img-top blog-img" alt="Financial Literacy Students" loading="lazy">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> November 2025</span>
-              <h5 class="card-title fw-bold">Importance of Financial Literacy for College Students</h5>
-              <p class="card-text text-muted mb-4">Build money confidence early — learn the basics of budgeting and saving as a student in India.</p>
-              <div class="mt-auto pt-2 border-top">
-                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </article>
-
-      <!-- Blog 12 -->
-      <article class="col-md-6 col-lg-4">
-        <a href="blogs/budgetmanager-saas-advanced-reports.html" class="text-decoration-none text-dark">
-          <div class="card blog-card h-100 shadow-sm border-0">
-            <div class="card-img-wrapper">
-              <img src="assets/img/blog12.png" class="card-img-top blog-img" alt="BudgetManager SaaS Reports" loading="lazy">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <span class="blog-date-badge"><i class="fa-regular fa-calendar me-1"></i> December 2025</span>
-              <h5 class="card-title fw-bold">BudgetManager as a SaaS: Smarter Reports & Historic Insights</h5>
-              <p class="card-text text-muted mb-4">Analyze historic spending, gain deep financial insights, and export powerful reports — all in one cloud platform.</p>
-              <div class="mt-auto pt-2 border-top">
-                <span class="text-primary fw-semibold read-more-text">Read Article <i class="fa-solid fa-arrow-right-long ms-2"></i></span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </article>
-
-    </div>
-    
-    <!-- Connect With Us (Kept consistent with Products page[cite: 1]) -->
-    <div class="text-center mt-5" data-aos="fade-up">
-      <h3 class="fw-bold mb-3">Connect With Us</h3>
-      <p class="mb-1"><i class="fa-brands fa-linkedin text-primary me-2"></i> <a href="https://in.linkedin.com/in/lumena-automation-712054363" target="_blank" rel="noopener">LinkedIn</a></p>
-      <p class="mb-1"><i class="fa-brands fa-instagram text-primary me-2"></i> <a href="https://www.instagram.com/lumenaautomation" target="_blank" rel="noopener">Instagram</a></p>
-      <p class="mb-1"><i class="fa-brands fa-x-twitter text-primary me-2"></i> <a href="https://x.com/lumenaauto" target="_blank" rel="noopener">X (Twitter)</a></p>
-      <p class="mb-1"><i class="fa-brands fa-youtube text-primary me-2"></i> <a href="https://www.youtube.com/@lumenaautomation" target="_blank" rel="noopener">YouTube</a></p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="text-white pt-5 pb-3" style="background: linear-gradient(135deg, #007bff 0%, #00bfa5 100%);">
+<!-- FILTER + ARTICLES -->
+<section class="py-5">
   <div class="container">
-    <div class="row text-start">
+    <div class="row g-5">
+      <!-- Articles grid -->
+      <div class="col-lg-8">
+        <!-- Filter tabs -->
+        <div class="filter-tabs" data-aos="fade-up">
+          <span class="filter-tab active" data-filter="all">All Articles</span>
+          <span class="filter-tab" data-filter="finance">💰 Finance</span>
+          <span class="filter-tab" data-filter="product">📦 Products</span>
+          <span class="filter-tab" data-filter="ai">🤖 AI &amp; Tech</span>
+          <span class="filter-tab" data-filter="automation">⚙️ Automation</span>
+          <span class="filter-tab" data-filter="home">🏠 Smart Home</span>
+        </div>
 
-      <!-- Company Info -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold">LumenaAutomation</h5>
-        <p class="small opacity-75">
-          Building intelligent software solutions including AI tools, home automation, and personal finance platforms like Budget Manager.
-        </p>
+        <div class="row g-4" id="blogGrid">
+
+          <!-- 1. BudgetManager Guide -->
+          <div class="col-md-6 blog-item" data-cat="product" data-aos="fade-up" data-aos-delay="50">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800&auto=format&fit=crop" alt="How to Use BudgetManager" loading="lazy">
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-cat-badge cat-product"><i class="fa-solid fa-wallet"></i> Product Guide</span>
+                <h3 class="blog-card-title">How to Use BudgetManager — Complete Step-by-Step Guide</h3>
+                <p class="blog-card-excerpt">Set budgets, log expenses, analyze charts, and master personal finance with our flagship BudgetManager app in 7 clear steps.</p>
+                <div class="blog-card-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Oct 2025</span>
+                  <span><i class="fa-regular fa-clock"></i> 6 min</span>
+                </div>
+                <a href="blogs/how-to-use-budgetmanager.html" class="blog-read-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Zero-Based Budgeting -->
+          <div class="col-md-6 blog-item" data-cat="finance" data-aos="fade-up" data-aos-delay="100">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=800&auto=format&fit=crop" alt="Zero-Based Budgeting" loading="lazy">
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-cat-badge cat-finance"><i class="fa-solid fa-indian-rupee-sign"></i> Personal Finance</span>
+                <h3 class="blog-card-title">The Complete Guide to Zero-Based Budgeting</h3>
+                <p class="blog-card-excerpt">Learn how to assign every rupee a purpose, balance income with intent, and reach financial freedom faster using BudgetManager.</p>
+                <div class="blog-card-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Nov 2025</span>
+                  <span><i class="fa-regular fa-clock"></i> 5 min</span>
+                </div>
+                <a href="blogs/zero-based-budget-guide.html" class="blog-read-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Daily Expense Tracking -->
+          <div class="col-md-6 blog-item" data-cat="product" data-aos="fade-up" data-aos-delay="150">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=800&auto=format&fit=crop" alt="Daily Expense Tracking" loading="lazy">
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-cat-badge cat-product"><i class="fa-solid fa-chart-pie"></i> Product</span>
+                <h3 class="blog-card-title">Track Your Daily Expenses Smartly with BudgetManager</h3>
+                <p class="blog-card-excerpt">Discover how AI-powered expense categorization and real-time dashboards help you see exactly where your money goes every month.</p>
+                <div class="blog-card-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Nov 2025</span>
+                  <span><i class="fa-regular fa-clock"></i> 4 min</span>
+                </div>
+                <a href="blogs/daily-expense.html" class="blog-read-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Best Budget App 2025 -->
+          <div class="col-md-6 blog-item" data-cat="product" data-aos="fade-up" data-aos-delay="200">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=800&auto=format&fit=crop" alt="Best Budget App 2025" loading="lazy">
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-cat-badge cat-product"><i class="fa-solid fa-trophy"></i> Product Review</span>
+                <h3 class="blog-card-title">Best Budget App 2025 — For Students, Professionals &amp; SMBs</h3>
+                <p class="blog-card-excerpt">Why BudgetManager leads as the go-to financial companion in 2025: visual dashboards, smart alerts, zero-based plans, and PDF reports.</p>
+                <div class="blog-card-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Nov 2025</span>
+                  <span><i class="fa-regular fa-clock"></i> 4 min</span>
+                </div>
+                <a href="blogs/best-budget-app-2025.html" class="blog-read-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. BudgetManager SaaS Reports -->
+          <div class="col-md-6 blog-item" data-cat="product" data-aos="fade-up" data-aos-delay="250">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="BudgetManager SaaS Reports" loading="lazy">
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-cat-badge cat-product"><i class="fa-solid fa-database"></i> SaaS Platform</span>
+                <h3 class="blog-card-title">BudgetManager SaaS — Advanced Reports &amp; Historic Insights</h3>
+                <p class="blog-card-excerpt">From daily expenses to multi-year financial trends — how BudgetManager's cloud platform delivers professional-grade analytics and exportable reports.</p>
+                <div class="blog-card-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Dec 2025</span>
+                  <span><i class="fa-regular fa-clock"></i> 4 min</span>
+                </div>
+                <a href="blogs/budgetmanager-saas-advanced-reports.html" class="blog-read-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Automation for Business -->
+          <div class="col-md-6 blog-item" data-cat="automation" data-aos="fade-up" data-aos-delay="300">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" alt="Business Automation" loading="lazy">
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-cat-badge cat-automation"><i class="fa-solid fa-gears"></i> Automation</span>
+                <h3 class="blog-card-title">How Automation Can Transform Your Business Finances</h3>
+                <p class="blog-card-excerpt">How SMBs using automated financial tools report 40% better accuracy, 60% faster decisions, and a clear competitive edge over manual tracking.</p>
+                <div class="blog-card-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Oct 2025</span>
+                  <span><i class="fa-regular fa-clock"></i> 5 min</span>
+                </div>
+                <a href="blogs/automation-saves-business-time.html" class="blog-read-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Personal Finance Mistakes -->
+          <div class="col-md-6 blog-item" data-cat="finance" data-aos="fade-up" data-aos-delay="350">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?q=80&w=800&auto=format&fit=crop" alt="Finance Mistakes" loading="lazy">
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-cat-badge cat-finance"><i class="fa-solid fa-triangle-exclamation"></i> Finance Tips</span>
+                <h3 class="blog-card-title">7 Common Personal Finance Mistakes and How to Avoid Them</h3>
+                <p class="blog-card-excerpt">From ignoring budgets to manual tracking errors — the most costly money habits and exactly how BudgetManager fixes each one automatically.</p>
+                <div class="blog-card-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Nov 2025</span>
+                  <span><i class="fa-regular fa-clock"></i> 5 min</span>
+                </div>
+                <a href="blogs/personal-finance-mistakes.html" class="blog-read-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Financial Goals Before 30 -->
+          <div class="col-md-6 blog-item" data-cat="finance" data-aos="fade-up" data-aos-delay="400">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" alt="Financial Goals Before 30" loading="lazy">
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-cat-badge cat-finance"><i class="fa-solid fa-bullseye"></i> Financial Goals</span>
+                <h3 class="blog-card-title">Financial Goals to Achieve Before 30</h3>
+                <p class="blog-card-excerpt">Emergency fund, debt clearance, early investing, and monthly budgets — the 5 financial milestones that set you up for lifetime freedom.</p>
+                <div class="blog-card-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Nov 2025</span>
+                  <span><i class="fa-regular fa-clock"></i> 5 min</span>
+                </div>
+                <a href="blogs/financial-goals-before-30.html" class="blog-read-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Financial Literacy for Students -->
+          <div class="col-md-6 blog-item" data-cat="finance" data-aos="fade-up" data-aos-delay="450">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop" alt="Financial Literacy Students" loading="lazy">
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-cat-badge cat-finance"><i class="fa-solid fa-graduation-cap"></i> Education</span>
+                <h3 class="blog-card-title">Financial Literacy for Students — Build Smart Money Habits Early</h3>
+                <p class="blog-card-excerpt">Why money management is a life skill, and how BudgetManager makes financial literacy hands-on, intuitive, and genuinely empowering for students.</p>
+                <div class="blog-card-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Nov 2025</span>
+                  <span><i class="fa-regular fa-clock"></i> 4 min</span>
+                </div>
+                <a href="blogs/financial-literacy-for-students.html" class="blog-read-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Top 5 AI Tools -->
+          <div class="col-md-6 blog-item" data-cat="ai" data-aos="fade-up" data-aos-delay="500">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=800&auto=format&fit=crop" alt="Top AI Tools" loading="lazy">
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-cat-badge cat-ai"><i class="fa-solid fa-robot"></i> AI Tools</span>
+                <h3 class="blog-card-title">Top 5 AI Tools That Improve Everyday Productivity</h3>
+                <p class="blog-card-excerpt">ChatGPT, Notion AI, Grammarly, Otter.ai, Zapier — how these five AI-powered tools automate repetitive tasks and help you work smarter in 2025.</p>
+                <div class="blog-card-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Aug 2025</span>
+                  <span><i class="fa-regular fa-clock"></i> 4 min</span>
+                </div>
+                <a href="blogs/top-5-ai-tools.html" class="blog-read-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. Custom IT Solutions -->
+          <div class="col-md-6 blog-item" data-cat="automation" data-aos="fade-up" data-aos-delay="550">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop" alt="Custom IT Solutions" loading="lazy">
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-cat-badge cat-automation"><i class="fa-solid fa-server"></i> Enterprise IT</span>
+                <h3 class="blog-card-title">Custom IT Solutions in 2025: Transforming Businesses with Automation</h3>
+                <p class="blog-card-excerpt">How LumenaAutomation builds AI-driven, security-first, scalable IT systems that reduce operational time by 30% and free teams to focus on growth.</p>
+                <div class="blog-card-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Nov 2025</span>
+                  <span><i class="fa-regular fa-clock"></i> 5 min</span>
+                </div>
+                <a href="blogs/custom-it-solutions-2025.html" class="blog-read-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12. Smart Home Automation -->
+          <div class="col-md-6 blog-item" data-cat="home" data-aos="fade-up" data-aos-delay="600">
+            <div class="blog-card">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop" alt="Smart Home Automation" loading="lazy">
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-cat-badge cat-home"><i class="fa-solid fa-house-signal"></i> Smart Home</span>
+                <h3 class="blog-card-title">Smart Home Automation: Making Life Effortless</h3>
+                <p class="blog-card-excerpt">IoT-powered lighting, climate, security, and energy systems — how LumenaAutomation transforms standard properties into intelligent, connected homes.</p>
+                <div class="blog-card-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Sep 2025</span>
+                  <span><i class="fa-regular fa-clock"></i> 4 min</span>
+                </div>
+                <a href="blogs/smart-home-automation.html" class="blog-read-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end #blogGrid -->
+
+        <!-- Empty state -->
+        <div id="emptyState" style="display:none;text-align:center;padding:4rem 0;">
+          <i class="fa-solid fa-newspaper" style="font-size:3rem;color:var(--text-dimmer);margin-bottom:1rem;display:block;"></i>
+          <p style="color:var(--text-dim);">No articles in this category yet. Check back soon!</p>
+        </div>
       </div>
 
-      <!-- Quick Links -->
-      <div class="col-md-4 mb-4">
-        <h6 class="fw-bold">Quick Links</h6>
-        <ul class="list-unstyled small">
-          <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-          <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
-          <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
-          <li><a href="products.html" class="text-white text-decoration-none">Products</a></li>
-          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
-        </ul>
-      </div>
+      <!-- SIDEBAR -->
+      <div class="col-lg-4" data-aos="fade-left">
 
-      <!-- Legal -->
-      <div class="col-md-4 mb-4">
-        <h6 class="fw-bold">Legal</h6>
-        <ul class="list-unstyled small">
-          <li><a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
-          <li><a href="terms-of-service.html" class="text-white text-decoration-none">Terms of Service</a></li>
-          <li><a href="refund-policy.html" class="text-white text-decoration-none">Refund Policy</a></li>
-          <li><a href="cookies.html" class="text-white text-decoration-none">Cookie Use</a></li>
-        </ul>
-      </div>
+        <!-- Popular posts -->
+        <div class="sidebar-card">
+          <p class="sidebar-heading">Popular Posts</p>
+          <div class="sidebar-post">
+            <div class="sidebar-post-num">1</div>
+            <div>
+              <a href="blogs/how-to-use-budgetmanager.html" class="sidebar-post-title">How to Use BudgetManager — Step-by-Step Guide</a>
+              <div class="sidebar-post-meta"><i class="fa-regular fa-calendar me-1"></i>Oct 2025 · 6 min read</div>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <div class="sidebar-post-num">2</div>
+            <div>
+              <a href="blogs/personal-finance-mistakes.html" class="sidebar-post-title">7 Common Personal Finance Mistakes to Avoid</a>
+              <div class="sidebar-post-meta"><i class="fa-regular fa-calendar me-1"></i>Nov 2025 · 5 min read</div>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <div class="sidebar-post-num">3</div>
+            <div>
+              <a href="blogs/automation-saves-business-time.html" class="sidebar-post-title">How Automation Transforms Business Finances</a>
+              <div class="sidebar-post-meta"><i class="fa-regular fa-calendar me-1"></i>Oct 2025 · 5 min read</div>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <div class="sidebar-post-num">4</div>
+            <div>
+              <a href="blogs/top-5-ai-tools.html" class="sidebar-post-title">Top 5 AI Tools for Everyday Productivity</a>
+              <div class="sidebar-post-meta"><i class="fa-regular fa-calendar me-1"></i>Aug 2025 · 4 min read</div>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <div class="sidebar-post-num">5</div>
+            <div>
+              <a href="blogs/zero-based-budget-guide.html" class="sidebar-post-title">The Complete Guide to Zero-Based Budgeting</a>
+              <div class="sidebar-post-meta"><i class="fa-regular fa-calendar me-1"></i>Nov 2025 · 5 min read</div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Categories -->
+        <div class="sidebar-card">
+          <p class="sidebar-heading">Browse by Category</p>
+          <div style="display:flex;flex-direction:column;gap:.5rem;">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:.55rem .8rem;border-radius:9px;border:1px solid var(--border);cursor:pointer;transition:all .2s;" onclick="filterPosts('finance')" class="cat-row">
+              <span style="font-size:.875rem;"><span style="margin-right:8px;">💰</span> Personal Finance</span>
+              <span style="font-size:.75rem;background:var(--accent-dim);color:var(--accent);border-radius:10px;padding:2px 8px;">5</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:.55rem .8rem;border-radius:9px;border:1px solid var(--border);cursor:pointer;transition:all .2s;" onclick="filterPosts('product')" class="cat-row">
+              <span style="font-size:.875rem;"><span style="margin-right:8px;">📦</span> Products</span>
+              <span style="font-size:.75rem;background:rgba(251,191,36,0.1);color:#fbbf24;border-radius:10px;padding:2px 8px;">4</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:.55rem .8rem;border-radius:9px;border:1px solid var(--border);cursor:pointer;transition:all .2s;" onclick="filterPosts('automation')" class="cat-row">
+              <span style="font-size:.875rem;"><span style="margin-right:8px;">⚙️</span> Automation</span>
+              <span style="font-size:.75rem;background:rgba(168,85,247,0.1);color:#c084fc;border-radius:10px;padding:2px 8px;">2</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:.55rem .8rem;border-radius:9px;border:1px solid var(--border);cursor:pointer;transition:all .2s;" onclick="filterPosts('ai')" class="cat-row">
+              <span style="font-size:.875rem;"><span style="margin-right:8px;">🤖</span> AI &amp; Tech</span>
+              <span style="font-size:.75rem;background:rgba(26,109,255,0.1);color:#6fa3ff;border-radius:10px;padding:2px 8px;">1</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:.55rem .8rem;border-radius:9px;border:1px solid var(--border);cursor:pointer;transition:all .2s;" onclick="filterPosts('home')" class="cat-row">
+              <span style="font-size:.875rem;"><span style="margin-right:8px;">🏠</span> Smart Home</span>
+              <span style="font-size:.75rem;background:rgba(249,115,22,0.1);color:#fb923c;border-radius:10px;padding:2px 8px;">1</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Products CTA -->
+        <div class="sidebar-card" style="border-color:var(--border-accent);background:linear-gradient(135deg,rgba(26,109,255,0.06),rgba(0,212,170,0.06));">
+          <div style="font-size:2rem;margin-bottom:.75rem;">💰</div>
+          <h5 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;">Try BudgetManager Free</h5>
+          <p style="font-size:.82rem;color:var(--text-dim);margin-bottom:1rem;">AI-powered personal finance management. Set budgets, track expenses, and hit your goals.</p>
+          <a href="https://bm.lumenaautomation.co.in" target="_blank" rel="noopener" class="btn-primary-gradient" style="font-size:.8rem;padding:9px 20px;width:100%;justify-content:center;">Launch App <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter-block">
+          <i class="fa-solid fa-bell" style="font-size:1.8rem;color:var(--accent);margin-bottom:.75rem;display:block;"></i>
+          <h5 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;">Stay in the Loop</h5>
+          <p style="font-size:.82rem;color:var(--text-dim);margin-bottom:1.2rem;">Get new articles and product updates delivered to your inbox.</p>
+          <div style="display:flex;flex-direction:column;gap:.75rem;">
+            <input type="email" class="newsletter-input" placeholder="your@email.com" id="newsletterEmail">
+            <a href="mailto:info@lumenaautomation.co.in?subject=Newsletter Subscription" class="btn-primary-gradient" style="font-size:.82rem;padding:10px 20px;width:100%;justify-content:center;" onclick="handleNewsletter(event)">
+              Subscribe <i class="fa-solid fa-paper-plane"></i>
+            </a>
+          </div>
+          <p style="font-size:.72rem;color:var(--text-dimmer);margin-top:.75rem;margin-bottom:0;">No spam. Unsubscribe anytime.</p>
+        </div>
+
+      </div>
     </div>
+  </div>
+</section>
 
-    <hr class="border-light opacity-25">
-
-    <!-- Bottom -->
-    <div class="text-center small">
-      © 2026 LumenaAutomation. All Rights Reserved.
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="brand-chip" style="width:30px;height:30px;font-size:.8rem;"><i class="fa-solid fa-microchip" style="color:#fff;"></i></span>
+          <span style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;">LumenaAutomation</span>
+        </div>
+        <p style="font-size:.85rem;color:var(--text-dim);line-height:1.7;max-width:280px;">Engineering intelligent systems, cloud infrastructure, and SaaS platforms for the modern digital economy.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="https://in.linkedin.com/in/lumena-automation-712054363" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/lumenaautomation" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/lumenaauto" target="_blank" rel="noopener" class="social-icon" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/@lumenaautomation" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <p class="footer-heading">Navigate</p>
+        <div class="d-flex flex-column">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="products.html" class="footer-link">Products</a>
+          <a href="blogs.html" class="footer-link">Blogs</a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <p class="footer-heading">Top Articles</p>
+        <div class="d-flex flex-column">
+          <a href="blogs/how-to-use-budgetmanager.html" class="footer-link">BudgetManager Guide</a>
+          <a href="blogs/zero-based-budget-guide.html" class="footer-link">Zero-Based Budgeting</a>
+          <a href="blogs/top-5-ai-tools.html" class="footer-link">Top 5 AI Tools</a>
+          <a href="blogs/smart-home-automation.html" class="footer-link">Smart Home</a>
+          <a href="blogs/custom-it-solutions-2025.html" class="footer-link">Custom IT 2025</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <p class="footer-heading">Contact &amp; Legal</p>
+        <div class="d-flex flex-column mb-3">
+          <a href="mailto:info@lumenaautomation.co.in" class="footer-link"><i class="fa-solid fa-envelope me-2" style="color:var(--accent);font-size:.8rem;"></i>info@lumenaautomation.co.in</a>
+          <a href="mailto:support@lumenaautomation.co.in" class="footer-link"><i class="fa-solid fa-headset me-2" style="color:var(--accent);font-size:.8rem;"></i>support@lumenaautomation.co.in</a>
+        </div>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="privacy-policy.html" class="footer-link" style="font-size:.78rem;">Privacy Policy</a>
+          <a href="terms-of-service.html" class="footer-link" style="font-size:.78rem;">Terms of Service</a>
+          <a href="refund-policy.html" class="footer-link" style="font-size:.78rem;">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+    <hr style="border-color:var(--border);margin:2rem 0 1.5rem;">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p style="font-size:.8rem;color:var(--text-dimmer);margin:0;">© 2026 LumenaAutomation. All Rights Reserved.</p>
+      <p style="font-size:.8rem;color:var(--text-dimmer);margin:0;">Built with precision in India 🇮🇳</p>
     </div>
   </div>
 </footer>
 
-<!-- JS -->
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    AOS.init({ duration: 1000, once: true });
-  });
-</script>
+document.addEventListener('DOMContentLoaded',function(){
+  AOS.init({duration:750,once:true,offset:80,easing:'ease-out-cubic'});
+  const btn=document.getElementById('backToTop');
+  window.addEventListener('scroll',()=>btn.classList.toggle('visible',window.scrollY>400));
+  btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 
+  // Category row hover
+  document.querySelectorAll('.cat-row').forEach(r=>{
+    r.addEventListener('mouseenter',()=>{r.style.borderColor='var(--border-accent)';r.style.background='var(--accent-dim)'});
+    r.addEventListener('mouseleave',()=>{r.style.borderColor='var(--border)';r.style.background=''});
+  });
+});
+
+function filterPosts(cat){
+  // update tabs
+  document.querySelectorAll('.filter-tab').forEach(t=>{
+    t.classList.toggle('active', t.dataset.filter===cat);
+  });
+  // filter cards
+  const items=document.querySelectorAll('.blog-item');
+  let visible=0;
+  items.forEach(item=>{
+    const show=(cat==='all'||item.dataset.cat===cat);
+    item.classList.toggle('hidden',!show);
+    if(show)visible++;
+  });
+  document.getElementById('emptyState').style.display=visible===0?'block':'none';
+}
+
+// Wire filter tabs
+document.querySelectorAll('.filter-tab').forEach(tab=>{
+  tab.addEventListener('click',function(){
+    document.querySelectorAll('.filter-tab').forEach(t=>t.classList.remove('active'));
+    this.classList.add('active');
+    filterPosts(this.dataset.filter);
+  });
+});
+
+function handleNewsletter(e){
+  const email=document.getElementById('newsletterEmail').value;
+  if(!email||!email.includes('@')){
+    e.preventDefault();
+    document.getElementById('newsletterEmail').style.borderColor='#f87171';
+    setTimeout(()=>document.getElementById('newsletterEmail').style.borderColor='',2000);
+  }
+}
+</script>
 </body>
 </html>
