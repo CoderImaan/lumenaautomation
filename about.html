@@ -11,15 +11,15 @@
 <link rel="canonical" href="https://lumenaautomation.co.in/about.html">
 <meta property="og:title" content="About LumenaAutomation — Engineering the Future">
 <meta property="og:description" content="Architecting intelligent ecosystems and human-centric software solutions built for the digital economy.">
-<meta property="og:image" content="https://lumenaautomation.co.in/assets/img/og-image.png">
+<meta property="og:image" content="/assets/img/lumena-automation-og-1200x630.png">
 <meta property="og:url" content="https://lumenaautomation.co.in/about.html">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@lumenaauto">
-<link rel="apple-touch-icon" sizes="180x180" href="https://lumenaautomation.co.in/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://lumenaautomation.co.in/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://lumenaautomation.co.in/favicon-16x16.png">
-<link rel="icon" href="https://lumenaautomation.co.in/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180x180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
 <link rel="manifest" href="https://lumenaautomation.co.in/site.webmanifest">
 <meta name="theme-color" content="#080c15">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -39,6 +39,9 @@ h1,h2,h3,h4,h5,h6,.navbar-brand{font-family:'Syne',sans-serif;letter-spacing:-0.
 
 .navbar{background:rgba(8,12,21,0.92)!important;backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:.85rem 0}
 .navbar-brand{font-weight:700;font-size:1.15rem;color:var(--text)!important}
+.brand-logo{display:block;width:178px;height:auto;max-height:46px;object-fit:contain;object-position:left center;filter:drop-shadow(0 0 14px rgba(0,212,170,.10));transition:filter .25s,transform .25s}
+.navbar-brand:hover .brand-logo{filter:drop-shadow(0 0 18px rgba(0,212,170,.24));transform:translateY(-1px)}
+
 .brand-chip{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:8px;background:var(--grad);margin-right:10px;font-size:.95rem}
 .nav-link{color:var(--text-dim)!important;font-weight:500;font-size:.875rem;padding:.45rem .9rem!important;border-radius:7px;transition:color .25s,background .25s}
 .nav-link:hover{color:var(--accent)!important;background:var(--accent-dim)}
@@ -93,6 +96,7 @@ h1,h2,h3,h4,h5,h6,.navbar-brand{font-family:'Syne',sans-serif;letter-spacing:-0.
 #backToTop{position:fixed;bottom:28px;right:28px;width:44px;height:44px;border-radius:11px;background:var(--grad);color:#fff;border:none;display:none;align-items:center;justify-content:center;font-size:1rem;cursor:pointer;z-index:9999;box-shadow:0 4px 20px rgba(0,212,170,0.4);transition:transform .2s}
 #backToTop:hover{transform:translateY(-3px)}
 #backToTop.visible{display:flex}
+@media(max-width:575.98px){.brand-logo{width:155px;max-height:40px}.hero-page{padding-top:145px}.cta-block{padding:3rem 1.25rem}}
 </style>
 </head>
 <body>
@@ -100,9 +104,10 @@ h1,h2,h3,h4,h5,h6,.navbar-brand{font-family:'Syne',sans-serif;letter-spacing:-0.
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <span class="brand-chip"><i class="fa-solid fa-microchip" style="font-size:.9rem;color:#fff;"></i></span>
-      LumenaAutomation
+    <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="LumenaAutomation Home">
+      <img src="/assets/img/lumena-automation-primary-transparent.svg"
+           alt="LumenaAutomation"
+           class="brand-logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -121,7 +126,10 @@ h1,h2,h3,h4,h5,h6,.navbar-brand{font-family:'Syne',sans-serif;letter-spacing:-0.
 </nav>
 
 <!-- HERO -->
-<section class="hero-page text-center">
+<section class="hero-page text-center" style="isolation:isolate;">
+  <div aria-hidden="true" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:-1;opacity:.055;">
+    <img src="/assets/img/lumena-automation-mark.svg" alt="" style="width:min(620px,70vw);height:auto;filter:drop-shadow(0 0 40px rgba(0,212,170,.45));">
+  </div>
   <div class="container" data-aos="fade-up">
     <div class="page-eyebrow mx-auto" style="width:fit-content;">
       <i class="fa-solid fa-circle" style="font-size:.5rem;"></i> Who We Are
@@ -133,6 +141,20 @@ h1,h2,h3,h4,h5,h6,.navbar-brand{font-family:'Syne',sans-serif;letter-spacing:-0.
     <div class="d-flex flex-wrap gap-3 justify-content-center">
       <a href="services.html" class="btn-primary-gradient">Explore Services <i class="fa-solid fa-arrow-right"></i></a>
       <a href="contact.html" class="btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND IDENTITY -->
+<section class="py-4" style="border-bottom:1px solid var(--border);background:rgba(255,255,255,.012);">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 gap-md-5 text-center">
+      <img src="/assets/img/lumena-automation-mark.svg" alt="LumenaAutomation brand mark"
+           style="width:52px;height:52px;object-fit:contain;filter:drop-shadow(0 0 12px rgba(0,212,170,.18));">
+      <div>
+        <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:.92rem;">Crafting Cognitive Systems for Smarter Living</div>
+        <div style="color:var(--text-dimmer);font-size:.78rem;margin-top:2px;">Intelligent software · automation · cloud · connected experiences</div>
+      </div>
     </div>
   </div>
 </section>
@@ -190,7 +212,7 @@ h1,h2,h3,h4,h5,h6,.navbar-brand{font-family:'Syne',sans-serif;letter-spacing:-0.
       </div>
       <div class="col-lg-6" data-aos="fade-left">
         <div style="border-radius:20px;overflow:hidden;border:1px solid var(--border);">
-          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop" alt="LumenaAutomation technology infrastructure" class="img-fluid" style="display:block;filter:brightness(.8) saturate(1.1);">
+          <img src="/assets/img/mission.jpg" alt="LumenaAutomation technology infrastructure" class="img-fluid" style="display:block;filter:brightness(.8) saturate(1.1);">
         </div>
       </div>
     </div>
@@ -262,9 +284,12 @@ h1,h2,h3,h4,h5,h6,.navbar-brand{font-family:'Syne',sans-serif;letter-spacing:-0.
   <div class="container">
     <div class="row g-4">
       <div class="col-lg-4 col-md-6">
-        <div class="d-flex align-items-center gap-2 mb-3">
-          <span class="brand-chip" style="width:30px;height:30px;font-size:.8rem;"><i class="fa-solid fa-microchip" style="color:#fff;"></i></span>
-          <span style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;">LumenaAutomation</span>
+        <div class="mb-3">
+          <a href="index.html" aria-label="LumenaAutomation Home" class="d-inline-block">
+            <img src="/assets/img/lumena-automation-primary-transparent.svg"
+                 alt="LumenaAutomation"
+                 style="width:190px;max-width:100%;height:auto;display:block;filter:drop-shadow(0 0 16px rgba(0,212,170,.10));">
+          </a>
         </div>
         <p style="font-size:.85rem;color:var(--text-dim);line-height:1.7;max-width:280px;">Engineering intelligent systems, cloud infrastructure, and SaaS platforms for the modern digital economy.</p>
         <div class="d-flex gap-2 mt-3">
