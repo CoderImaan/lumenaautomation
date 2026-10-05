@@ -1,8 +1,11 @@
-# LumenaAutomation Static Website
+# LumenaAutomation website
 
-## Deployment on Netlify
+Production website for [lumenaautomation.co.in](https://lumenaautomation.co.in/), built with Jekyll and deployed to GitHub Pages.
 
-1. Copy this folder to your computer.
-2. Compress the folder into `lumenaautomation.zip`.
-3. Go to https://app.netlify.com → Add New Site → Deploy Manually → Drag & Drop ZIP.
-4. Done! Your site will be live.
+## Build and validation
+
+The repository uses the GitHub Pages-compatible Jekyll configuration in `_config.yml`. After building to `_site`, run `python scripts/validate_site.py _site` to check generated page metadata, local links and assets, the custom domain, `robots.txt`, and `sitemap.xml`.
+
+## Deployment
+
+Pushes to `master` are built and deployed by `.github/workflows/deploy-pages.yml`. Pull requests and modernization branches run `.github/workflows/validate.yml`.
