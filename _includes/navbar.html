@@ -1,0 +1,16 @@
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" id="siteHeader">
+  <div class="site-container site-header-inner">
+    <a class="site-brand" href="/" aria-label="LumenaAutomation home"><img src="/assets/img/lumena-automation-primary-transparent.svg" width="190" height="48" alt="LumenaAutomation"></a>
+    <button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+    <nav class="site-navigation" id="primary-navigation" aria-label="Primary navigation">
+      <a href="/"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
+      <a href="/about.html"{% if page.url == '/about.html' %} aria-current="page"{% endif %}>About</a>
+      <a href="/services.html"{% if page.url == '/services.html' %} aria-current="page"{% endif %}>Services</a>
+      <a href="/products.html"{% if page.url == '/products.html' %} aria-current="page"{% endif %}>Products</a>
+      <a href="/blogs.html"{% if page.url == '/blogs.html' or page.url contains '/blogs/' %} aria-current="page"{% endif %}>Blogs</a>
+      <a href="/careers.html"{% if page.url == '/careers.html' %} aria-current="page"{% endif %}>Careers</a>
+      <a class="site-nav-cta" href="/contact.html"{% if page.url == '/contact.html' %} aria-current="page"{% endif %}>Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>

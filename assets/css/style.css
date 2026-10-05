@@ -1,31 +1,7 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-}
-
-h1, h2, h3, h4, h5 {
-  color: #0d6efd;
-}
-
-.navbar-brand {
-  font-weight: bold;
-  color: #0d6efd !important;
-}
-
-.nav-link.active {
-  font-weight: 600;
-  color: #0d6efd !important;
-}
-
-section {
-  padding: 60px 0;
-}
-
-footer {
-  background-color: #f8f9fa;
-}
-
-.btn-primary {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
-}
+/* Small compatibility layer for the legacy article and policy markup. */
+body { font-family: "DM Sans", system-ui, sans-serif; line-height: 1.7; }
+h1, h2, h3, h4, h5 { color: inherit; font-family: "Syne", sans-serif; }
+.nav-link.active { color: #00d4aa; }
+section { padding-block: clamp(2.5rem, 6vw, 4rem); }
+footer { color: #c2ced6; }
+.btn-primary { background-color: #2878ff; border-color: #2878ff; }

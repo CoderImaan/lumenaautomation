@@ -1,0 +1,15 @@
+title: LumenaAutomation
+url: https://lumenaautomation.co.in
+baseurl: ""
+lang: en
+markdown: kramdown
+permalink: pretty
+plugins: []
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts
+  - work
+  - '*.py'
