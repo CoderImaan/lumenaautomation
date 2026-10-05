@@ -14,7 +14,9 @@ class PageParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         a=dict(attrs)
         if a.get("id"): self.ids.add(a["id"])
-        if tag=="meta": self.metas.add((a.get("name","").lower(),a.get("property","").lower()))
+        if tag=="meta":
+            if a.get("name"): self.metas.add(("name",a["name"].lower()))
+            if a.get("property"): self.metas.add(("property",a["property"].lower()))
         if tag in ("a","link","script","img","source","iframe"):
             for key in ("href","src","srcset"):
                 if a.get(key):
