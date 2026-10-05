@@ -3,7 +3,6 @@ url: https://lumenaautomation.co.in
 baseurl: ""
 lang: en
 markdown: kramdown
-permalink: pretty
 plugins: []
 exclude:
   - README.md
