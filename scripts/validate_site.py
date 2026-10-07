@@ -70,8 +70,9 @@ for css in root.rglob("*.css"):
         target=(root/value.lstrip("/")) if value.startswith("/") else css.parent/value
         if not target.exists(): errors.append(f"{css.relative_to(root)}: missing CSS asset {value}")
 
-for required in ("about.html","services.html","endpoint-management.html","ai-automation.html","saas-engineering.html","products.html","budgetmanager.html","farmserve.html","kids-fun-test.html","blogs.html","contact.html","careers.html","privacy.html","terms.html","refund.html","cookies.html","404.html","robots.txt","sitemap.xml","CNAME"):
+for required in ("admin/index.html","about.html","services.html","endpoint-management.html","ai-automation.html","saas-engineering.html","products.html","budgetmanager.html","farmserve.html","kids-fun-test.html","blogs.html","contact.html","careers.html","privacy.html","terms.html","refund.html","cookies.html","404.html","robots.txt","sitemap.xml","CNAME"):
     if not (root/required).exists(): errors.append(f"missing generated {required}")
+if (root/"admin/index.html").exists() and 'content="noindex, nofollow"' not in (root/"admin/index.html").read_text(encoding="utf-8"): errors.append("admin publishing page must remain noindex, nofollow")
 if (root/"CNAME").exists() and (root/"CNAME").read_text(encoding="utf-8").strip()!="lumenaautomation.co.in": errors.append("CNAME does not match production domain")
 if (root/"robots.txt").exists() and domain+"/sitemap.xml" not in (root/"robots.txt").read_text(encoding="utf-8"): errors.append("robots.txt sitemap URL does not match canonical domain")
 try:
