@@ -46,9 +46,9 @@ try:
     if len(title) > 120:
         raise ValueError("Title must be 120 characters or fewer.")
     if not 40 <= len(description) <= 180:
-        raise ValueError("Summary must be between 40 and 180 characters.")
+        raise ValueError(f"Summary must be between 40 and 180 characters (received {len(description)}).")
     if len(body) < 100:
-        raise ValueError("Article body must contain at least 100 characters.")
+        raise ValueError(f"Article body must contain at least 100 characters (received {len(body)}).")
     if len(body) > 60000:
         raise ValueError("Article body must be under 60,000 characters.")
     if category not in CATEGORY_KEYS:
