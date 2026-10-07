@@ -1,0 +1,40 @@
+---
+layout: base
+title: "Blog Publishing Desk | LumenaAutomation"
+description: "Private publishing workflow for LumenaAutomation blog administrators."
+canonical_url: "https://lumenaautomation.co.in/admin/"
+robots: "noindex, nofollow"
+page_id: "blog-admin"
+styles:
+  - "/assets/css/pages/blog-admin.html.css"
+---
+<main class="admin-page">
+  <section class="admin-hero">
+    <div class="admin-shell">
+      <span class="admin-eyebrow">LumenaAutomation · Editorial</span>
+      <h1>Blog publishing desk</h1>
+      <p class="admin-lead">Create or update a public article through the repository’s protected publishing workflow. GitHub verifies administrator access before the workflow can write anything.</p>
+      <a class="admin-action" href="https://github.com/CoderImaan/lumenaautomation/actions/workflows/publish-blog.yml" target="_blank" rel="noopener noreferrer">Open the publishing workflow <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+  <section class="admin-shell admin-content">
+    <h2>How publishing works</h2>
+    <ol>
+      <li>Sign in to GitHub with an owner or repository administrator account.</li>
+      <li>Open <strong>Actions → Publish or update a blog article → Run workflow</strong> on the <code>master</code> branch.</li>
+      <li>Choose publish or update, add the article title, URL slug, summary, category and Markdown content.</li>
+      <li>Optionally provide an existing image path under <code>/assets/img/</code>. Images must already be in the repository.</li>
+      <li>The workflow validates the article and full Jekyll site, writes the article and sitemap entry, then starts the normal Pages deployment.</li>
+    </ol>
+    <div class="admin-note"><strong>Access:</strong> the public site is read-only. Only repository administrators can run this publisher; readers cannot create or edit site content. Published articles are public.</div>
+    <div class="admin-note"><strong>Existing URLs:</strong> legacy blog URLs are protected. New articles receive <code>/blogs/&lt;slug&gt;.html</code> URLs. Use the same slug and choose Update only for articles created by this publisher.</div>
+    <h2>Writing checklist</h2>
+    <ul>
+      <li>Use clear headings and short paragraphs; Markdown is supported.</li>
+      <li>Choose a descriptive summary between 40 and 180 characters.</li>
+      <li>Use only images already available in <code>/assets/img/</code>.</li>
+      <li>Do not include secrets, private customer data or unsupported performance claims.</li>
+    </ul>
+    <p><a href="/blogs.html">Read the public blog →</a></p>
+  </section>
+</main>
