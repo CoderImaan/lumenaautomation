@@ -65,11 +65,32 @@ scripts:
           <span class="filter-tab" data-filter="product" role="button" tabindex="0">Products</span>
           <span class="filter-tab" data-filter="ai" role="button" tabindex="0">AI &amp; Tech</span>
           <span class="filter-tab" data-filter="automation" role="button" tabindex="0">Automation</span>
+          <span class="filter-tab" data-filter="business" role="button" tabindex="0">Business</span>
+          <span class="filter-tab" data-filter="workplace" role="button" tabindex="0">Digital Workplace</span>
+          <span class="filter-tab" data-filter="cloud" role="button" tabindex="0">Cloud</span>
           <span class="filter-tab" data-filter="home" role="button" tabindex="0">Smart Home</span>
           <span class="filter-tab" data-filter="education" role="button" tabindex="0">Education</span>
         </div>
 
         <div class="row g-4" id="blogGrid">
+          {% assign published_blog_pages = site.pages | where: "blog_published", true | sort: "date" | reverse %}
+          {% for article in published_blog_pages %}
+          <div class="col-md-6 blog-item" data-cat="{{ article.category_key | escape }}">
+            <article class="blog-card">
+              <div class="blog-card-img blog-card-img-editorial">
+                {% if article.image %}<img src="{{ article.image | escape }}" alt="{{ article.title | escape }}" loading="lazy" width="800" height="500">
+                {% else %}<div class="blog-card-placeholder" aria-hidden="true"><span>{{ article.categories | first | escape }}</span></div>{% endif %}
+              </div>
+              <div class="blog-card-body">
+                <span class="blog-cat-badge cat-{{ article.category_key | escape }}">{{ article.categories | first | escape }}</span>
+                <h3 class="blog-card-title">{{ article.title | escape }}</h3>
+                <p class="blog-card-excerpt">{{ article.description | escape }}</p>
+                <div class="blog-card-meta"><span>{{ article.date | date: "%b %Y" }}</span><span>{{ article.reading_minutes }} min read</span></div>
+                <a href="{{ article.url | relative_url }}" class="blog-read-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+          {% endfor %}
           <!-- Existing articles preserved -->
           <div class="col-md-6 blog-item" data-cat="product" data-aos="fade-up">
             <div class="blog-card"><div class="blog-card-img"><img src="/assets/img/finance.jpg" alt="How to Use BudgetManager" loading="lazy"></div><div class="blog-card-body">

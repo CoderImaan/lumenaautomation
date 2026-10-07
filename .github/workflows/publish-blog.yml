@@ -1,0 +1,123 @@
+name: Publish or update a blog article
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Publish a new article or update an article created by this workflow
+        type: choice
+        options:
+          - publish
+          - update
+        required: true
+        default: publish
+      title:
+        description: Public article title
+        type: string
+        required: true
+      slug:
+        description: URL slug using lowercase letters, numbers and hyphens
+        type: string
+        required: true
+      description:
+        description: Search and listing summary (40–180 characters)
+        type: string
+        required: true
+      category:
+        description: Article category
+        type: choice
+        options:
+          - Finance
+          - Technology & AI
+          - Automation
+          - Education
+          - Business
+          - Digital Workplace
+          - Cloud
+          - Product
+          - Smart Home
+        required: true
+      publish_date:
+        description: Optional date in YYYY-MM-DD format; defaults to today (UTC)
+        type: string
+        required: false
+      cover_image:
+        description: Optional existing image path, for example /assets/img/automation.jpg
+        type: string
+        required: false
+      body:
+        description: Full article body in Markdown
+        type: string
+        required: true
+concurrency:
+  group: blog-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - name: Verify authorized publisher
+        uses: actions/github-script@v7
+        env:
+          BLOG_PUBLISHER_ADMINS: ${{ vars.BLOG_PUBLISHER_ADMINS }}
+        with:
+          script: |
+            if (context.ref !== 'refs/heads/master') {
+              core.setFailed('Run this workflow from the master branch.');
+              return;
+            }
+            const publishers = new Set([
+              'CoderImaan',
+              ...(process.env.BLOG_PUBLISHER_ADMINS || '')
+                .split(',')
+                .map((login) => login.trim())
+                .filter(Boolean)
+            ]);
+            if (!publishers.has(context.actor)) {
+              core.setFailed('Only the repository owner or an explicitly authorized administrator can publish blog articles.');
+            }
+      - name: Checkout production branch
+        uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Generate or update article and sitemap entry
+        env:
+          BLOG_MODE: ${{ inputs.mode }}
+          BLOG_TITLE: ${{ inputs.title }}
+          BLOG_SLUG: ${{ inputs.slug }}
+          BLOG_DESCRIPTION: ${{ inputs.description }}
+          BLOG_CATEGORY: ${{ inputs.category }}
+          BLOG_DATE: ${{ inputs.publish_date }}
+          BLOG_IMAGE: ${{ inputs.cover_image }}
+          BLOG_BODY: ${{ inputs.body }}
+        run: python3 scripts/publish_blog.py
+      - name: Build the Jekyll site
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Validate generated pages, assets and sitemap
+        run: python3 scripts/validate_site.py ./_site
+      - name: Commit article
+        id: commit
+        env:
+          BLOG_COMMIT_TITLE: ${{ inputs.title }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add blogs sitemap.xml
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No article changes to publish."
+          else
+            git commit -m "Publish blog: ${BLOG_COMMIT_TITLE}"
+            git push origin HEAD:master
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Start GitHub Pages deployment
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-pages.yml --ref master
