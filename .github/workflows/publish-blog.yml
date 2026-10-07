@@ -56,25 +56,28 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      administration: read
       contents: write
       actions: write
     steps:
-      - name: Verify repository administrator
+      - name: Verify authorized publisher
         uses: actions/github-script@v7
+        env:
+          BLOG_PUBLISHER_ADMINS: ${{ vars.BLOG_PUBLISHER_ADMINS }}
         with:
           script: |
             if (context.ref !== 'refs/heads/master') {
               core.setFailed('Run this workflow from the master branch.');
               return;
             }
-            const { data } = await github.rest.repos.getCollaboratorPermissionLevel({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              username: context.actor
-            });
-            if (data.permission !== 'admin') {
-              core.setFailed('Only repository administrators can publish blog articles.');
+            const publishers = new Set([
+              'CoderImaan',
+              ...(process.env.BLOG_PUBLISHER_ADMINS || '')
+                .split(',')
+                .map((login) => login.trim())
+                .filter(Boolean)
+            ]);
+            if (!publishers.has(context.actor)) {
+              core.setFailed('Only the repository owner or an explicitly authorized administrator can publish blog articles.');
             }
       - name: Checkout production branch
         uses: actions/checkout@v4
