@@ -1,0 +1,14 @@
+.admin-page{color:var(--la-text)}
+.admin-shell{width:min(900px,calc(100% - 2rem));margin-inline:auto}
+.admin-hero{padding:clamp(8rem,15vw,11rem) 0 4rem;background:radial-gradient(ellipse at 15% 40%,rgba(40,120,255,.17),transparent 45%),radial-gradient(ellipse at 85% 20%,rgba(0,212,170,.1),transparent 42%);border-bottom:1px solid var(--la-border)}
+.admin-eyebrow{color:var(--la-mint);font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.admin-hero h1{margin:.8rem 0;font:800 clamp(2.3rem,6vw,4rem)/1.08 "Syne",sans-serif;letter-spacing:-.04em}
+.admin-lead{max-width:700px;color:var(--la-muted);font-size:1.08rem;line-height:1.8}
+.admin-action{display:inline-flex;gap:.7rem;align-items:center;margin-top:1rem;padding:.9rem 1.1rem;border-radius:8px;background:var(--la-mint);color:#04120f;font-weight:800;text-decoration:none}
+.admin-content{padding:3rem 0 5rem}
+.admin-content h2{margin:2rem 0 .85rem;font:700 1.5rem "Syne",sans-serif}
+.admin-content li{margin:.55rem 0;color:var(--la-muted)}
+.admin-content code{color:#80efda}
+.admin-note{margin:1.2rem 0;padding:1rem 1.15rem;border:1px solid var(--la-border);border-left:3px solid var(--la-mint);border-radius:8px;background:rgba(255,255,255,.025);color:var(--la-muted)}
+.admin-content a:not(.admin-action){color:#80efda}
+@media(max-width:600px){.admin-hero{padding-top:7rem}}
