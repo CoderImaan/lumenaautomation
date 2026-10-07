@@ -26,7 +26,7 @@ styles:
       <li>Optionally provide an existing image path under <code>/assets/img/</code>. Images must already be in the repository.</li>
       <li>The workflow validates the article and full Jekyll site, writes the article and sitemap entry, then starts the normal Pages deployment.</li>
     </ol>
-    <div class="admin-note"><strong>Access:</strong> the public site is read-only. Only repository administrators can run this publisher; readers cannot create or edit site content. Published articles are public.</div>
+    <div class="admin-note"><strong>Access:</strong> the public site is read-only. Only the repository owner and administrators explicitly listed in the repository Actions variable `BLOG_PUBLISHER_ADMINS` can run this publisher; readers cannot create or edit site content. Published articles are public.</div>
     <div class="admin-note"><strong>Existing URLs:</strong> legacy blog URLs are protected. New articles receive <code>/blogs/&lt;slug&gt;.html</code> URLs. Use the same slug and choose Update only for articles created by this publisher.</div>
     <h2>Writing checklist</h2>
     <ul>
