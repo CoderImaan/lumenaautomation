@@ -721,3 +721,7 @@
       html{scroll-behavior:auto}
       *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
     }
+
+/* Clear platform coverage under the homepage capability statement. */
+.la-platform-note{flex-basis:100%;display:block;color:#c3d1dc;font-size:.82rem;letter-spacing:.04em;padding:.35rem 0 0 .15rem}
+@media(max-width:575.98px){.la-platform-note{font-size:.75rem;line-height:1.55}}
