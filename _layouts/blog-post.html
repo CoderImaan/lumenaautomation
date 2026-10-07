@@ -1,0 +1,30 @@
+---
+layout: base
+---
+<article class="article-page">
+  <header class="article-hero">
+    <div class="article-shell">
+      <a class="article-back" href="/blogs.html">← All articles</a>
+      <div class="article-kicker">
+        <span>{{ page.categories | first | escape }}</span>
+        <span aria-hidden="true">·</span>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        <span aria-hidden="true">·</span>
+        <span>{{ page.reading_minutes }} min read</span>
+      </div>
+      <h1>{{ page.title | escape }}</h1>
+      <p class="article-deck">{{ page.description | escape }}</p>
+      {% if page.image %}<img class="article-cover" src="{{ page.image | escape }}" alt="{{ page.title | escape }}" width="1200" height="630">{% endif %}
+    </div>
+  </header>
+  <div class="article-shell article-body">
+    <div class="article-prose">{{ content }}</div>
+    <aside class="article-cta">
+      <span class="article-kicker">Built for real work</span>
+      <h2>Have a process or product you want to improve?</h2>
+      <p>Talk with LumenaAutomation about endpoint management, custom AI automation or digital product engineering.</p>
+      <a class="article-button" href="/contact.html">Start a conversation <span aria-hidden="true">→</span></a>
+    </aside>
+    <a class="article-back article-back-bottom" href="/blogs.html">← Back to all articles</a>
+  </div>
+</article>
