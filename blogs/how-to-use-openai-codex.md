@@ -14,8 +14,6 @@ styles:
   - "/assets/css/pages/blog-post.html.css"
 ---
 
-# How to use OpenAI Codex: a practical guide for your first coding task
-
 OpenAI Codex is a coding agent that can help you understand, change, and review software. Depending on what is available to you, you may use Codex through the ChatGPT desktop app, a command-line interface, an IDE extension, or Codex on the web. The exact tools and permissions differ by environment, so begin with the options shown in your own account. See OpenAI’s [Codex plan and access guide](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan) for current details.
 
 The most reliable way to work with an agent is to give it a clear goal, set boundaries, and check the result yourself. This guide walks through that process.
