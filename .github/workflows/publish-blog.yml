@@ -48,7 +48,6 @@ on:
         description: Full article body in Markdown
         type: string
         required: true
-permissions: {}
 concurrency:
   group: blog-publish
   cancel-in-progress: false
