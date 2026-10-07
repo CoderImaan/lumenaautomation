@@ -41,8 +41,8 @@ try:
     image = os.environ.get("BLOG_IMAGE", "").strip()
     raw_date = os.environ.get("BLOG_DATE", "").strip()
 
-    if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug):
-        raise ValueError("Slug must use lowercase letters, numbers and single hyphens only.")
+    if len(slug) > 80 or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug):
+        raise ValueError("Slug must use lowercase letters, numbers and single hyphens only (maximum 80 characters).")
     if len(title) > 120:
         raise ValueError("Title must be 120 characters or fewer.")
     if not 40 <= len(description) <= 180:
@@ -55,10 +55,12 @@ try:
         raise ValueError("Choose a category from the publishing form.")
     publish_date = date.fromisoformat(raw_date) if raw_date else datetime.now(timezone.utc).date()
     if image:
-        image_path = image.lstrip("/")
-        if not image_path.startswith("assets/img/") or not (ROOT / image_path).is_file():
-            raise ValueError("Cover image must be an existing repository file under /assets/img/.")
-        image = "/" + image_path
+        image_path = Path(image.lstrip("/"))
+        image_file = (ROOT / image_path).resolve()
+        image_root = (ROOT / "assets" / "img").resolve()
+        if image_file.suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"} or image_root not in image_file.parents or not image_file.is_file():
+            raise ValueError("Cover image must be an existing image file under /assets/img/.")
+        image = "/" + image_path.as_posix()
 
     BLOG_DIR.mkdir(parents=True, exist_ok=True)
     post_file = BLOG_DIR / f"{slug}.md"
