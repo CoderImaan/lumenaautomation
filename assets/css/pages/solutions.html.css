@@ -23,3 +23,10 @@
 .solution-note{border-left:3px solid var(--la-mint);padding:1rem 1.25rem;background:rgba(0,212,170,.055);color:var(--la-muted);max-width:820px}
 @media(max-width:760px){.solution-grid{grid-template-columns:1fr}.solution-wrap{width:min(100% - 2rem,1100px)}.solution-hero{padding-top:7rem}}
 @media(prefers-reduced-motion:reduce){.solution-button{transition:none}}
+
+.platform-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:2rem}
+.platform-tile{min-height:190px;padding:1.5rem;border:1px solid var(--la-border);border-radius:12px;background:linear-gradient(145deg,rgba(12,24,34,.94),rgba(8,17,26,.8))}
+.platform-tile h3{font:700 1.2rem "Syne",sans-serif;margin:.65rem 0}
+.platform-tile p{font-size:.94rem;margin:0}
+.platform-os{color:var(--la-mint);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:650px){.platform-grid{grid-template-columns:1fr}.platform-tile{min-height:0}}
