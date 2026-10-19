@@ -173,30 +173,36 @@ scripts:
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="form-label-custom" for="fullName">Full Name <span style="color:#f87171;">*</span></label>
-                  <input type="text" id="fullName" name="name" class="form-control-custom" placeholder="Your full name" required autocomplete="name">
+                  <input type="text" id="fullName" name="name" class="form-control-custom" placeholder="Your full name" maxlength="120" required autocomplete="name">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="form-label-custom" for="emailAddr">Email Address <span style="color:#f87171;">*</span></label>
-                  <input type="email" id="emailAddr" name="_replyto" class="form-control-custom" placeholder="you@company.com" required autocomplete="email">
+                  <input type="email" id="emailAddr" name="_replyto" class="form-control-custom" placeholder="you@company.com" maxlength="254" required autocomplete="email">
                 </div>
               </div>
             </div>
 
             <div class="form-group">
               <label class="form-label-custom" for="orgName">Company / Organisation</label>
-              <input type="text" id="orgName" name="organisation" class="form-control-custom" placeholder="Company or organisation name (optional)" autocomplete="organization">
+              <input type="text" id="orgName" name="organisation" class="form-control-custom" placeholder="Company or organisation name (optional)" maxlength="160" autocomplete="organization">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label-custom" for="platformContext">Platforms or systems involved <span style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
+              <input type="text" id="platformContext" name="platforms_or_systems" class="form-control-custom" placeholder="e.g., Windows and Android devices, Intune, or an approval workflow" maxlength="300" aria-describedby="platformContextHint">
+              <small id="platformContextHint" style="display:block;color:var(--text-dimmer);font-size:.75rem;margin-top:.45rem;">A short overview helps us understand the context. Please do not include passwords, access tokens, personal records, or confidential data.</small>
             </div>
 
             <div class="form-group">
               <label class="form-label-custom" for="msgSubject">Subject <span style="color:#f87171;">*</span></label>
-              <input type="text" id="msgSubject" name="subject" class="form-control-custom" placeholder="Brief subject of your inquiry" required>
+              <input type="text" id="msgSubject" name="subject" class="form-control-custom" placeholder="Brief subject of your inquiry" maxlength="160" required>
             </div>
 
             <div class="form-group">
               <label class="form-label-custom" for="msgBody">Message <span style="color:#f87171;">*</span></label>
-              <textarea id="msgBody" name="message" class="form-control-custom" rows="5" placeholder="Describe your requirements, project scope, or question in detail..." required></textarea>
+              <textarea id="msgBody" name="message" class="form-control-custom" rows="5" maxlength="5000" placeholder="Describe your requirements, project scope, or question in detail..." required></textarea>
             </div>
 
             <!-- Honeypot spam protection -->
